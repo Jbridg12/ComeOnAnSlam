@@ -50,6 +50,5 @@ else
 			
 			in_path = true;
 		}
-		show_debug_message(in_path);
 	}
 }

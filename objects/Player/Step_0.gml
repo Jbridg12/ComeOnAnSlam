@@ -2,13 +2,15 @@
 // You can write your code in this editor
 
 
+if(obj_game_manager.in_pause) return;
+
 if(dropdown_timer >= 0)
 {
 	if (--dropdown_timer <= 0)
 		platform_transparent = false;
 }
 
-movement_input()
+handle_input()
 
 // Update position by speed
 

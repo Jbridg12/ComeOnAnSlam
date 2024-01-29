@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // TODO: Gamepad Input gp_()
-function movement_input(){
+function handle_input(){
 	var isUp = keyboard_check_pressed(vk_space);
 	var isDown = keyboard_check(ord("S"));
 	
@@ -39,5 +39,5 @@ function movement_input(){
 	//{
 	//	instance_create_layer(0,0, "Instances", dialogue1);
 	//}
-		
+	
 }

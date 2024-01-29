@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(obj_game_manager.in_pause) return;
 
 if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
 {
@@ -16,6 +17,8 @@ if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
 }
 else
 {
+	motion_set(0,0);
+	
 	if(!in_path)
 	{
 		if(abs(targ_x-x) >= 2 ||abs(targ_y-y) >= 2)
@@ -26,6 +29,7 @@ else
 			delta_x = cos(-dir) * 2;
 			delta_y = sin(-dir) * 2;
 			calculate_movement();
+			show_debug_message(delta_y);
 		}
 		else
 		{
