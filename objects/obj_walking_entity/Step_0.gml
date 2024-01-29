@@ -16,18 +16,22 @@ if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
 		in_path = false;	
 	}
 	
-	motion_set(point_direction(x, y, Player.x, Player.y), move_speed); 
+	var dir = degtorad(point_direction(x, 0, Player.x, 0));
+	delta_x = sign(cos(-dir)) * move_speed;
+	
+	// Implement AI jump in future
+	calculate_movement();
 }
 else
 {
 	if(!in_path)
 	{
-		if(abs(targ_x-x) >= 2 ||abs(targ_y-y) >= 2)
+		if(abs(targ_x-x) >= 2)
 		{
 			
 			//move_towards_point(targ_x, targ_y, move_speed);
-			var dir = degtorad(point_direction(x, y, targ_x, targ_y));
-			delta_x = cos(-dir) * 2;
+			var dir = degtorad(point_direction(x, 0, targ_x, 0));
+			delta_x = sign(cos(-dir)) * move_speed;
 			
 			// Implement AI jump in future
 			delta_y = 0;

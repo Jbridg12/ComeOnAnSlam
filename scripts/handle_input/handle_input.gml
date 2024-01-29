@@ -35,6 +35,21 @@ function handle_input(){
 		}
 	}
 	
+	var primaryAttack = keyboard_check_pressed(ord("2")) || keyboard_check_pressed(ord("K")) || mouse_check_button_released(mb_left);
+	var secondaryAttack = keyboard_check_pressed(ord("3")) || keyboard_check_pressed(ord("L")) || mouse_check_button_released(mb_right);
+	
+	if(primaryAttack)
+	{
+		show_debug_message("ATTACK");
+		event_user(2);
+	}
+	
+	else if(secondaryAttack)
+	{
+		show_debug_message("YA ATTACK");
+		event_user(3);
+	}
+	
 	//if(keyboard_check_released(ord("W")))
 	//{
 	//	instance_create_layer(0,0, "Instances", dialogue1);

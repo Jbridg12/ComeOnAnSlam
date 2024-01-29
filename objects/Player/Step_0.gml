@@ -4,6 +4,10 @@
 
 if(obj_game_manager.in_pause) return;
 
+
+CheckAnimation();
+if(in_animation) return;
+
 if(dropdown_timer >= 0)
 {
 	if (--dropdown_timer <= 0)

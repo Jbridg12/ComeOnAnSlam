@@ -8,6 +8,8 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":13,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [
@@ -47,6 +49,8 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"friction","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.9","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"orientation","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dropdown_timer","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"weapon_reference","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"BBall","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"in_animation","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":3,},
   ],
   "solid": true,
   "spriteId": {

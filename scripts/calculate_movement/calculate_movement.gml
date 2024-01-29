@@ -4,6 +4,7 @@ function calculate_movement()
 {
 	var colliding_instances_x;
 	var colliding_instances_y;
+	
 	if(use_gravity)
 		delta_y += 1;
 	
