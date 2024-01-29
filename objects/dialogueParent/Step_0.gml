@@ -5,12 +5,14 @@ if(showing_dialogue == false)
 {
 	if(dialog.count() <= 0)
 	{
+		obj_game_manager.in_dialogue = false;
 		instance_destroy();
 		return;
 	}
 	
 	current_dialogue = dialog.pop();
 	showing_dialogue = true;
+	obj_game_manager.in_dialogue = true;
 }
 else
 {

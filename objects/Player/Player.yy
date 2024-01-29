@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Entities",
+    "path": "folders/Objects/Entities.yy",
   },
   "parentObjectId": null,
   "persistent": true,

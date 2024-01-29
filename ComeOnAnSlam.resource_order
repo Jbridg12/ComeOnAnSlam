@@ -21,14 +21,14 @@
   "ResourceOrderSettings": [
     {"name":"obj_game_manager","order":5,"path":"objects/obj_game_manager/obj_game_manager.yy",},
     {"name":"obj_path_enemy","order":1,"path":"objects/obj_path_enemy/obj_path_enemy.yy",},
-    {"name":"dialogue_red","order":2,"path":"sprites/dialogue_red/dialogue_red.yy",},
+    {"name":"dialogue_red","order":1,"path":"sprites/dialogue_red/dialogue_red.yy",},
     {"name":"dialogue1","order":1,"path":"objects/dialogue1/dialogue1.yy",},
     {"name":"test_enemy","order":2,"path":"objects/test_enemy/test_enemy.yy",},
     {"name":"dialogue","order":2,"path":"scripts/dialogue/dialogue.yy",},
-    {"name":"Player","order":1,"path":"objects/Player/Player.yy",},
-    {"name":"Sprite2","order":15,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"Player","order":3,"path":"objects/Player/Player.yy",},
+    {"name":"Sprite2","order":2,"path":"sprites/Sprite2/Sprite2.yy",},
     {"name":"dialogueParent","order":2,"path":"objects/dialogueParent/dialogueParent.yy",},
     {"name":"movement_input","order":1,"path":"scripts/movement_input/movement_input.yy",},
-    {"name":"Sprite4","order":16,"path":"sprites/Sprite4/Sprite4.yy",},
+    {"name":"Sprite4","order":3,"path":"sprites/Sprite4/Sprite4.yy",},
   ],
 }

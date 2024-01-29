@@ -8,7 +8,7 @@ function movement_input(){
 	var isRight = keyboard_check(ord("D"));
 
 
-	if(instance_exists(dialogueParent)) return;
+	if(obj_game_manager.in_dialogue) return;
 
 	move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 	delta_x = move_x * walk_speed;
