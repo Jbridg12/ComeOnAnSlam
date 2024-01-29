@@ -20,7 +20,6 @@ if(showing_dialogue == true)
 	height += padding * 2;
 	
 	var base_y = view_hport[0] - height;
-	show_debug_message(base_y);
 	
 	text_x = sprite_get_width(current_dialogue.sprite) + (padding * 2);
 	

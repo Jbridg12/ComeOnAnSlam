@@ -20,7 +20,8 @@ function movement_input(){
 		if(isDown)
 		{
 			// handle dropping through platforms
-			platform_transparent = 1;
+			platform_transparent = true;
+			dropdown_timer = 60;
 			
 		}
 		else
@@ -32,17 +33,11 @@ function movement_input(){
 				dropdown_timer = 0;
 			}
 		}
-		
 	}
 	
-	if(!isDown)
-	{
-		if(platform_transparent)
-		{
-			dropdown_timer = 60;
-		}
-		platform_transparent = 0;
-	}
-	
+	//if(keyboard_check_released(ord("W")))
+	//{
+	//	instance_create_layer(0,0, "Instances", dialogue1);
+	//}
 		
 }

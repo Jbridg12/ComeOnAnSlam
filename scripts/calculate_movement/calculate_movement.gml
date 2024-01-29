@@ -3,14 +3,11 @@
 function calculate_movement()
 {
 	
-	delta_y += 1;
-	
-	if(platform_transparent || dropdown_timer > 0)
+	if(platform_transparent)
 	{
 		var colliding_instances_x = move_and_collide(delta_x, 0, room_collision_layer);
 		var colliding_instances_y = move_and_collide(0, delta_y, room_collision_layer);
 		
-		if(dropdown_timer > 0) dropdown_timer--;
 	
 	}
 	else
