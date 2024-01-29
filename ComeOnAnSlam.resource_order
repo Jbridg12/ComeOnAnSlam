@@ -1,0 +1,27 @@
+{
+  "FolderOrderSettings": [
+    {"name":"Animation Curves","order":10,"path":"folders/Animation Curves.yy",},
+    {"name":"Extensions","order":12,"path":"folders/Extensions.yy",},
+    {"name":"Fonts","order":6,"path":"folders/Fonts.yy",},
+    {"name":"Notes","order":11,"path":"folders/Notes.yy",},
+    {"name":"Objects","order":7,"path":"folders/Objects.yy",},
+    {"name":"Particle Systems","order":13,"path":"folders/Particle Systems.yy",},
+    {"name":"Paths","order":3,"path":"folders/Paths.yy",},
+    {"name":"Rooms","order":8,"path":"folders/Rooms.yy",},
+    {"name":"Scripts","order":4,"path":"folders/Scripts.yy",},
+    {"name":"Sequences","order":9,"path":"folders/Sequences.yy",},
+    {"name":"Shaders","order":5,"path":"folders/Shaders.yy",},
+    {"name":"Sounds","order":2,"path":"folders/Sounds.yy",},
+    {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
+    {"name":"Timelines","order":14,"path":"folders/Timelines.yy",},
+  ],
+  "ResourceOrderSettings": [
+    {"name":"dialogue_red","order":2,"path":"sprites/dialogue_red/dialogue_red.yy",},
+    {"name":"dialogue1","order":1,"path":"objects/dialogue1/dialogue1.yy",},
+    {"name":"dialogue","order":2,"path":"scripts/dialogue/dialogue.yy",},
+    {"name":"Player","order":1,"path":"objects/Player/Player.yy",},
+    {"name":"Sprite2","order":15,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"dialgoue2","order":2,"path":"objects/dialgoue2/dialgoue2.yy",},
+    {"name":"calculate_movement","order":1,"path":"scripts/calculate_movement/calculate_movement.yy",},
+  ],
+}
