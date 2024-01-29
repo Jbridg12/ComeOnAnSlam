@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "dialgoue2",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_path_enemy",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dialogue",
-    "path": "folders/Objects/Dialogue.yy",
+    "name": "Entities",
+    "path": "folders/Objects/Entities.yy",
   },
   "parentObjectId": {
-    "name": "dialogueParent",
-    "path": "objects/dialogueParent/dialogueParent.yy",
+    "name": "obj_pausable_object",
+    "path": "objects/obj_pausable_object/obj_pausable_object.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -28,7 +26,9 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"path","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"noone","varType":5,},
+  ],
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,
