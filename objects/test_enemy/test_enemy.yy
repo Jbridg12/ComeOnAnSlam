@@ -6,16 +6,14 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_pausable_object","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"propertyId":{"name":"platform_transparent","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"value":"True",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Entities",
     "path": "folders/Objects/Entities.yy",
   },
   "parentObjectId": {
-    "name": "obj_looping_path_enemy",
-    "path": "objects/obj_looping_path_enemy/obj_looping_path_enemy.yy",
+    "name": "obj_flying_enemy",
+    "path": "objects/obj_flying_enemy/obj_flying_enemy.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

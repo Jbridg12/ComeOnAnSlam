@@ -14,6 +14,4 @@ movement_input()
 
 if(delta_x != 0) orientation = sign(delta_x);
 
-delta_y += 1;
-
 calculate_movement();
