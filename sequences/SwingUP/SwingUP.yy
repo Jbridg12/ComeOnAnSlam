@@ -36,7 +36,7 @@
   "timeUnits": 1,
   "tracks": [
     {"resourceType":"GMInstanceTrack","resourceVersion":"1.0","name":"Hitbox1","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<AssetInstanceKeyframe>","resourceVersion":"1.0","Keyframes":[
-          {"resourceType":"Keyframe<AssetInstanceKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"AssetInstanceKeyframe","resourceVersion":"1.0","Id":{"name":"player_melee_hitbox","path":"objects/player_melee_hitbox/player_melee_hitbox.yy",},},},"Disabled":false,"id":"0ed712dd-e9d0-42df-b4a0-793db2c8a1e1","IsCreationKey":false,"Key":35.0,"Length":14.0,"Stretch":false,},
+          {"resourceType":"Keyframe<AssetInstanceKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"AssetInstanceKeyframe","resourceVersion":"1.0","Id":{"name":"attack_hitbox","path":"objects/attack_hitbox/attack_hitbox.yy",},},},"Disabled":false,"id":"0ed712dd-e9d0-42df-b4a0-793db2c8a1e1","IsCreationKey":false,"Key":35.0,"Length":14.0,"Stretch":false,},
         ],},"modifiers":[
         {"resourceType":"InvisibleModifier","resourceVersion":"1.0",},
       ],"trackColour":4294068336,"tracks":[

@@ -52,7 +52,7 @@ function handle_input(){
 	
 	if(keyboard_check_released(ord("W")))
 	{
-		Player.weapon_id++;
+		//Player.weapon_id++;
 		//instance_create_layer(0,0, "Instances", dialogue1);
 	}
 	

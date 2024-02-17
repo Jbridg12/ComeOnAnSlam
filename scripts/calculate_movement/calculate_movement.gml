@@ -6,7 +6,7 @@ function calculate_movement()
 	var colliding_instances_y;
 	
 	if(use_gravity)
-		delta_y += 1;
+		delta_y += .5 * weight;
 	
 	if(platform_transparent)
 	{

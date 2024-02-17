@@ -17,8 +17,23 @@ if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
 		in_path = false;	
 	}
 	
+	
 	var dir = degtorad(point_direction(x, 0, Player.x, 0));
 	delta_x = sign(cos(-dir)) * move_speed;
+	
+	// Process Hit Bounceback
+	if(hit_timer > 0)
+	{
+		if(hit_timer >= 10) 
+		{
+			delta_y = -6/weight;
+			delta_x *= -13/weight;
+		}
+		
+		hit_timer--;
+		
+		if(hit_timer == 0) invulnerable = false;
+	}
 	
 	// Implement AI jump in future
 	calculate_movement();
