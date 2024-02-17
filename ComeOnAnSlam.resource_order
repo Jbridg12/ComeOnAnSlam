@@ -38,6 +38,7 @@
     {"name":"Hitbox1","order":1,"path":"objects/Hitbox1/Hitbox1.yy",},
     {"name":"Sprite7","order":16,"path":"sprites/Sprite7/Sprite7.yy",},
     {"name":"obj_pausable_object","order":1,"path":"objects/obj_pausable_object/obj_pausable_object.yy",},
+    {"name":"attack_animation","order":5,"path":"scripts/attack_animation/attack_animation.yy",},
     {"name":"obj_flying_enemy","order":2,"path":"objects/obj_flying_enemy/obj_flying_enemy.yy",},
     {"name":"dialogueParent","order":2,"path":"objects/dialogueParent/dialogueParent.yy",},
     {"name":"Bat","order":15,"path":"sprites/Bat/Bat.yy",},

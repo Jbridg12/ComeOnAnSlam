@@ -61,6 +61,7 @@
     {"id":{"name":"Hitbox1","path":"objects/Hitbox1/Hitbox1.yy",},},
     {"id":{"name":"Sprite7","path":"sprites/Sprite7/Sprite7.yy",},},
     {"id":{"name":"obj_pausable_object","path":"objects/obj_pausable_object/obj_pausable_object.yy",},},
+    {"id":{"name":"attack_animation","path":"scripts/attack_animation/attack_animation.yy",},},
     {"id":{"name":"dialgoue2","path":"objects/dialgoue2/dialgoue2.yy",},},
     {"id":{"name":"obj_flying_enemy","path":"objects/obj_flying_enemy/obj_flying_enemy.yy",},},
     {"id":{"name":"dialogueParent","path":"objects/dialogueParent/dialogueParent.yy",},},

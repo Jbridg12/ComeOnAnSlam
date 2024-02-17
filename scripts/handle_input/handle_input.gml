@@ -50,9 +50,10 @@ function handle_input(){
 		event_user(3);
 	}
 	
-	//if(keyboard_check_released(ord("W")))
-	//{
-	//	instance_create_layer(0,0, "Instances", dialogue1);
-	//}
+	if(keyboard_check_released(ord("W")))
+	{
+		Player.weapon_id++;
+		//instance_create_layer(0,0, "Instances", dialogue1);
+	}
 	
 }

@@ -3,5 +3,5 @@
 
 
 // Check Weapon 
-
-StartAnimation(weapon_reference.primary_sequence);
+var attack_sequence = attack_animation(weapon_id)
+StartAnimation(attack_sequence);
