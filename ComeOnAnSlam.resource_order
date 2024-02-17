@@ -35,7 +35,7 @@
     {"name":"obj_walking_entity","order":3,"path":"objects/obj_walking_entity/obj_walking_entity.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"path_horz_line","order":1,"path":"paths/path_horz_line/path_horz_line.yy",},
-    {"name":"Hitbox1","order":1,"path":"objects/Hitbox1/Hitbox1.yy",},
+    {"name":"player_melee_hitbox","order":1,"path":"objects/player_melee_hitbox/player_melee_hitbox.yy",},
     {"name":"Sprite7","order":16,"path":"sprites/Sprite7/Sprite7.yy",},
     {"name":"obj_pausable_object","order":1,"path":"objects/obj_pausable_object/obj_pausable_object.yy",},
     {"name":"attack_animation","order":5,"path":"scripts/attack_animation/attack_animation.yy",},

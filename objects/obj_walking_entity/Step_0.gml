@@ -2,8 +2,9 @@
 // You can write your code in this editor
 
 
-/// @description Insert description here
-// You can write your code in this editor
+if(obj_game_manager.in_pause) return;
+
+if(health <= 0) event_user(2)
 
 
 if(point_in_circle(Player.x, Player.y, x, y, detection_radius))

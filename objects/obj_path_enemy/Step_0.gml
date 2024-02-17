@@ -3,6 +3,10 @@
 
 if(obj_game_manager.in_pause) return;
 
+if(health <= 0) event_user(2)
+
+
+// Check for pathing and entity movement 
 if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
 {
 	if(obj_game_manager.in_dialogue) return;

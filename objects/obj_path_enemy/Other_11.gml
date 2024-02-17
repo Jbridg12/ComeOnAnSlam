@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Unpause Event
 // You can write your code in this editor
 
 
@@ -29,7 +29,7 @@ if(in_path)
 			break;
 	}	
 	
-	path_position = pp;
+	path_position = path_distance;
 }
 
 if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
