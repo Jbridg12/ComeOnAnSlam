@@ -54,6 +54,7 @@
     {"id":{"name":"path_flying_circle","path":"paths/path_flying_circle/path_flying_circle.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"obj_walking_entity","path":"objects/obj_walking_entity/obj_walking_entity.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"path_horz_line","path":"paths/path_horz_line/path_horz_line.yy",},},
     {"id":{"name":"LargerFont","path":"fonts/LargerFont/LargerFont.yy",},},
     {"id":{"name":"Hitbox1","path":"objects/Hitbox1/Hitbox1.yy",},},
@@ -78,6 +79,7 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
