@@ -5,6 +5,7 @@ if(other.invulnerable) return;
 
 other.invulnerable = true;
 show_debug_message("Hit a Walker");
+screenshake(20, 3, 0.4);
 
 var damage = 0;
 

@@ -13,6 +13,7 @@
     {"name":"inst_5FDCE97F","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_5C209D80","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_19F825DA","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_4D83B3C8","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -44,6 +45,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"RoomTransition","path":"objects/RoomTransition/RoomTransition.yy",},"propertyId":{"name":"destination","path":"objects/RoomTransition/RoomTransition.yy",},"value":"Room2",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"RoomTransition","path":"objects/RoomTransition/RoomTransition.yy",},"propertyId":{"name":"dest_entrance_id","path":"objects/RoomTransition/RoomTransition.yy",},"value":"1",},
           ],"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":2208.0,"y":384.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4D83B3C8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_screenshake","path":"objects/obj_screenshake/obj_screenshake.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Collidable_Instances","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"Render_Below_Instance","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
