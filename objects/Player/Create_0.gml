@@ -6,6 +6,8 @@
 // Inherit the parent event
 event_inherited();
 
+
+// Animation object instantiation
 activeAnimation = -1;
 sequenceLayer = -1;
 activeSequence = -1;
@@ -33,5 +35,9 @@ CheckAnimation = function () {
 	}
 }
 
+// Health Bar size coordinates
+healthbar_height = 24;
 
-weapon_reference = BBall;
+// Health bar offsets
+healthbar_offset_x = 40;
+healthbar_offset_y = 20;

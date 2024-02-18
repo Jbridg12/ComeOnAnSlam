@@ -1,5 +1,4 @@
 /// @description Secondary Attack
 
 
-
-StartAnimation(weapon_reference.secondary_sequence);
+show_debug_message("NOT YET IMPLEMENTED");

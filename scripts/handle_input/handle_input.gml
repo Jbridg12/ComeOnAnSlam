@@ -46,13 +46,19 @@ function handle_input(){
 	
 	else if(secondaryAttack)
 	{
-		show_debug_message("YA ATTACK");
+		show_debug_message("RANGED ATTACK");
 		event_user(3);
 	}
 	
+	// Space is used for jump so W will be mapped to miscellaneous functions
+	// for testing. 
+	// Final verison will use W for interacting with background elements and
+	// character dialogues.
 	if(keyboard_check_released(ord("W")))
 	{
-		screenshake(30, 5, 0.4);
+		Player.max_health = 150;
+		Player.hp = 150;
+		//screenshake(30, 5, 0.4);
 		//Player.weapon_id++;
 		//instance_create_layer(0,0, "Instances", dialogue1);
 	}
