@@ -6,7 +6,12 @@ function calculate_movement()
 	var colliding_instances_y = [];
 	
 	if(use_gravity)
-		delta_y += .5 * weight;
+	{
+		if(object_get_name(object_index) != "Player" || curr_jump <= 0)
+		{
+			delta_y += .5 * weight;
+		}
+	}
 	
 	
 	
@@ -17,7 +22,7 @@ function calculate_movement()
 		if(wall_jump)
 		{
 			delta_y *= 0.8;
-			delta_x += abs(jump_speed / 2) * -hanging_side;
+			delta_x += abs(jump_speed) * -hanging_side;
 			wall_jump = false;
 			hanging = false;
 			hanging_side = 0;
@@ -43,7 +48,7 @@ function calculate_movement()
 			{
 				hanging = false;
 				delta_y *= 0.8;
-				delta_x += abs(jump_speed / 2) * -hanging_side;
+				delta_x += abs(jump_speed) * -hanging_side;
 				wall_jump = false;
 				hanging_side = 0;
 				hanging_timer = 0;

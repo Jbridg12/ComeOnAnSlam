@@ -52,5 +52,9 @@ hanging_side = 0;
 
 //Different Speed Parameters for movement calc
 walk_speed = 3;
-jump_speed = -20;
+jump_speed = -10;
 float_speed = 0.5;
+
+// Holding Jump lets you jump longer without gravity for x frames
+max_jump = 10;
+curr_jump = 0;

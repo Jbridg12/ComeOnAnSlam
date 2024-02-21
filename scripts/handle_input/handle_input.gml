@@ -1,7 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // TODO: Gamepad Input gp_()
 function handle_input(){
-	var isUp = keyboard_check_pressed(vk_space);
+	//var isUp = keyboard_check_pressed(vk_space);
+	var isUp = keyboard_check(vk_space);
 	var isDown = keyboard_check(ord("S"));
 	
 	var isLeft = keyboard_check(ord("A"));
@@ -34,9 +35,19 @@ function handle_input(){
 				grounded = 0;
 				delta_y = jump_speed;
 				dropdown_timer = 0;
+				curr_jump = max_jump;
 			}
-			 if(hanging || hanging_timer > 0) wall_jump = true;
+			if(hanging || hanging_timer > 0) wall_jump = true;
+			
+			if(!grounded)
+			{
+				curr_jump--;	
+			}
 		}
+	}
+	else
+	{
+		curr_jump = 0;	
 	}
 	
 	var primaryAttack = keyboard_check_pressed(ord("2")) || keyboard_check_pressed(ord("K")) || mouse_check_button_released(mb_left);
