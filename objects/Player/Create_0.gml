@@ -41,3 +41,16 @@ healthbar_height = 24;
 // Health bar offsets
 healthbar_offset_x = 40;
 healthbar_offset_y = 20;
+
+// Hanging Parameters for movement
+hanging = false;
+hanging_timer = 0;
+wall_jump = false;
+
+// Side of Hang: -1 left, 0 none, 1 right
+hanging_side = 0;
+
+//Different Speed Parameters for movement calc
+walk_speed = 3;
+jump_speed = -20;
+float_speed = 0.5;

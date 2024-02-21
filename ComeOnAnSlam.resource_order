@@ -18,9 +18,9 @@
     {"name":"Sequences","order":9,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":5,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":2,"path":"folders/Sounds.yy",},
+    {"name":"HealthBars","order":8,"path":"folders/Sprites/HealthBars.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":14,"path":"folders/Timelines.yy",},
-    {"name":"HealthBars","order":8,"path":"folders/Sprites/HealthBars.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"SwingUP","order":1,"path":"sequences/SwingUP/SwingUP.yy",},

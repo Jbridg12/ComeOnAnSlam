@@ -10,8 +10,11 @@ function handle_input(){
 
 	if(obj_game_manager.in_dialogue) return;
 
+
 	move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-	delta_x = move_x * walk_speed;
+	
+	delta_x = grounded ? move_x * walk_speed : (delta_x * 0.9) + (move_x * float_speed);
+	
 	
 	if (keyboard_check(vk_shift)) delta_x *= 2;
 	
@@ -26,12 +29,13 @@ function handle_input(){
 		}
 		else
 		{
-			if(grounded)
+			if(grounded || hanging || hanging_timer > 0)
 			{
 				grounded = 0;
 				delta_y = jump_speed;
 				dropdown_timer = 0;
 			}
+			 if(hanging || hanging_timer > 0) wall_jump = true;
 		}
 	}
 	
@@ -56,8 +60,8 @@ function handle_input(){
 	// character dialogues.
 	if(keyboard_check_released(ord("W")))
 	{
-		Player.max_health = 150;
-		Player.hp = 150;
+		//Player.max_health = 150;
+		//Player.hp = 150;
 		//screenshake(30, 5, 0.4);
 		//Player.weapon_id++;
 		//instance_create_layer(0,0, "Instances", dialogue1);

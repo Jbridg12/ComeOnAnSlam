@@ -8,7 +8,6 @@ var healthbar_width = 200 * (max_health / 100);
 switch(max_health)
 {
 	case 150:
-		show_debug_message("100 Hp");
 		health_bg = healthbar_bg_lvl2;
 		health_border = healthbar_border_lvl2;
 		break;
