@@ -2,6 +2,7 @@
 // TODO: Gamepad Input gp_()
 function handle_input(){
 	var isJump = keyboard_check_pressed(vk_space);
+	var isSprint =  keyboard_check(vk_lshift);
 	var isUp = keyboard_check(vk_space);
 	var isDown = keyboard_check(ord("S"));
 	
@@ -11,13 +12,21 @@ function handle_input(){
 
 	if(obj_game_manager.in_dialogue) return;
 
-
+	// get absolute input value
 	move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 	
-	delta_x = grounded ? move_x * walk_speed : (delta_x * 0.9) + (move_x * float_speed);
+	// Default speed set to walking unless player holds sprint key (Shift)
+	motion_speed = walk_speed;
+	air_resistance = 0.9;
 	
+	if(isSprint) 
+	{
+		air_resistance = 0.95;
+		motion_speed = sprint_speed;
+	}
 	
-	if (keyboard_check(vk_shift)) delta_x *= 2;
+	delta_x = grounded ? move_x * motion_speed : (delta_x * air_resistance) + (move_x * float_speed);
+	
 	
 	if(isJump)
 	{	
@@ -32,8 +41,11 @@ function handle_input(){
 		{
 			if(grounded || hanging || hanging_timer > 0)
 			{
-				grounded = 0;
+				
 				delta_y = jump_speed;
+				//if(isSprint) delta_x *= 1.5;
+				
+				grounded = 0;
 				dropdown_timer = 0;
 				curr_jump = max_jump;
 			}

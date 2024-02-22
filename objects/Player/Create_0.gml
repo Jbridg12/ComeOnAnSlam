@@ -45,6 +45,7 @@ healthbar_offset_y = 20;
 // Hanging Parameters for movement
 hanging = false;
 hanging_timer = 0;
+hanging_forgiveness = 20;
 wall_jump = false;
 
 // Side of Hang: -1 left, 0 none, 1 right
@@ -52,6 +53,7 @@ hanging_side = 0;
 
 //Different Speed Parameters for movement calc
 walk_speed = 3;
+sprint_speed = 6;
 jump_speed = -10;
 float_speed = 0.5;
 

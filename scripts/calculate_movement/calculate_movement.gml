@@ -7,6 +7,7 @@ function calculate_movement()
 	
 	if(use_gravity)
 	{
+		// Only apply gravity if the player is not holding Jump to extend distance
 		if(object_get_name(object_index) != "Player" || curr_jump <= 0)
 		{
 			delta_y += .5 * weight;
@@ -17,12 +18,21 @@ function calculate_movement()
 	
 	
 	// If Player is hanging then we should calculate Y-axis movement differently
-	if(object_get_name(object_index) == "Player" && hanging)
+	if(object_get_name(object_index) == "Player" && (hanging || hanging_timer > 0))
 	{
+		// If Player is trying to leave the wall then they can free fall off
+		if(!hanging && delta_x != 0) hanging_timer = 0;	
+		
+		// If they Press jump off the wall
 		if(wall_jump)
 		{
+			// Adjust height to not be that vertical
 			delta_y *= 0.8;
+			
+			// Push the player out further than normal to prevent infinite scaling
 			delta_x += abs(jump_speed) * -hanging_side;
+			
+			// Reset flags
 			wall_jump = false;
 			hanging = false;
 			hanging_side = 0;
@@ -31,37 +41,25 @@ function calculate_movement()
 		}
 		else
 		{
-			delta_y *= 0.1;
-			hanging = false;
-			hanging_timer = 20;
-		}
-		
-	}
-	else if(object_get_name(object_index) == "Player" && !hanging)
-	{
-		// If Player is not moving back into wall then they can free fall off
-		if(delta_x != 0) hanging_timer = 0;	
-		
-		if(hanging_timer > 0)
-		{
-			if(wall_jump)
+			if(hanging)
 			{
-				hanging = false;
-				delta_y *= 0.8;
-				delta_x += abs(jump_speed) * -hanging_side;
-				wall_jump = false;
-				hanging_side = 0;
-				hanging_timer = 0;
-			
+				// If the hang is stopped by releaseing key,
+				// Give the player a snall frame forgiveness window
+				hanging_timer = hanging_forgiveness;
 			}
 			else
 			{
-				show_debug_message(hanging_timer)
-				delta_y *= 0.1;
+				// Otherwise the timer should be counting down
 				hanging_timer--;
 			}
 			
+			// If they aren't jumping, make player slowly slide down wall
+			delta_y *= 0.1;
+			
+			// Reset flag
+			hanging = false;
 		}
+		
 	}
 	
 	
