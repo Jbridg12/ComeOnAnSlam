@@ -1,7 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // TODO: Gamepad Input gp_()
 function handle_input(){
-	//var isUp = keyboard_check_pressed(vk_space);
+	var isJump = keyboard_check_pressed(vk_space);
 	var isUp = keyboard_check(vk_space);
 	var isDown = keyboard_check(ord("S"));
 	
@@ -19,7 +19,7 @@ function handle_input(){
 	
 	if (keyboard_check(vk_shift)) delta_x *= 2;
 	
-	if(isUp)
+	if(isJump)
 	{	
 		if(isDown)
 		{
@@ -39,11 +39,13 @@ function handle_input(){
 			}
 			if(hanging || hanging_timer > 0) wall_jump = true;
 			
-			if(!grounded)
-			{
-				curr_jump--;	
-			}
 		}
+	}
+	
+	// If player holding the Jump button let them go further
+	if(isUp && !grounded)
+	{
+		curr_jump--;		
 	}
 	else
 	{

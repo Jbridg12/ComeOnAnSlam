@@ -64,6 +64,8 @@ function calculate_movement()
 		}
 	}
 	
+	
+	// Detect Collisions
 	if(platform_transparent)
 	{
 		colliding_instances_x = move_and_collide(delta_x, 0, room_collision_layer);
@@ -77,7 +79,7 @@ function calculate_movement()
 		colliding_instances_x = move_and_collide(delta_x, 0, [room_collision_layer, platform_collision_layer]);
 		
 		
-		if(delta_y < 0)
+		if(delta_y <= 0)
 		{
 			colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer]);
 		}
@@ -116,10 +118,12 @@ function calculate_movement()
 			if(!grounded) 
 			{
 				//show_debug_message("Hanging");
-				
-				hanging = true;
-				hanging_side = sign(delta_x);
-				hanging_timer = 0;
+				if(move_x != 0)
+				{
+					hanging = true;
+					hanging_side = sign(delta_x);
+					hanging_timer = 0;
+				}
 				
 			}
 		}
