@@ -33,8 +33,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "Sprite8",
-    "path": "sprites/Sprite8/Sprite8.yy",
+    "name": "Portal",
+    "path": "sprites/Portal/Portal.yy",
   },
   "spriteMaskId": null,
   "visible": false,

@@ -1,20 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "test_enemy",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "Vine",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Entities",
-    "path": "folders/Objects/Entities.yy",
+    "name": "Environement Props",
+    "path": "folders/Objects/Environement Props.yy",
   },
-  "parentObjectId": {
-    "name": "obj_flying_enemy",
-    "path": "objects/obj_flying_enemy/obj_flying_enemy.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sFlyer",
-    "path": "sprites/sFlyer/sFlyer.yy",
+    "name": "CoolLookingVine",
+    "path": "sprites/CoolLookingVine/CoolLookingVine.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -6,7 +6,7 @@
 // Inherit the parent event
 event_inherited();
 
-
+//----------------Animation Control-------------------------------
 // Animation object instantiation
 activeAnimation = -1;
 sequenceLayer = -1;
@@ -34,14 +34,18 @@ CheckAnimation = function () {
 		in_animation = false;
 	}
 }
+//------------------------------------------------------------------
 
+//-------------------------Health Bar-------------------------------
 // Health Bar size coordinates
 healthbar_height = 24;
 
 // Health bar offsets
 healthbar_offset_x = 40;
 healthbar_offset_y = 20;
+//------------------------------------------------------------------
 
+//---------------------------Movement-------------------------------
 // Hanging Parameters for movement
 hanging = false;
 hanging_timer = 0;
@@ -60,3 +64,11 @@ float_speed = 0.5;
 // Holding Jump lets you jump longer without gravity for x frames
 max_jump = 10;
 curr_jump = 0;
+//------------------------------------------------------------------
+
+
+//-----------------------Vine Interaction---------------------------
+
+on_vine = false;
+
+//------------------------------------------------------------------

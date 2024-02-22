@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite7",
-    "path": "sprites/Sprite7/Sprite7.yy",
+    "name": "Hitbox",
+    "path": "sprites/Hitbox/Hitbox.yy",
   },
   "spriteMaskId": null,
   "visible": true,
