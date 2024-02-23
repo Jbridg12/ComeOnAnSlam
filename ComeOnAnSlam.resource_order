@@ -22,6 +22,7 @@
     {"name":"HealthBars","order":5,"path":"folders/Sprites/HealthBars.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":14,"path":"folders/Timelines.yy",},
+    {"name":"Collectible","order":10,"path":"folders/Objects/Collectible.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"SwingUP","order":1,"path":"sequences/SwingUP/SwingUP.yy",},
@@ -36,6 +37,7 @@
     {"name":"healthbar_border_lvl2","order":3,"path":"sprites/healthbar_border_lvl2/healthbar_border_lvl2.yy",},
     {"name":"CoolLookingVine","order":6,"path":"sprites/CoolLookingVine/CoolLookingVine.yy",},
     {"name":"Player","order":3,"path":"objects/Player/Player.yy",},
+    {"name":"sHealthPickup","order":15,"path":"sprites/sHealthPickup/sHealthPickup.yy",},
     {"name":"healthbar_bg","order":1,"path":"sprites/healthbar_bg/healthbar_bg.yy",},
     {"name":"obj_screenshake","order":2,"path":"objects/obj_screenshake/obj_screenshake.yy",},
     {"name":"sPlayer","order":2,"path":"sprites/sPlayer/sPlayer.yy",},
