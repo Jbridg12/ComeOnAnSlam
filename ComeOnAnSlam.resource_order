@@ -7,6 +7,7 @@
     {"name":"Objects","order":7,"path":"folders/Objects.yy",},
     {"name":"Entities","order":1,"path":"folders/Objects/Entities.yy",},
     {"name":"Parents","order":4,"path":"folders/Objects/Entities/Parents.yy",},
+    {"name":"Environement Props","order":9,"path":"folders/Objects/Environement Props.yy",},
     {"name":"Globals","order":7,"path":"folders/Objects/Globals.yy",},
     {"name":"Weapons","order":4,"path":"folders/Objects/Weapons.yy",},
     {"name":"Parents","order":3,"path":"folders/Objects/Weapons/Parents.yy",},
@@ -21,7 +22,6 @@
     {"name":"HealthBars","order":5,"path":"folders/Sprites/HealthBars.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":14,"path":"folders/Timelines.yy",},
-    {"name":"Environement Props","order":9,"path":"folders/Objects/Environement Props.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"SwingUP","order":1,"path":"sequences/SwingUP/SwingUP.yy",},

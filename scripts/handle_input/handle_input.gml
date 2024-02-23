@@ -3,7 +3,9 @@
 function handle_input(){
 	var isJump = keyboard_check_pressed(vk_space);
 	var isSprint =  keyboard_check(vk_lshift);
-	var isUp = keyboard_check(vk_space);
+	var isHoldJump = keyboard_check(vk_space);
+	
+	var isUp = keyboard_check(ord("W"));
 	var isDown = keyboard_check(ord("S"));
 	
 	var isLeft = keyboard_check(ord("A"));
@@ -18,6 +20,48 @@ function handle_input(){
 	// Default speed set to walking unless player holds sprint key (Shift)
 	motion_speed = walk_speed;
 	air_resistance = 0.9;
+	
+	// Vine Input management
+	if(on_vine)
+	{
+		delta_y = 0;
+		delta_x = 0;
+		
+		// Calculate movement up vine
+		if(attached_vine)
+		{
+			// Vine Should swing with delta_x movement
+			
+			attached_vine.vine_input = move_x;
+			vine_angle = attached_vine.image_angle;
+			show_debug_message(vine_angle);
+			
+			x_dir = attached_vine.x + lengthdir_x(attached_length, 270 + attached_vine.image_angle);
+			y_dir = attached_vine.y + lengthdir_y(attached_length, 270 + attached_vine.image_angle);
+			delta_x = (x_dir-x);
+			delta_y = (y_dir - y);
+					
+			// All Y has to do is modify the attach length
+			move_y = isDown - isUp;
+			attached_length += move_y*vine_shimmy_speed;
+			max_height = sprite_get_height(attached_vine.sprite_index) + (sprite_get_height(Player.sprite_index) / 2);
+			attached_length = clamp(attached_length, 0, max_height);
+			
+				
+		}
+		
+		
+	
+		if(isJump)
+		{
+			use_gravity = true;
+			on_vine = false;
+			vine_cooldown = 30;
+			attached_vine.vine_input = 0;
+		}
+		
+		return;
+	}
 	
 	if(isSprint) 
 	{
@@ -55,7 +99,7 @@ function handle_input(){
 	}
 	
 	// If player holding the Jump button let them go further
-	if(isUp && !grounded)
+	if(isHoldJump && !grounded)
 	{
 		curr_jump--;		
 	}
