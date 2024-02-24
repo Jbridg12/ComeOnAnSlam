@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Hitbox",
-    "path": "sprites/Hitbox/Hitbox.yy",
+    "name": "sHitboxRight",
+    "path": "sprites/sHitboxRight/sHitboxRight.yy",
   },
   "spriteMaskId": null,
   "visible": true,
