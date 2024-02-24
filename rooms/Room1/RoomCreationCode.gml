@@ -10,3 +10,5 @@ switch(obj_game_manager.room_entrance_id)
 }
 
 obj_game_manager.room_entrance_id = 0;
+
+obj_game_manager.curr_realm = Realm.Limbo;

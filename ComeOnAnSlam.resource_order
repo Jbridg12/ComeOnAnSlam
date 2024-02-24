@@ -28,6 +28,7 @@
     {"name":"SwingUP","order":1,"path":"sequences/SwingUP/SwingUP.yy",},
     {"name":"dialogue_red","order":1,"path":"sprites/dialogue_red/dialogue_red.yy",},
     {"name":"dialogue1","order":1,"path":"objects/dialogue1/dialogue1.yy",},
+    {"name":"Platform","order":1,"path":"objects/Platform/Platform.yy",},
     {"name":"render_map","order":4,"path":"scripts/render_map/render_map.yy",},
     {"name":"test_enemy","order":2,"path":"objects/test_enemy/test_enemy.yy",},
     {"name":"obj_melee_weapon","order":1,"path":"objects/obj_melee_weapon/obj_melee_weapon.yy",},
@@ -35,6 +36,7 @@
     {"name":"Portal","order":8,"path":"sprites/Portal/Portal.yy",},
     {"name":"dialogue","order":2,"path":"scripts/dialogue/dialogue.yy",},
     {"name":"healthbar_border_lvl2","order":3,"path":"sprites/healthbar_border_lvl2/healthbar_border_lvl2.yy",},
+    {"name":"sndLimboBGM","order":1,"path":"sounds/sndLimboBGM/sndLimboBGM.yy",},
     {"name":"CoolLookingVine","order":6,"path":"sprites/CoolLookingVine/CoolLookingVine.yy",},
     {"name":"Player","order":3,"path":"objects/Player/Player.yy",},
     {"name":"sHealthPickup","order":15,"path":"sprites/sHealthPickup/sHealthPickup.yy",},
@@ -59,6 +61,7 @@
     {"name":"obj_mini_map","order":1,"path":"objects/obj_mini_map/obj_mini_map.yy",},
     {"name":"Man","order":4,"path":"sprites/Man/Man.yy",},
     {"name":"sFlyer","order":3,"path":"sprites/sFlyer/sFlyer.yy",},
+    {"name":"sPlatform","order":16,"path":"sprites/sPlatform/sPlatform.yy",},
     {"name":"walking_enemy","order":5,"path":"objects/walking_enemy/walking_enemy.yy",},
   ],
 }

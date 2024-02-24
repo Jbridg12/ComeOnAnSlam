@@ -66,25 +66,32 @@ function calculate_movement()
 	// Detect Collisions
 	if(platform_transparent)
 	{
+		
+		
 		colliding_instances_x = move_and_collide(delta_x, 0, room_collision_layer);
 		
 		colliding_instances_y = move_and_collide(0, delta_y, room_collision_layer);
+		
+		var inst;
+		inst = collision_rectangle(x - sprite_get_width(sprite_index)/2 , 
+									y - sprite_get_height(sprite_index)/2, 
+									x + sprite_get_width(sprite_index)/2 ,
+									y + sprite_get_height(sprite_index)/2,  
+									platform_collision_layer, false, true);
+		if (inst == noone)
+		{
+			if(delta_y>0) platform_transparent = false;	
+		}
+
+		
 		
 	
 	}
 	else
 	{
 		colliding_instances_x = move_and_collide(delta_x, 0, [room_collision_layer, platform_collision_layer]);
-		
-		
-		if(delta_y <= 0)
-		{
-			colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer]);
-		}
-		else
-		{
-				colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, platform_collision_layer]);
-		}
+		colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, platform_collision_layer]);
+	
 		
 	}
 
@@ -101,8 +108,6 @@ function calculate_movement()
 	{
 		grounded = 0;
 	}
-	
-
 	
 	//Code to run if there is a horizontal collision
 	if (array_length(colliding_instances_x) != 0)

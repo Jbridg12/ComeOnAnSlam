@@ -39,6 +39,7 @@ vine_shimmy_speed = 2;
 // Holding Jump lets you jump longer without gravity for x frames
 max_jump = 10;
 curr_jump = 0;
+
 //------------------------------------------------------------------
 
 

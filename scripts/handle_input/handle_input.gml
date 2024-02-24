@@ -71,31 +71,26 @@ function handle_input(){
 	
 	delta_x = grounded ? move_x * motion_speed : (delta_x * air_resistance) + (move_x * float_speed);
 	
-	
+	if(isDown)
+	{
+		// handle dropping through platforms
+		platform_transparent = true;
+			
+	}
 	if(isJump)
 	{	
-		if(isDown)
+		if(grounded || hanging || hanging_timer > 0)
 		{
-			// handle dropping through platforms
+				
+			delta_y = jump_speed;
+			//if(isSprint) delta_x *= 1.5;
+				
+			grounded = 0;
 			platform_transparent = true;
-			dropdown_timer = 60;
-			
+			curr_jump = max_jump;
 		}
-		else
-		{
-			if(grounded || hanging || hanging_timer > 0)
-			{
-				
-				delta_y = jump_speed;
-				//if(isSprint) delta_x *= 1.5;
-				
-				grounded = 0;
-				dropdown_timer = 0;
-				curr_jump = max_jump;
-			}
-			if(hanging || hanging_timer > 0) wall_jump = true;
+		if(hanging || hanging_timer > 0) wall_jump = true;
 			
-		}
 	}
 	
 	// If player holding the Jump button let them go further
