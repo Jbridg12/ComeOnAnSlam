@@ -10,6 +10,12 @@ var right = x + ((sprite_get_width(sprite_index)/2) * orientation);
 var top = y - (sprite_get_height(sprite_index)/2);
 var bottom = y + (sprite_get_height(sprite_index)/2);
 
+if(active_hitbox)
+{
+	instance_destroy(active_hitbox);
+	active_hitbox = noone;
+}
+
 if(!grounded && keyboard_check(ord("S")))
 {
 	sprite_index = TestAttackDown;
