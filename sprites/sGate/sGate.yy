@@ -7,7 +7,7 @@
   "bbox_right": 28,
   "bbox_top": 0,
   "bboxMode": 0,
-  "collisionKind": 0,
+  "collisionKind": 1,
   "collisionTolerance": 0,
   "DynamicTexturePage": false,
   "edgeFiltering": false,
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Environment",
+    "path": "folders/Sprites/ObjectSprites/Environment.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

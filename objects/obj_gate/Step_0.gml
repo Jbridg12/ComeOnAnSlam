@@ -11,7 +11,7 @@ if(move)
 		extended = !extended;
 		move = false;
 		distance_travelled = 0;
-		Player.frozen = false;
+		obj_player.frozen = false;
 		return;
 	}
 	

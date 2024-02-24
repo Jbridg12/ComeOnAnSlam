@@ -15,7 +15,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Parents",
-    "path": "folders/Objects/Entities/Parents.yy",
+    "path": "folders/Objects/Parents.yy",
   },
   "parentObjectId": {
     "name": "obj_pausable_object",

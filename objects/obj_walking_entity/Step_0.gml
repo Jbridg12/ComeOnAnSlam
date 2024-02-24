@@ -7,7 +7,7 @@ if(obj_game_manager.in_pause) return;
 if(health <= 0) event_user(2)
 
 
-if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
+if(point_in_circle(obj_player.x, obj_player.y, x, y, detection_radius))
 {
 	if(obj_game_manager.in_dialogue) return;
 	
@@ -18,7 +18,7 @@ if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
 	}
 	
 	
-	var dir = degtorad(point_direction(x, 0, Player.x, 0));
+	var dir = degtorad(point_direction(x, 0, obj_player.x, 0));
 	delta_x = sign(cos(-dir)) * move_speed;
 	
 	// Process Hit Bounceback

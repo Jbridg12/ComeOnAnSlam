@@ -9,7 +9,7 @@ screenshake(20, 3, 0.4);
 
 var damage = 0;
 
-switch(Player.weapon_id)
+switch(obj_player.weapon_id)
 {
 	case 0:
 		damage = 5;

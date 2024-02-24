@@ -1,21 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Lever",
+  "name": "obj_gate",
   "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_interactible","path":"objects/obj_interactible/obj_interactible.yy",},"propertyId":{"name":"priority","path":"objects/obj_interactible/obj_interactible.yy",},"value":"1",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Environement Props",
     "path": "folders/Objects/Environement Props.yy",
   },
   "parentObjectId": {
-    "name": "obj_interactible",
-    "path": "objects/obj_interactible/obj_interactible.yy",
+    "name": "obj_obstacle",
+    "path": "objects/obj_obstacle/obj_obstacle.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -30,13 +30,11 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"tied_object","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"noone","varType":5,},
-  ],
+  "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sLever",
-    "path": "sprites/sLever/sLever.yy",
+    "name": "sGate",
+    "path": "sprites/sGate/sGate.yy",
   },
   "spriteMaskId": null,
   "visible": true,

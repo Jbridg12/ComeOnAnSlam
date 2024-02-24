@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// KEEP IN MIND PLAYER STARTING POSITIONS ARE 
+// SPECIFIED IN ROOM CREATION CODE
+
 // Inherit the parent event
 event_inherited();
 
@@ -47,6 +50,11 @@ vine_shimmy_speed = 2;
 // Holding Jump lets you jump longer without gravity for x frames
 max_jump = 10;
 curr_jump = 0;
+
+// Save last safe grounded position for hazard interaction
+safe_x = x;
+safe_y = y;
+safety_timer = 0;
 
 //------------------------------------------------------------------
 

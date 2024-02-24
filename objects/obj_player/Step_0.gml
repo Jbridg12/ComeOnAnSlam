@@ -16,6 +16,13 @@ if(delta_x != 0) orientation = sign(delta_x);
 
 if(!frozen) calculate_movement();
 
+if(grounded && !hanging && safety_timer-- < 0)
+{
+	safe_x = x;
+	safe_y = y;
+	safety_timer = 30;
+}
+
 // Vine Cooldown
 if(vine_cooldown > 0)
 {

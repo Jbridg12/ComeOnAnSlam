@@ -9,7 +9,7 @@ function calculate_movement()
 	if(use_gravity)
 	{
 		// Only apply gravity if the player is not holding Jump to extend distance
-		if(object_get_name(object_index) != "Player" || curr_jump <= 0)
+		if(object_get_name(object_index) != "obj_player" || curr_jump <= 0)
 		{
 			delta_y += .5 * weight;
 		}
@@ -19,7 +19,7 @@ function calculate_movement()
 	
 	
 	// If Player is hanging then we should calculate Y-axis movement differently
-	if(object_get_name(object_index) == "Player" && (hanging || hanging_timer > 0))
+	if(object_get_name(object_index) == "obj_player" && (hanging || hanging_timer > 0))
 	{
 		// If Player is trying to leave the wall then they can free fall off
 		if(!hanging && delta_x != 0) hanging_timer = 0;	
@@ -99,11 +99,14 @@ function calculate_movement()
 
 	//Code to run if there is a vertical collision
 	// We're gonna be grounded from the ceiling but ill fix that later
-	if (array_length(colliding_instances_y) != 0)
+	if (array_length(colliding_instances_y) != 0 )
 	{
-		grounded = 1;
-		delta_y = 0; 
+		if(object_get_name(object_index) == "obj_player" && delta_y > 0)
+		{
+			grounded = 1;
+		}
 		
+		delta_y = 0; 
 	}
 	else
 	{
@@ -114,7 +117,7 @@ function calculate_movement()
 	if (array_length(colliding_instances_x) != 0)
 	{
 		
-		if(object_get_name(object_index) == "Player")
+		if(object_get_name(object_index) == "obj_player")
 		{
 			// Player colliding with a wall
 			

@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Vine",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_spikes",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Environement Props",
-    "path": "folders/Objects/Environement Props.yy",
+    "name": "Hazards",
+    "path": "folders/Objects/Environement Props/Hazards.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_hazard_parent",
+    "path": "objects/obj_hazard_parent/obj_hazard_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "CoolLookingVine",
-    "path": "sprites/CoolLookingVine/CoolLookingVine.yy",
+    "name": "sSpikes",
+    "path": "sprites/sSpikes/sSpikes.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -7,7 +7,7 @@ if(health <= 0) event_user(2)
 
 
 // Check for pathing and entity movement 
-if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
+if(point_in_circle(obj_player.x, obj_player.y, x, y, detection_radius))
 {
 	if(obj_game_manager.in_dialogue) return;
 	
@@ -17,7 +17,7 @@ if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
 		in_path = false;	
 	}
 	
-	motion_set(point_direction(x, y, Player.x, Player.y), move_speed); 
+	motion_set(point_direction(x, y, obj_player.x, obj_player.y), move_speed); 
 }
 else
 {

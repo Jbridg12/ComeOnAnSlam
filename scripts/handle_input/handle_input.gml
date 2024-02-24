@@ -45,7 +45,7 @@ function handle_input(){
 			// All Y has to do is modify the attach length
 			move_y = isDown - isUp;
 			attached_length += move_y*vine_shimmy_speed;
-			max_height = sprite_get_height(attached_vine.sprite_index) + (sprite_get_height(Player.sprite_index) / 2);
+			max_height = sprite_get_height(attached_vine.sprite_index) + (sprite_get_height(obj_player.sprite_index) / 2);
 			attached_length = clamp(attached_length, 0, max_height);
 			
 				

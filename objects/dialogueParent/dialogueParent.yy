@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Dialogue",
-    "path": "folders/Objects/Dialogue.yy",
+    "name": "Parents",
+    "path": "folders/Objects/Parents.yy",
   },
   "parentObjectId": null,
   "persistent": false,
