@@ -5,6 +5,7 @@ function calculate_movement()
 	var colliding_instances_x = [];
 	var colliding_instances_y = [];
 	
+	
 	if(use_gravity)
 	{
 		// Only apply gravity if the player is not holding Jump to extend distance
@@ -68,9 +69,9 @@ function calculate_movement()
 	{
 		
 		
-		colliding_instances_x = move_and_collide(delta_x, 0, room_collision_layer);
+		colliding_instances_x = move_and_collide(delta_x, 0, [room_collision_layer, obj_obstacle]);
 		
-		colliding_instances_y = move_and_collide(0, delta_y, room_collision_layer);
+		colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, obj_obstacle]);
 		
 		var inst;
 		inst = collision_rectangle(x - sprite_get_width(sprite_index)/2 , 
@@ -89,8 +90,8 @@ function calculate_movement()
 	}
 	else
 	{
-		colliding_instances_x = move_and_collide(delta_x, 0, [room_collision_layer, platform_collision_layer]);
-		colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, platform_collision_layer]);
+		colliding_instances_x = move_and_collide(delta_x, 0, [room_collision_layer, platform_collision_layer, obj_obstacle]);
+		colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, platform_collision_layer, obj_obstacle]);
 	
 		
 	}

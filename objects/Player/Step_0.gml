@@ -14,7 +14,7 @@ handle_input()
 
 if(delta_x != 0) orientation = sign(delta_x);
 
-calculate_movement();
+if(!frozen) calculate_movement();
 
 // Vine Cooldown
 if(vine_cooldown > 0)

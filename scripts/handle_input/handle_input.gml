@@ -20,8 +20,9 @@ function handle_input(){
 	// Default speed set to walking unless player holds sprint key (Shift)
 	motion_speed = walk_speed;
 	air_resistance = 0.9;
-	
-	// Vine Input management
+
+
+	//--------------------Vine Input management-------------------------
 	if(on_vine)
 	{
 		delta_y = 0;
@@ -61,6 +62,13 @@ function handle_input(){
 		}
 		
 		return;
+	}
+	
+	//------------------------------------------------------------------
+	
+	if(keyboard_check_released(ord("W")))
+	{
+		triggerInteractibles();
 	}
 	
 	if(isSprint) 
