@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 hp = max_health;
+hit_timer = 0;
 in_animation = false;
 
 room_collision_layer = layer_tilemap_get_id("Collision");

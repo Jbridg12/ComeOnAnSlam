@@ -30,6 +30,7 @@ charged_vert_enabled = false;
 
 attacking_enable_collision = false;
 active_hitbox = noone;
+invulnerable = false;
 
 //------------------------------------------------------------------
 

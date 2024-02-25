@@ -7,8 +7,6 @@
 event_inherited();
 
 // Object Parameters
-
-hit_timer = 0;
 invulnerable = false;
 path_distance = 0;
 

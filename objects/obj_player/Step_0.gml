@@ -29,3 +29,10 @@ if(vine_cooldown > 0)
 	vine_cooldown--;
 	if(vine_cooldown = 0) attached_vine = noone;
 }
+
+// Invulnerability Cooldown
+if(hit_timer > 0)
+{
+	hit_timer--;
+	if(hit_timer = 0) invulnerable = noone;
+}
