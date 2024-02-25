@@ -20,7 +20,7 @@ if(grounded && !hanging && safety_timer-- < 0)
 {
 	safe_x = x;
 	safe_y = y;
-	safety_timer = 30;
+	safety_timer = 20;
 }
 
 // Vine Cooldown

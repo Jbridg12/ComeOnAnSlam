@@ -16,5 +16,5 @@ saved_Hspeed = 0;
 
 delta_x = 0;
 delta_y = 0;
-orientation = 0;
+orientation = 1;
 grounded = 0;
