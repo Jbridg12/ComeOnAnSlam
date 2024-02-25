@@ -36,3 +36,6 @@ if(hit_timer > 0)
 	hit_timer--;
 	if(hit_timer = 0) invulnerable = noone;
 }
+
+
+if(hazard_cooldown > 0) hazard_cooldown--;

@@ -19,6 +19,7 @@ function handle_input(){
 	}
 	
 	if(obj_game_manager.in_dialogue) return;
+	if(hazard_cooldown > 0) return;
 
 	// get absolute input value
 	move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));

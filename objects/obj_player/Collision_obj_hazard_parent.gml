@@ -10,3 +10,5 @@ y = safe_y;
 delta_x = 0;
 delta_y = 0;
 
+hazard_cooldown = 30;
+
