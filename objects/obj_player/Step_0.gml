@@ -20,7 +20,7 @@ if(grounded && !hanging && safety_timer-- < 0)
 {
 	safe_x = x;
 	safe_y = y;
-	safety_timer = 30;
+	safety_timer = 20;
 }
 
 // Vine Cooldown
@@ -28,4 +28,11 @@ if(vine_cooldown > 0)
 {
 	vine_cooldown--;
 	if(vine_cooldown = 0) attached_vine = noone;
+}
+
+// Invulnerability Cooldown
+if(hit_timer > 0)
+{
+	hit_timer--;
+	if(hit_timer = 0) invulnerable = noone;
 }

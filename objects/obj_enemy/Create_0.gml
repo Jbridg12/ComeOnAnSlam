@@ -6,6 +6,12 @@
 // Inherit the parent event
 event_inherited();
 
+// Object Parameters
+invulnerable = false;
+path_distance = 0;
+
+// Instantiation
+
 if(!absolute_path)
 {
 	targ_x = x;
@@ -30,4 +36,5 @@ switch(path_action)
 			path_start(follow_path, move_speed, path_action_continue, absolute_path);
 			break;
 	}
+
 in_path = true;
