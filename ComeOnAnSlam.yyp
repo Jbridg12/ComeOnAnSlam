@@ -57,7 +57,7 @@
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
     {"id":{"name":"SwingUP","path":"sequences/SwingUP/SwingUP.yy",},},
     {"id":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},},
-    {"id":{"name":"obj_path_enemy","path":"objects/obj_path_enemy/obj_path_enemy.yy",},},
+    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"dialogue_red","path":"sprites/dialogue_red/dialogue_red.yy",},},
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
     {"id":{"name":"dialogue1","path":"objects/dialogue1/dialogue1.yy",},},

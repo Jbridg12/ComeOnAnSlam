@@ -12,11 +12,7 @@ function handle_input(){
 	var isRight = keyboard_check(ord("D"));
 
 
-	
-	if(keyboard_check_released(vk_backspace))
-	{
-		save_game();
-	}
+
 	if(keyboard_check_released(vk_delete))
 	{
 		room_goto(MainMenu);
@@ -94,7 +90,7 @@ function handle_input(){
 	
 	delta_x = grounded ? move_x * motion_speed : (delta_x * air_resistance) + (move_x * float_speed);
 	
-	if(isDown)
+	if(isDown && !grounded)
 	{
 		// handle dropping through platforms
 		platform_transparent = true;
@@ -102,17 +98,26 @@ function handle_input(){
 	}
 	if(isJump)
 	{	
-		if(grounded || hanging || hanging_timer > 0)
+		if(isDown)
 		{
-				
-			delta_y = jump_speed;
-			//if(isSprint) delta_x *= 1.5;
-				
-			grounded = 0;
+			// handle dropping through platforms
 			platform_transparent = true;
-			curr_jump = max_jump;
+			
 		}
-		if(hanging || hanging_timer > 0) wall_jump = true;
+		else
+		{
+			if(grounded || hanging || hanging_timer > 0)
+			{
+				
+				delta_y = jump_speed;
+				//if(isSprint) delta_x *= 1.5;
+				
+				grounded = 0;
+				platform_transparent = true;
+				curr_jump = max_jump;
+			}
+			if(hanging || hanging_timer > 0) wall_jump = true;
+		}
 			
 	}
 	

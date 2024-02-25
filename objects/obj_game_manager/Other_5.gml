@@ -31,6 +31,19 @@ with(obj_gate)
 	ds_list_add(_obs_list, _obstacles_struct);
 }
 
+with(obj_enemy)
+{
+	var _obstacles_struct = 
+	{
+		object : object_get_name(object_index),
+		x : x,
+		y : y,
+		
+	};
+
+	ds_list_add(_obs_list, _obstacles_struct);
+}
+
 var _room_data = 
 {
 	collectibles : _coll_list,
