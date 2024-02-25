@@ -64,6 +64,7 @@
     {"id":{"name":"trigger_interactibles","path":"scripts/trigger_interactibles/trigger_interactibles.yy",},},
     {"id":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},},
     {"id":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},},
+    {"id":{"name":"Limbo2","path":"rooms/Limbo2/Limbo2.yy",},},
     {"id":{"name":"TestAttackRight","path":"sprites/TestAttackRight/TestAttackRight.yy",},},
     {"id":{"name":"render_map","path":"scripts/render_map/render_map.yy",},},
     {"id":{"name":"test_enemy","path":"objects/test_enemy/test_enemy.yy",},},
@@ -92,7 +93,7 @@
     {"id":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},},
     {"id":{"name":"oHealthPickup","path":"objects/oHealthPickup/oHealthPickup.yy",},},
     {"id":{"name":"obj_load_button","path":"objects/obj_load_button/obj_load_button.yy",},},
-    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"Limbo1","path":"rooms/Limbo1/Limbo1.yy",},},
     {"id":{"name":"path_horz_line","path":"paths/path_horz_line/path_horz_line.yy",},},
     {"id":{"name":"obj_collectible_parent","path":"objects/obj_collectible_parent/obj_collectible_parent.yy",},},
     {"id":{"name":"healthbar_border","path":"sprites/healthbar_border/healthbar_border.yy",},},
@@ -132,7 +133,8 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"Limbo1","path":"rooms/Limbo1/Limbo1.yy",},},
+    {"roomId":{"name":"Limbo2","path":"rooms/Limbo2/Limbo2.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [
