@@ -21,7 +21,9 @@ if(ds_map_exists(room_map, room))
 	{
 		var struct = ds_list_find_value(coll_list, i);
 		
-		instance_create_layer(struct.x, struct.y, "Instances", asset_get_index(struct.object));
+		var inst = instance_create_layer(struct.x, struct.y, "Instances", asset_get_index(struct.object));
+		inst.image_xscale = struct.x_scale;
+		inst.image_yscale = struct.y_scale;
 	}
 	
 }

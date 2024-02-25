@@ -25,8 +25,7 @@ with(obj_gate)
 	{
 		object : object_get_name(object_index),
 		x : x,
-		y : y,
-		extended : extended
+		y : y
 	};
 
 	ds_list_add(_obs_list, _obstacles_struct);

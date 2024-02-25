@@ -5,7 +5,7 @@ if(in_pause)
 {
 	in_pause = false;
 	
-	with(all)
+	with(obj_pausable_object)
 	{
 		event_user(1);	
 	}
@@ -14,7 +14,7 @@ else
 {
 	in_pause = true;
 	
-	with(all)
+	with(obj_pausable_object)
 	{
 		event_user(0);	
 	}
