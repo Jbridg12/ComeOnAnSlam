@@ -8,7 +8,6 @@
 event_inherited();
 
 //---------------------------Global Flags---------------------------
-
 frozen = false;
 gui_enabled = true;
 image_speed = 1;

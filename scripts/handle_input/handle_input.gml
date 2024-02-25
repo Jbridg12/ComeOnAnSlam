@@ -11,8 +11,6 @@ function handle_input(){
 	var isLeft = keyboard_check(ord("A"));
 	var isRight = keyboard_check(ord("D"));
 
-
-
 	if(keyboard_check_released(vk_delete))
 	{
 		room_goto(MainMenu);

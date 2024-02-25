@@ -22,6 +22,6 @@ switch(obj_player.weapon_id)
 		break;
 }
 
-other.health -= damage;
+other.hp -= damage;
 
 other.hit_timer = 15;

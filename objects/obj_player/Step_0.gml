@@ -8,7 +8,7 @@ if(obj_game_manager.in_pause) return;
 CheckAnimation();
 if(in_animation) return;
 
-handle_input()
+handle_input();
 
 // Update position by speed
 

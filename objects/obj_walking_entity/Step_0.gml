@@ -4,7 +4,7 @@
 
 if(obj_game_manager.in_pause) return;
 
-if(health <= 0) event_user(2)
+if(hp <= 0) event_user(2)
 
 
 if(point_in_circle(obj_player.x, obj_player.y, x, y, detection_radius))
