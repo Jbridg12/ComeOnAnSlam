@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "triggerInteractibles",
+  "name": "trigger_interactibles",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

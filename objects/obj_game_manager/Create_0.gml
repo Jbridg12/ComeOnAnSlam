@@ -14,6 +14,9 @@ curr_realm = last_realm;
 curr_bgm = noone;
 
 
+// Room State Map
+room_map = ds_map_create();
 bgm_map = ds_map_create();
 ds_map_add(bgm_map, Realm.Limbo, sndLimboBGM);
 ds_map_add(bgm_map, Realm.Lust, sndCollect);
+

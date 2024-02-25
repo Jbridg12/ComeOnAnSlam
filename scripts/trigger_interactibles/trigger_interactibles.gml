@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function triggerInteractibles()
+function trigger_interactibles()
 {
 	var _list = ds_list_create();
 	var _num = collision_rectangle_list(x - sprite_get_width(sprite_index)/2 , 

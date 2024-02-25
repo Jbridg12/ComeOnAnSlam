@@ -12,6 +12,16 @@ function handle_input(){
 	var isRight = keyboard_check(ord("D"));
 
 
+	
+	if(keyboard_check_released(vk_backspace))
+	{
+		save_game();
+	}
+	if(keyboard_check_released(vk_delete))
+	{
+		room_goto(MainMenu);
+	}
+	
 	if(obj_game_manager.in_dialogue) return;
 
 	// get absolute input value
@@ -68,7 +78,12 @@ function handle_input(){
 	
 	if(keyboard_check_released(ord("W")))
 	{
-		triggerInteractibles();
+		trigger_interactibles();
+		//Player.max_health = 150;
+		//Player.hp = 150;
+		//screenshake(30, 5, 0.4);
+		//Player.weapon_id++;
+		//instance_create_layer(0,0, "Instances", dialogue1);
 	}
 	
 	if(isSprint) 
@@ -130,13 +145,5 @@ function handle_input(){
 	// for testing. 
 	// Final verison will use W for interacting with background elements and
 	// character dialogues.
-	if(keyboard_check_released(ord("W")))
-	{
-		//Player.max_health = 150;
-		//Player.hp = 150;
-		//screenshake(30, 5, 0.4);
-		//Player.weapon_id++;
-		//instance_create_layer(0,0, "Instances", dialogue1);
-	}
 	
 }
