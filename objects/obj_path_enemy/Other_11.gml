@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Unpause Event
 // You can write your code in this editor
 
 
@@ -29,15 +29,15 @@ if(in_path)
 			break;
 	}	
 	
-	path_position = pp;
+	path_position = path_distance;
 }
 
-if(point_in_circle(Player.x, Player.y, x, y, detection_radius))
+if(point_in_circle(obj_player.x, obj_player.y, x, y, detection_radius))
 {
 	if(in_path) 
 	{
 		path_end();
 		in_path = false;	
 	}
-	motion_set(point_direction(x, y, Player.x, Player.y), move_speed); 
+	motion_set(point_direction(x, y, obj_player.x, obj_player.y), move_speed); 
 }

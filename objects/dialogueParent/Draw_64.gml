@@ -39,7 +39,7 @@ if(showing_dialogue == true)
 		draw_sprite(current_dialogue.sprite, 0, border * 3, base_y + (border * 2));	
 	}
 	
-	draw_set_font(LargerFont);
+	draw_set_font(fLargeText);
 	
 	draw_set_color(c_white);
 	draw_text_ext(text_x, base_y + text_y, current_dialogue.message, 16, display_get_gui_width() -192);
