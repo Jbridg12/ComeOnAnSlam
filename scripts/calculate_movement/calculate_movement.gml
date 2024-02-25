@@ -122,9 +122,8 @@ function calculate_movement()
 			// Player colliding with a wall
 			
 			// Wall Jump Handling
-			if(!grounded) 
+			if(!grounded && wall_jump_enabled) 
 			{
-				//show_debug_message("Hanging");
 				if(move_x != 0)
 				{
 					hanging = true;

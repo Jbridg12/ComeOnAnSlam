@@ -1,15 +1,20 @@
-switch(obj_game_manager.room_entrance_id)
+
+with(obj_game_manager)
 {
-	case 1:
-		obj_player.x = 230;
-		obj_player.y = 1800;
-		break;
-	default:
-		obj_player.x = 230;
-		obj_player.y = 1800;
-		break;
+	switch(room_entrance_id)
+	{
+		case -1:
+			break;
+		case 1:
+			obj_player.forced_x = 230;
+			obj_player.forced_y = 1800;
+			break;
+		default:
+			obj_player.forced_x = 230;
+			obj_player.forced_y = 1800;
+			break;
+	}
+
+	room_entrance_id = -1;
+	curr_realm = Realm.Lust;
 }
-
-obj_game_manager.room_entrance_id = 0;
-
-obj_game_manager.curr_realm = Realm.Lust;

@@ -10,7 +10,19 @@ event_inherited();
 //---------------------------Global Flags---------------------------
 
 frozen = false;
+gui_enabled = true;
 image_speed = 1;
+
+//------------------------------------------------------------------
+
+//--------------------Progression Upgrade Flags---------------------
+
+ranged_enabled = false;
+wall_jump_enabled = false;
+charge_attack_enabled = false;
+dummy_enabled = false;
+charged_vert_enabled = false;
+
 
 //------------------------------------------------------------------
 
@@ -55,6 +67,10 @@ curr_jump = 0;
 safe_x = x;
 safe_y = y;
 safety_timer = 0;
+
+// Forced player positons when loading rooms (saves / transitions)
+forced_x = -1;
+forced_y = -1;
 
 //------------------------------------------------------------------
 
