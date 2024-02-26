@@ -20,7 +20,7 @@ ranged_enabled = false;
 wall_jump_enabled = false;
 charge_attack_enabled = false;
 dummy_enabled = false;
-charged_vert_enabled = false;
+charged_vert_enabled = true;
 
 
 //------------------------------------------------------------------
@@ -81,6 +81,11 @@ last_y = y;
 
 // Hitbox Bounce Speed
 bounce_speed = -15;
+
+// Charge Jump Parameters
+charging_jump = false;
+charge_jump_timer = 0;
+charge_jump_speed = -100;
 
 
 //------------------------------------------------------------------

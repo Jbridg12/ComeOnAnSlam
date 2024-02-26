@@ -97,7 +97,13 @@ function handle_input(){
 	}
 	if(isJump)
 	{	
-		if(isDown)
+		if(keyboard_check(vk_shift) && move_x == 0)
+		{
+			delta_y = 0;
+			charging_jump = true;
+			charge_jump_timer = 120;
+		}
+		else if(isDown)
 		{
 			// handle dropping through platforms
 			platform_transparent = true;
@@ -129,6 +135,36 @@ function handle_input(){
 	{
 		curr_jump = 0;	
 	}
+	
+	// If player holding the Jump button let them go further
+	if(isHoldJump && grounded && charging_jump)
+	{
+		if(keyboard_check(vk_shift))
+		{
+			if(charge_jump_timer > 0) charge_jump_timer--;
+		}
+	}
+	
+	if(keyboard_check_released(vk_space) || keyboard_check_released(vk_shift))
+	{
+		if(charging_jump)
+		{
+			// Launch with Massive Speed Charge Jump
+			delta_y = lerp(charge_jump_speed, 0, charge_jump_timer / 120);
+			charging_jump = 0;
+			charge_jump_timer = 0;
+			platform_transparent = true;
+			
+			// Floatier Charge Jump
+			//delta_y = lerp(-30, 0, charge_jump_timer / 120);
+			//charging_jump = 0;
+			//charge_jump_timer = 0;
+			//platform_transparent = true;
+			//weight = 1;
+			//alarm[1] = 60;
+		}
+	}
+
 	
 	var primaryAttack = keyboard_check_pressed(ord("2")) || keyboard_check_pressed(ord("K")) || mouse_check_button_released(mb_left);
 	var secondaryAttack = keyboard_check_pressed(ord("3")) || keyboard_check_pressed(ord("L")) || mouse_check_button_released(mb_right);
