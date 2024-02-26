@@ -1,20 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_down_attack",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_wall_bounce","path":"objects/obj_wall_bounce/obj_wall_bounce.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-  ],
+  "name": "obj_wall_bounce",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Hitboxes",
-    "path": "folders/Objects/Weapons/Hitboxes.yy",
+    "name": "Environement Props",
+    "path": "folders/Objects/Environement Props.yy",
   },
-  "parentObjectId": {
-    "name": "obj_hitbox_parent",
-    "path": "objects/obj_hitbox_parent/obj_hitbox_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sHitboxDown",
-    "path": "sprites/sHitboxDown/sHitboxDown.yy",
+    "name": "sHitboxWall",
+    "path": "sprites/sHitboxWall/sHitboxWall.yy",
   },
   "spriteMaskId": null,
   "visible": true,

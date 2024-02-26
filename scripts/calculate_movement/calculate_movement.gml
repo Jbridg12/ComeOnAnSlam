@@ -11,7 +11,7 @@ function calculate_movement()
 		// Only apply gravity if the player is not holding Jump to extend distance
 		if(object_get_name(object_index) != "obj_player" || curr_jump <= 0)
 		{
-			delta_y += .5 * weight;
+			delta_y += .4 * weight;
 		}
 	}
 	
