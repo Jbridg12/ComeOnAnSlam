@@ -12,6 +12,6 @@ event_inherited();
 
 if(!wall_collided)
 {
-	obj_player.delta_y = -15;
+	obj_player.delta_y = obj_player.bounce_speed;
 	wall_collided = true;
 }

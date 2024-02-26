@@ -79,6 +79,10 @@ hazard_cooldown = 0;
 last_x = x;
 last_y = y;
 
+// Hitbox Bounce Speed
+bounce_speed = -15;
+
+
 //------------------------------------------------------------------
 
 
