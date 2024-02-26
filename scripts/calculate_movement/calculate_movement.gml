@@ -73,20 +73,20 @@ function calculate_movement()
 		
 		colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, obj_obstacle]);
 		
-		var inst;
-		inst = collision_rectangle(x - sprite_get_width(sprite_index)/2 , 
-									y - sprite_get_height(sprite_index)/2, 
-									x + sprite_get_width(sprite_index)/2 ,
-									y + sprite_get_height(sprite_index)/2,  
-									platform_collision_layer, false, true);
-		if (inst == noone)
+		if(object_get_name(object_index) == "obj_player")
 		{
-			if(delta_y>0) platform_transparent = false;	
+			var inst;
+			inst = collision_rectangle(x - sprite_get_width(sprite_index)/2 , 
+										y - sprite_get_height(sprite_index)/2, 
+										x + sprite_get_width(sprite_index)/2 ,
+										y + sprite_get_height(sprite_index)/2,  
+										platform_collision_layer, false, true);
+			if (inst == noone)
+			{
+				if(delta_y>0) platform_transparent = false;	
+			}
 		}
 
-		
-		
-	
 	}
 	else
 	{
