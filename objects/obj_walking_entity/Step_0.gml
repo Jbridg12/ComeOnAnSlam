@@ -40,35 +40,38 @@ if(point_in_circle(obj_player.x, obj_player.y, x, y, detection_radius))
 }
 else
 {
-	if(!in_path)
+	if(follow_path != noone)
 	{
-		if(abs(targ_x-x) >= 2)
+		if(!in_path)
 		{
-			
-			//move_towards_point(targ_x, targ_y, move_speed);
-			var dir = degtorad(point_direction(x, 0, targ_x, 0));
-			delta_x = sign(cos(-dir)) * move_speed;
-			
-			// Implement AI jump in future
-			delta_y = 0;
-			calculate_movement();
-		}
-		else
-		{
-			switch(path_action)
+			if(abs(targ_x-x) >= 2)
 			{
-				case "loop":
-					path_start(follow_path, move_speed, path_action_continue, absolute_path);
-					break;
-				case "reverse":
-					path_start(follow_path, move_speed, path_action_reverse, absolute_path);
-					break;
-				default:
-					path_start(follow_path, move_speed, path_action_continue, absolute_path);
-					break;
-			}
 			
-			in_path = true;
+				//move_towards_point(targ_x, targ_y, move_speed);
+				var dir = degtorad(point_direction(x, 0, targ_x, 0));
+				delta_x = sign(cos(-dir)) * move_speed;
+			
+				// Implement AI jump in future
+				delta_y = 0;
+				calculate_movement();
+			}
+			else
+			{
+				switch(path_action)
+				{
+					case "loop":
+						path_start(follow_path, move_speed, path_action_continue, absolute_path);
+						break;
+					case "reverse":
+						path_start(follow_path, move_speed, path_action_reverse, absolute_path);
+						break;
+					default:
+						path_start(follow_path, move_speed, path_action_continue, absolute_path);
+						break;
+				}
+			
+				in_path = true;
+			}
 		}
 	}
 }

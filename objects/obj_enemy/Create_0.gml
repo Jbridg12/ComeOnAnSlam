@@ -23,8 +23,9 @@ else
 	targ_y = path_get_y(follow_path, 0);
 }
 
-
-switch(path_action)
+if(follow_path != noone)
+{
+	switch(path_action)
 	{
 		case "loop":
 			path_start(follow_path, move_speed, path_action_continue, absolute_path);
@@ -37,4 +38,10 @@ switch(path_action)
 			break;
 	}
 
-in_path = true;
+	in_path = true;
+}
+else
+{
+	
+	in_path = false;
+}

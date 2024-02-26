@@ -75,6 +75,10 @@ forced_y = -1;
 // Cooldown on inputs after hitting hazard
 hazard_cooldown = 0;
 
+// Past Frame Location for hitbox tracking
+last_x = x;
+last_y = y;
+
 //------------------------------------------------------------------
 
 

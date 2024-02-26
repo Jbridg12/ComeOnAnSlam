@@ -19,12 +19,12 @@ if(active_hitbox)
 if(!grounded && keyboard_check(ord("S")))
 {
 	sprite_index = TestAttackDown;
-	active_hitbox = instance_create_layer(left, bottom, instance_layer, attack_hitbox);
+	active_hitbox = instance_create_layer(x, bottom - 8, instance_layer, obj_down_attack);
 }
 else
 {
 	sprite_index = TestAttackRight;
-	active_hitbox = instance_create_layer(right, top, instance_layer, attack_hitbox);
+	active_hitbox = instance_create_layer(right, top, instance_layer, obj_side_attack);
 	
 }
 

@@ -26,9 +26,13 @@ function save_game()
 	
 	with (obj_game_manager)
 	{
+		var _map_copy = ds_map_create();
+		event_user(0);
+		ds_map_copy(_map_copy, room_map);
+		
 		var struct =
 		{
-			room_map : room_map,
+			room_map : _map_copy,
 			curr_room : room
 		};
 		
@@ -68,6 +72,7 @@ function load_game()
 			dummy_enabled = array[0].dummy_enabled;
 			charged_vert_enabled = array[0].charged_vert_enabled;
 			max_health = array[0].max_health;
+			hp = max_health;
 		}
 		
 		

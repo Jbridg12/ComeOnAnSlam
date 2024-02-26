@@ -137,5 +137,16 @@ function calculate_movement()
 		delta_x = 0;
 	}
 
+	if(object_get_name(object_index) == "obj_player")
+	{
+		if(active_hitbox)
+		{
+			active_hitbox.x += x - last_x;
+			active_hitbox.y += y - last_y;
+		}
+		
+		last_x = x;
+		last_y = y;
+	}
 	
 }

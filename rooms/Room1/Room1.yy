@@ -15,8 +15,7 @@
     {"name":"inst_734940EF","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_61E477A6","path":"rooms/Room1/Room1.yy",},
     {"name":"inst_3B69FEA2","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_4A1CA4A1","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_1DD91823","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_56A9A280","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -56,8 +55,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_61E477A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_lever","path":"objects/obj_lever/obj_lever.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_lever","path":"objects/obj_lever/obj_lever.yy",},"propertyId":{"name":"tied_object","path":"objects/obj_lever/obj_lever.yy",},"value":"inst_3B69FEA2",},
           ],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":608.0,"y":448.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4A1CA4A1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":928.0,"y":448.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1DD91823","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_spikes","path":"objects/obj_spikes/obj_spikes.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":896.0,"y":448.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_56A9A280","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_save","path":"objects/obj_save/obj_save.yy",},"properties":[],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":896.0,"y":416.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"Render_Below_Instance","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"resourceType":"GMRLayer","resourceVersion":"1.0","name":"Enemy_Paths","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
