@@ -1,9 +1,15 @@
 
 var _entrance_map = ds_map_create();
+var _realm = 0;
 
 with(obj_room_entrance)
 {
 	ds_map_add(_entrance_map, entrance_id, [x, y]);
+}
+
+with(obj_room_BGM)
+{
+	_realm = realm;	
 }
 
 with(obj_game_manager)
@@ -17,7 +23,5 @@ with(obj_game_manager)
 
 	room_entrance_id = -1;
 
-	curr_realm = REALM.LIMBO;
+	curr_realm = _realm;
 }
-
-ds_map_destroy(_entrance_map);

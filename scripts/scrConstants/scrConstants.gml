@@ -4,10 +4,10 @@
 
 enum REALM
 {
+	MAINMENU,
 	LIMBO,
 	LUST,
 	TREACHERY,
-	MAINMENU
 }
 
 enum LIST_TYPE
