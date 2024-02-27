@@ -1,23 +1,23 @@
+
+var _entrance_map = ds_map_create();
+
+with(obj_room_entrance)
+{
+	ds_map_add(_entrance_map, entrance_id, [x, y]);
+}
+
 with(obj_game_manager)
 {
-	switch(room_entrance_id)
+	if(ds_map_exists(_entrance_map, room_entrance_id))
 	{
-		case -1:
-			break;
-		case 1:
-			obj_player.forced_x = 2800;
-			obj_player.forced_y = 720;
-			break;
-		case 2:
-			obj_player.forced_x = 2830;
-			obj_player.forced_y = 95;
-			break;
-		default:
-			obj_player.forced_x = 800;
-			obj_player.forced_y = 448;
+		var _arr = ds_map_find_value(_entrance_map, room_entrance_id);
+		obj_player.forced_x = _arr[@0];
+		obj_player.forced_y = _arr[@1];
 	}
 
 	room_entrance_id = -1;
 
 	curr_realm = REALM.LIMBO;
 }
+
+ds_map_destroy(_entrance_map);
