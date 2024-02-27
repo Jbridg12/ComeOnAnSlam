@@ -19,7 +19,7 @@ for(var i = 0; i < _size; i++)
 	var _x = x + padding * _scaling;
 	var _y = y + (padding + item_height * i) * _scaling;
 	
-	if(i != hover_index)
+	if(i != selected)
 	{
 		draw_set_color(c_black);
 	}

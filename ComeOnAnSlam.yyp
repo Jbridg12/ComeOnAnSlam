@@ -101,6 +101,7 @@
     {"id":{"name":"scrCreateList","path":"scripts/scrCreateList/scrCreateList.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
     {"id":{"name":"sHitboxRight","path":"sprites/sHitboxRight/sHitboxRight.yy",},},
+    {"id":{"name":"obj_settings_button","path":"objects/obj_settings_button/obj_settings_button.yy",},},
     {"id":{"name":"scrScreenshake","path":"scripts/scrScreenshake/scrScreenshake.yy",},},
     {"id":{"name":"obj_walking_entity","path":"objects/obj_walking_entity/obj_walking_entity.yy",},},
     {"id":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},},

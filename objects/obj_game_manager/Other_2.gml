@@ -15,4 +15,7 @@ global.win_height = 720;
 global.scaling = 1;
 global.started = true;
 
+global.win_dim = WIN_SIZE.MID;
+global.fullscreen = 0;
+
 

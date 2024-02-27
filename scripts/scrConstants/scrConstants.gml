@@ -22,3 +22,10 @@ enum PARAM
 	SEL_VAL,
 	VALUES
 };
+
+enum WIN_SIZE
+{
+	SMALL,
+	MID,
+	LARGE
+}

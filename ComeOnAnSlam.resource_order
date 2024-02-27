@@ -68,6 +68,7 @@
     {"name":"obj_screenshake","order":2,"path":"objects/obj_screenshake/obj_screenshake.yy",},
     {"name":"scrCreateList","order":11,"path":"scripts/scrCreateList/scrCreateList.yy",},
     {"name":"sHitboxRight","order":2,"path":"sprites/sHitboxRight/sHitboxRight.yy",},
+    {"name":"obj_settings_button","order":2,"path":"objects/obj_settings_button/obj_settings_button.yy",},
     {"name":"scrScreenshake","order":6,"path":"scripts/scrScreenshake/scrScreenshake.yy",},
     {"name":"obj_walking_entity","order":3,"path":"objects/obj_walking_entity/obj_walking_entity.yy",},
     {"name":"obj_obstacle","order":5,"path":"objects/obj_obstacle/obj_obstacle.yy",},

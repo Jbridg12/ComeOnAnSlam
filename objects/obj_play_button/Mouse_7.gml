@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-start_game();
+if(!in_settings) start_game();
 

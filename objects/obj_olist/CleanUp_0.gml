@@ -4,3 +4,4 @@
 
 
 ds_list_destroy(list);
+obj_game_manager.recently_escaped = true;
