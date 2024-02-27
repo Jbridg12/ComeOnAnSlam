@@ -22,8 +22,11 @@ if(forced_y > 0)
 if(room == MainMenu)
 {
 	gui_enabled = false;	
+	layer = layer_get_id("HiddenInstances");
 }
 else
 {
 	gui_enabled = true;	
+	layer = layer_get_id("Instances");
 }
+

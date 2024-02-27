@@ -27,5 +27,5 @@ with(obj_game_manager)
 
 	room_entrance_id = -1;
 
-	curr_realm = Realm.Limbo;
+	curr_realm = REALM.LIMBO;
 }

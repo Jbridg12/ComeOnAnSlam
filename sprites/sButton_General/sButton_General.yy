@@ -28,7 +28,7 @@
   "origin": 4,
   "parent": {
     "name": "Buttons",
-    "path": "folders/Sprites/Buttons.yy",
+    "path": "folders/Sprites/Menus/Buttons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

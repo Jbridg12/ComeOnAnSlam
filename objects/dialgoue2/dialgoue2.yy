@@ -12,8 +12,8 @@
     "path": "folders/Objects/Dialogue.yy",
   },
   "parentObjectId": {
-    "name": "dialogueParent",
-    "path": "objects/dialogueParent/dialogueParent.yy",
+    "name": "obj_dialogue_parent",
+    "path": "objects/obj_dialogue_parent/obj_dialogue_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
