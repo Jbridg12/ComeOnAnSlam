@@ -14,11 +14,15 @@ with(obj_game_manager)
 			break;
 		case 3:
 			obj_player.forced_x = 300;
-			obj_player.forced_y = 45;
+			obj_player.forced_y = 90;
 			break;
 		case 4:
 			obj_player.forced_x = 750;
 			obj_player.forced_y = 170;
+			break;
+		case 5:
+			obj_player.forced_x = 300;
+			obj_player.forced_y = 450;
 			break;
 		default:
 			obj_player.forced_x = 800;

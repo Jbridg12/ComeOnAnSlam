@@ -1,18 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_collectible_parent",
+  "name": "obj_wall_jump_upgrade",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Parents",
-    "path": "folders/Objects/Parents.yy",
+    "name": "Collectible",
+    "path": "folders/Objects/Collectible.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_collectible_parent",
+    "path": "objects/obj_collectible_parent/obj_collectible_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sHealthPickup",
+    "path": "sprites/sHealthPickup/sHealthPickup.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

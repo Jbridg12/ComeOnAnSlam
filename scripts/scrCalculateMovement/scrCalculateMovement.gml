@@ -120,8 +120,7 @@ function calculate_movement()
 		if(object_get_name(object_index) == "obj_player")
 		{
 			// Player colliding with a wall
-			
-			if(array_contains(colliding_instances_x, 9))
+			if(array_contains(colliding_instances_x, room_collision_layer))
 			{
 				// Wall Jump Handling
 				if(!grounded && wall_jump_enabled) 

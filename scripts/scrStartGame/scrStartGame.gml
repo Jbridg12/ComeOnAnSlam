@@ -3,5 +3,5 @@
 function start_game()
 {
 	ds_map_clear(obj_game_manager.room_map);
-	room_goto(Room1);
+	room_goto(TestRoomStart);
 }
