@@ -121,16 +121,19 @@ function calculate_movement()
 		{
 			// Player colliding with a wall
 			
-			// Wall Jump Handling
-			if(!grounded && wall_jump_enabled) 
+			if(array_contains(colliding_instances_x, 9))
 			{
-				if(move_x != 0)
+				// Wall Jump Handling
+				if(!grounded && wall_jump_enabled) 
 				{
-					hanging = true;
-					hanging_side = sign(delta_x);
-					hanging_timer = 0;
-				}
+					if(move_x != 0)
+					{
+						hanging = true;
+						hanging_side = sign(delta_x);
+						hanging_timer = 0;
+					}
 				
+				}
 			}
 		}
 		
