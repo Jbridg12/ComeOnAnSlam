@@ -13,4 +13,8 @@ ds_map_add(bgm_map, REALM.LIMBO, sndLimboBGM);
 ds_map_add(bgm_map, REALM.LUST, sndLustBGM);
 ds_map_add(bgm_map, REALM.MAINMENU, sndLustBGM);
 
-in_menu = false;
+in_pause = false;
+in_dialogue = false;
+room_entrance_id = 0;
+
+sel_menu_button = 0;

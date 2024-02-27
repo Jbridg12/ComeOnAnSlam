@@ -1,7 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_self();
+if(selected)
+{
+	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
+}
+else
+{
+	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_teal, 1);
+}
 
 draw_set_font(fMenu);
 draw_set_halign(fa_center);
