@@ -18,7 +18,7 @@ if(gui_enabled)
 			health_border = healthbar_border;
 			break;
 	}
-
+	
 
 	draw_sprite(health_bg, 0, healthbar_offset_x, healthbar_offset_y);
 
@@ -30,4 +30,12 @@ if(gui_enabled)
 						  healthbar_height);
 					  
 	draw_sprite(health_border, 0, healthbar_offset_x, healthbar_offset_y)
+
+	for(var i=0; i < max_ammo; i++)
+	{
+		var _ammo_sprite = sFullAmmo;
+		if(i >= current_ammo) _ammo_sprite = sEmptyAmmo;
+		
+		draw_sprite(_ammo_sprite, 0, initial_ammo_x + (i * ammo_offset_x), initial_ammo_y);	
+	}
 }

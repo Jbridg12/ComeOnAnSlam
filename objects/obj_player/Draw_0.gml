@@ -2,7 +2,16 @@
 // You can write your code in this editor
 
 
-draw_sprite_ext(sprite_index, image_index, x, y, orientation, 1, 0, c_white, 1);
+//draw_sprite_ext(sprite_index, image_index, x, y, orientation, 1, 0, c_white, 1);
+
+if(on_vine)
+{
+	draw_sprite_ext(sprite_index, image_index, x, y, orientation, 1, attached_vine.image_angle, c_white, 1);
+}
+else
+{
+	draw_sprite_ext(sprite_index, image_index, x, y, orientation, 1, 0, c_white, 1);	
+}
 
 // Bugtesting ranged movement direction
 if(in_ranged)
@@ -14,3 +23,5 @@ if(in_ranged)
 	y_dir, 
 	25);
 }
+
+

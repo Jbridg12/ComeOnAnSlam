@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "HealthBars",
-    "path": "folders/Sprites/HealthBars.yy",
+    "path": "folders/Sprites/GUI/HealthBars.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

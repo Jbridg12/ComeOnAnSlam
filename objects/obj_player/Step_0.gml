@@ -1,6 +1,5 @@
-/// @description Player processes on every update tick of the game.
+/// @description Player Step.
 // You can write your code in this editor
-
 
 if(obj_game_manager.in_pause) return;
 

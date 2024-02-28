@@ -36,16 +36,23 @@ invulnerable = false;
 in_ranged = false;
 ranged_rotation_speed = 2;
 ranged_angle = 180;
+max_ammo = 5;
+current_ammo = max_ammo;
 
 //------------------------------------------------------------------
 
-//-------------------------Health Bar-------------------------------
+//-----------------------------GUI----------------------------------
 // Health Bar size coordinates
 healthbar_height = 24;
 
 // Health bar offsets
 healthbar_offset_x = 40;
 healthbar_offset_y = 20;
+
+// Ammo Coordinate
+initial_ammo_x = 32;
+initial_ammo_y = 80;
+ammo_offset_x = 64;
 //------------------------------------------------------------------
 
 //---------------------------Movement-------------------------------

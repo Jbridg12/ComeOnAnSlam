@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "healthbar",
-  "bbox_bottom": 23,
+  "name": "sAmmoCircle",
+  "bbox_bottom": 63,
   "bbox_left": 0,
-  "bbox_right": 0,
+  "bbox_right": 63,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,27 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"365db4cb-6824-4abb-bcf0-814d745b860b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ee782a50-a050-423a-8a02-b789ed3b1e3b",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 24,
+  "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d3cb4cda-a1be-4635-bf05-18db2b9cd920","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d73936f5-e4f6-45a1-bf8c-69fec89bca89","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"916b1d49-df9d-4e7d-857f-1cd93ba24dff","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "HealthBars",
-    "path": "folders/Sprites/GUI/HealthBars.yy",
+    "name": "Ammo",
+    "path": "folders/Sprites/GUI/Ammo.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "healthbar",
+    "name": "sAmmoCircle",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +55,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"365db4cb-6824-4abb-bcf0-814d745b860b","path":"sprites/healthbar/healthbar.yy",},},},"Disabled":false,"id":"31ce777a-97c9-4935-b006-daff2a149b6e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ee782a50-a050-423a-8a02-b789ed3b1e3b","path":"sprites/sAmmoCircle/sAmmoCircle.yy",},},},"Disabled":false,"id":"e5f2fce0-437e-498c-9fcb-0c125c07be4f","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +71,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 1,
+  "width": 64,
 }
