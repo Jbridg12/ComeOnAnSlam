@@ -207,6 +207,11 @@ function handle_input(){
 			}
 			
 		}
+		
+		if(isJump)
+		{
+			event_user(4);
+		}
 	}
 	else
 	{

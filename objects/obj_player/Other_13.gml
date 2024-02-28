@@ -2,7 +2,6 @@
 
 
 show_debug_message("Shoot Bolt");
-var right = x + ((sprite_get_width(sprite_index)/2) * orientation);
 
 if(current_ammo > 0)
 {
