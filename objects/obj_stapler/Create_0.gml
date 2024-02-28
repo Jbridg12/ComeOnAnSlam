@@ -10,4 +10,4 @@ damage = 100;
 
 rotation_speed = 10;
 
-ricochet = false;
+ricochet = 0;

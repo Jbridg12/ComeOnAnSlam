@@ -36,6 +36,16 @@ if(vine_cooldown > 0)
 	if(vine_cooldown = 0) attached_vine = noone;
 }
 
+if(ammo_countdown > 0)
+{
+	ammo_countdown--;	
+}
+else
+{
+	current_ammo = max_ammo;
+	ammo_countdown = 300;
+}
+
 // Invulnerability Cooldown
 if(hit_timer > 0)
 {

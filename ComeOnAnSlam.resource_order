@@ -27,6 +27,8 @@
     {"name":"Sequences","order":9,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":5,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":2,"path":"folders/Sounds.yy",},
+    {"name":"GUI","order":3,"path":"folders/Sprites/GUI.yy",},
+    {"name":"Ammo","order":1,"path":"folders/Sprites/GUI/Ammo.yy",},
     {"name":"Menus","order":1,"path":"folders/Sprites/Menus.yy",},
     {"name":"Enemy","order":2,"path":"folders/Sprites/ObjectSprites/Enemy.yy",},
     {"name":"Environment","order":4,"path":"folders/Sprites/ObjectSprites/Environment.yy",},
@@ -35,8 +37,6 @@
     {"name":"SaveSprites","order":5,"path":"folders/Sprites/ObjectSprites/SaveSprites.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":14,"path":"folders/Timelines.yy",},
-    {"name":"GUI","order":3,"path":"folders/Sprites/GUI.yy",},
-    {"name":"Ammo","order":1,"path":"folders/Sprites/GUI/Ammo.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"SwingUP","order":1,"path":"sequences/SwingUP/SwingUP.yy",},

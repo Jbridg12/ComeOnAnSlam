@@ -38,6 +38,7 @@ ranged_rotation_speed = 2;
 ranged_angle = 180;
 max_ammo = 5;
 current_ammo = max_ammo;
+ammo_countdown = 300;
 
 //------------------------------------------------------------------
 

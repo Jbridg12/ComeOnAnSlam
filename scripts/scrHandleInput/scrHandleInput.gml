@@ -192,11 +192,13 @@ function handle_input(){
 	
 	if(secondaryAttack)
 	{
+		
 		if(!in_ranged)
 		{
 			show_debug_message("RANGED ATTACK");
 			in_ranged = true;
 			delta_x = 0;
+			delta_y = 0;
 			if(orientation > 0)
 			{
 				ranged_angle = 180;
