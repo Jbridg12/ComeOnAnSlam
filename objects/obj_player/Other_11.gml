@@ -1,7 +1,7 @@
-/// @description Unpause Control
+/// @description Insert description here
 // You can write your code in this editor
 
 
+// Inherit the parent event
+event_inherited();
 
-delta_x = saved_Hspeed;
-delta_y = saved_Vspeed;

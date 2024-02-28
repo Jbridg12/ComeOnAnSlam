@@ -31,6 +31,12 @@ attacking_enable_collision = false;
 active_hitbox = noone;
 invulnerable = false;
 
+
+// Ranged Control
+in_ranged = false;
+ranged_rotation_speed = 2;
+ranged_angle = 180;
+
 //------------------------------------------------------------------
 
 //-------------------------Health Bar-------------------------------

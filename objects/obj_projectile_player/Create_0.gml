@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 // Inherit the parent event
 event_inherited();
 
-path_distance = path_position;
+fire_angle = 0;
+move_speed = 10;
 
-path_end();
-
-motion_set(0,0);
+damage = 40;

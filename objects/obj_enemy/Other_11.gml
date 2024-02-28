@@ -1,12 +1,8 @@
-/// @description Unpause Event
+/// @description Insert description here
 // You can write your code in this editor
 
-
-
-delta_x = saved_Hspeed;
-delta_y = saved_Vspeed;
-
-
+// Inherit the parent event
+event_inherited();
 
 if(in_path)
 {

@@ -87,99 +87,136 @@ function handle_input(){
 		motion_speed = sprint_speed;
 	}
 	
-	delta_x = grounded ? move_x * motion_speed : (delta_x * air_resistance) + (move_x * float_speed);
-	
-	if(isDown && !grounded)
+	if(in_ranged)
 	{
-		// handle dropping through platforms
-		platform_transparent = true;
-			
+		ranged_angle += move_x * ranged_rotation_speed;
+		ranged_angle = clamp(ranged_angle, -30, 210);
 	}
-	if(isJump)
-	{	
-		if(keyboard_check(vk_shift) && move_x == 0)
-		{
-			delta_y = 0;
-			charging_jump = true;
-			charge_jump_timer = 120;
-		}
-		else if(isDown)
+	else
+	{
+		delta_x = grounded ? move_x * motion_speed : (delta_x * air_resistance) + (move_x * float_speed);
+		
+		if(isDown && !grounded)
 		{
 			// handle dropping through platforms
 			platform_transparent = true;
 			
 		}
+		if(isJump)
+		{	
+			if(keyboard_check(vk_shift) && move_x == 0)
+			{
+				delta_y = 0;
+				charging_jump = true;
+				charge_jump_timer = 120;
+			}
+			else if(isDown)
+			{
+				// handle dropping through platforms
+				platform_transparent = true;
+			
+			}
+			else
+			{
+				if(grounded || hanging || hanging_timer > 0)
+				{
+				
+					delta_y = jump_speed;
+					//if(isSprint) delta_x *= 1.5;
+				
+					grounded = 0;
+					platform_transparent = true;
+					curr_jump = max_jump;
+				}
+				if(hanging || hanging_timer > 0) wall_jump = true;
+			}
+			
+		}
+	
+		// If player holding the Jump button let them go further
+		if(isHoldJump && !grounded)
+		{
+			curr_jump--;		
+		}
 		else
 		{
-			if(grounded || hanging || hanging_timer > 0)
+			curr_jump = 0;	
+		}
+	
+		// If player holding the Jump button let them go further
+		if(isHoldJump && grounded && charging_jump)
+		{
+			if(keyboard_check(vk_shift))
 			{
-				
-				delta_y = jump_speed;
-				//if(isSprint) delta_x *= 1.5;
-				
-				grounded = 0;
-				platform_transparent = true;
-				curr_jump = max_jump;
+				if(charge_jump_timer > 0) charge_jump_timer--;
 			}
-			if(hanging || hanging_timer > 0) wall_jump = true;
 		}
-			
-	}
 	
-	// If player holding the Jump button let them go further
-	if(isHoldJump && !grounded)
-	{
-		curr_jump--;		
-	}
-	else
-	{
-		curr_jump = 0;	
-	}
-	
-	// If player holding the Jump button let them go further
-	if(isHoldJump && grounded && charging_jump)
-	{
-		if(keyboard_check(vk_shift))
+		if(keyboard_check_released(vk_space) || keyboard_check_released(vk_shift))
 		{
-			if(charge_jump_timer > 0) charge_jump_timer--;
+			if(charging_jump)
+			{
+				// Launch with Massive Speed Charge Jump
+				delta_y = lerp(charge_jump_speed, 0, charge_jump_timer / 120);
+				charging_jump = 0;
+				charge_jump_timer = 0;
+				platform_transparent = true;
+			
+				// Floatier Charge Jump
+				//delta_y = lerp(-30, 0, charge_jump_timer / 120);
+				//charging_jump = 0;
+				//charge_jump_timer = 0;
+				//platform_transparent = true;
+				//weight = 1;
+				//alarm[1] = 60;
+			}
 		}
 	}
 	
-	if(keyboard_check_released(vk_space) || keyboard_check_released(vk_shift))
-	{
-		if(charging_jump)
-		{
-			// Launch with Massive Speed Charge Jump
-			delta_y = lerp(charge_jump_speed, 0, charge_jump_timer / 120);
-			charging_jump = 0;
-			charge_jump_timer = 0;
-			platform_transparent = true;
-			
-			// Floatier Charge Jump
-			//delta_y = lerp(-30, 0, charge_jump_timer / 120);
-			//charging_jump = 0;
-			//charge_jump_timer = 0;
-			//platform_transparent = true;
-			//weight = 1;
-			//alarm[1] = 60;
-		}
-	}
-
 	
 	var primaryAttack = keyboard_check_pressed(ord("2")) || keyboard_check_pressed(ord("K")) || mouse_check_button_released(mb_left);
-	var secondaryAttack = keyboard_check_pressed(ord("3")) || keyboard_check_pressed(ord("L")) || mouse_check_button_released(mb_right);
+	var secondaryAttack = keyboard_check(ord("3")) || keyboard_check(ord("L")) || mouse_check_button(mb_right);
 	
 	if(primaryAttack)
 	{
-		show_debug_message("ATTACK");
-		event_user(2);
+		if(in_ranged)
+		{
+			event_user(3);
+		}
+		else
+		{
+			show_debug_message("ATTACK");
+			event_user(2);
+		}
 	}
 	
-	else if(secondaryAttack)
+	if(secondaryAttack)
 	{
-		show_debug_message("RANGED ATTACK");
-		event_user(3);
+		if(!in_ranged)
+		{
+			show_debug_message("RANGED ATTACK");
+			in_ranged = true;
+			delta_x = 0;
+			if(orientation > 0)
+			{
+				ranged_angle = 180;
+			}
+			else
+			{
+				ranged_angle = 0;	
+			}
+			
+		}
 	}
+	else
+	{
+		if(in_ranged)
+		{
+			in_ranged = false;
+			
+		}
+	}
+	
 	
 	// Space is used for jump so W will be mapped to miscellaneous functions
 	// for testing. 

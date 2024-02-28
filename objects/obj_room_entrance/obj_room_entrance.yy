@@ -28,8 +28,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "Sprite29",
-    "path": "sprites/Sprite29/Sprite29.yy",
+    "name": "sRoomLanding",
+    "path": "sprites/sRoomLanding/sRoomLanding.yy",
   },
   "spriteMaskId": null,
   "visible": false,

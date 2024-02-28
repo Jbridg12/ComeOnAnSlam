@@ -10,10 +10,17 @@ if(in_animation) return;
 
 handle_input();
 
+if(!in_ranged)
+{
+	if(delta_x != 0) orientation = sign(delta_x);
+}
+else
+{
+	orientation = sign(ranged_angle - 90);	
+}
+
+
 // Update position by speed
-
-if(delta_x != 0) orientation = sign(delta_x);
-
 if(!frozen) calculate_movement();
 
 if(grounded && !hanging && safety_timer-- < 0)

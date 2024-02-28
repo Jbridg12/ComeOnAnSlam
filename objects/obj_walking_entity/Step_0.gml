@@ -2,9 +2,8 @@
 // You can write your code in this editor
 
 
-if(obj_game_manager.in_pause) return;
-
-if(hp <= 0) event_user(2)
+// Inherit the parent event
+event_inherited();
 
 
 if(point_in_circle(obj_player.x, obj_player.y, x, y, detection_radius))
@@ -26,13 +25,20 @@ if(point_in_circle(obj_player.x, obj_player.y, x, y, detection_radius))
 	{
 		if(hit_timer >= 10) 
 		{
-			delta_y = -6/weight;
-			delta_x *= -13/weight;
+			var _knockback_x = knockback_force * dcos(knockback_angle);
+			var _knockback_y = knockback_force * dsin(knockback_angle) * 0.5;
+			delta_x += _knockback_x;
+			delta_y -= _knockback_y;
 		}
 		
 		hit_timer--;
 		
-		if(hit_timer == 0) invulnerable = false;
+		if(hit_timer == 0) 
+		{
+			invulnerable = false;
+			knockback_angle = 0;
+			knockback_force = 0;
+		}
 	}
 	
 	// Implement AI jump in future

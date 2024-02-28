@@ -9,6 +9,8 @@ event_inherited();
 // Object Parameters
 invulnerable = false;
 path_distance = 0;
+knockback_force = 0;
+knockback_angle = 0;
 
 // Instantiation
 
