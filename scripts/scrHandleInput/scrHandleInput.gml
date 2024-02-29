@@ -1,17 +1,17 @@
 // Script assets have changed for v2.3.0 see
 // TODO: Gamepad Input gp_()
 function handle_input(){
-	var isJump = keyboard_check_pressed(vk_space);
-	var isSprint =  keyboard_check(vk_lshift);
-	var isHoldJump = keyboard_check(vk_space);
+	var isJump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
+	var isSprint =  keyboard_check(vk_lshift) || gamepad_button_check_released(0, gp_shoulderlb);
+	var isHoldJump = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
 	
-	var isUp = keyboard_check(ord("W"));
-	var isDown = keyboard_check(ord("S"));
+	var isUp = keyboard_check(ord("W")) + ceil(gamepad_axis_value(0, gp_axislv));
+	var isDown = keyboard_check(ord("S")) + floor(gamepad_axis_value(0, gp_axislv));
 	
-	var isLeft = keyboard_check(ord("A"));
-	var isRight = keyboard_check(ord("D"));
+	//var isLeft = keyboard_check(ord("A"));
+	//var isRight = keyboard_check(ord("D"));
 
-	if(keyboard_check_released(vk_delete))
+	if(keyboard_check_released(vk_delete) || gamepad_button_check_released(0, gp_start))
 	{
 		room_goto(MainMenu);
 	}
@@ -21,6 +21,7 @@ function handle_input(){
 
 	// get absolute input value
 	move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+	move_x += gamepad_axis_value(0, gp_axislh) > 0 ? ceil(gamepad_axis_value(0, gp_axislh)) : floor(gamepad_axis_value(0, gp_axislh));
 	
 	// Default speed set to walking unless player holds sprint key (Shift)
 	motion_speed = walk_speed;
@@ -71,7 +72,7 @@ function handle_input(){
 	
 	//------------------------------------------------------------------
 	
-	if(keyboard_check_released(ord("W")))
+	if(keyboard_check_released(ord("W")) || gamepad_button_check_released(0, gp_face2))
 	{
 		trigger_interactibles();
 		//Player.max_health = 150;
@@ -152,7 +153,7 @@ function handle_input(){
 			}
 		}
 	
-		if(keyboard_check_released(vk_space) || keyboard_check_released(vk_shift))
+		if(keyboard_check_released(vk_space) || keyboard_check_released(vk_shift) || gamepad_button_check_released(0, gp_face1) || gamepad_button_check_released(0, gp_shoulderlb))
 		{
 			if(charging_jump)
 			{
@@ -174,8 +175,8 @@ function handle_input(){
 	}
 	
 	
-	var primaryAttack = keyboard_check_pressed(ord("2")) || keyboard_check_pressed(ord("K")) || mouse_check_button_released(mb_left);
-	var secondaryAttack = keyboard_check(ord("3")) || keyboard_check(ord("L")) || mouse_check_button(mb_right);
+	var primaryAttack = keyboard_check_pressed(ord("2")) || keyboard_check_pressed(ord("K")) || mouse_check_button_released(mb_left) || gamepad_button_check(0, gp_face3);
+	var secondaryAttack = keyboard_check(ord("3")) || keyboard_check(ord("L")) || mouse_check_button(mb_right) || gamepad_button_check(0, gp_shoulderrb);
 	
 	if(primaryAttack)
 	{

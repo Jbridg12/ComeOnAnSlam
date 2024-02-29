@@ -4,6 +4,7 @@
 dialog = new dialogue();
 
 key_next = vk_space;
+gp_next = gp_face1;
 
 showing_dialogue = false;
 

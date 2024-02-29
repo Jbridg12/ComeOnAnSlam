@@ -7,21 +7,25 @@ if(room == MainMenu)
 {
 	var _arr = layer_get_all_elements("Instances");
 	
-	if(keyboard_check_released(ord("W")))
+	if(keyboard_check_released(ord("W")) || gamepad_axis_value(0, gp_axislv) > 0)
 	{
 		layer_instance_get_instance(_arr[@sel_menu_button]).selected = false;
 		
 		sel_menu_button -= 1;
 		
 	}
-	if(keyboard_check_released(ord("S")))
+	if(keyboard_check_released(ord("S")) || gamepad_axis_value(0, gp_axislv) < 0)
 	{
 		layer_instance_get_instance(_arr[@sel_menu_button]).selected = false;
 		
 		sel_menu_button += 1;
 		
 	}
-	if(keyboard_check_released(ord("E")))
+	
+	sel_menu_button = clamp(sel_menu_button, 0, array_length(_arr)-1);
+	layer_instance_get_instance(_arr[@sel_menu_button]).selected = true;
+	
+	if(keyboard_check_released(ord("E")) || gamepad_button_check_released(0, gp_face1))
 	{
 		with(layer_instance_get_instance(_arr[@sel_menu_button]))
 		{
@@ -31,6 +35,4 @@ if(room == MainMenu)
 	}
 	
 	
-	sel_menu_button = clamp(sel_menu_button, 0, array_length(_arr)-1);
-	layer_instance_get_instance(_arr[@sel_menu_button]).selected = true;
 }

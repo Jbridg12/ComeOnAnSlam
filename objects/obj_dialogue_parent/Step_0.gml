@@ -16,7 +16,7 @@ if(showing_dialogue == false)
 }
 else
 {
-	if(keyboard_check_released(key_next))
+	if(keyboard_check_released(key_next) || gamepad_button_check_released(0, gp_next))
 	{
 		showing_dialogue = false;
 		alpha = 0;

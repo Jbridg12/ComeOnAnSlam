@@ -4,20 +4,26 @@
 var _mouseX = device_mouse_x_to_gui(0);
 var _mouseY = device_mouse_y_to_gui(0);
 var _mousePressed = mouse_check_button_released(mb_left);
-var _selectOption = keyboard_check_released(ord("E")) + keyboard_check_released(vk_space);
-var _moveSelect =  keyboard_check_released(ord("W")) - keyboard_check_released(ord("S"));
+var _selectOption = keyboard_check_released(ord("E")) || keyboard_check_released(vk_space) || gamepad_button_check_released(0, gp_face1);
 var _unSelectOption = 0;
+
+
+var _moveSelect =  keyboard_check_released(ord("W")) - keyboard_check_released(ord("S"));
+_moveSelect += gamepad_axis_value(0, gp_axislv) > 0 ? ceil(gamepad_axis_value(0, gp_axislv)) : floor(gamepad_axis_value(0, gp_axislv));
+
 
 if(unlock_escape)
 {
-	_unSelectOption = keyboard_check_released(ord("Q")) + keyboard_check_pressed(vk_escape);	
+	_unSelectOption = keyboard_check_released(ord("Q")) ||
+					  keyboard_check_pressed(vk_escape) ||
+					  gamepad_button_check_released(0, gp_face2);	
 }
 
 var _scaling = global.scaling;
 var _size = ds_list_size(list);
 
 
-if(_unSelectOption > 0)
+if(_unSelectOption)
 {
 	if(locked)
 	{
@@ -45,7 +51,7 @@ if(_unSelectOption > 0)
 	}
 }
 	
-if(_selectOption > 0)
+if(_selectOption)
 {
 	var _arr = list[| selected];
 	var _name = _arr[PARAM.NAME];
