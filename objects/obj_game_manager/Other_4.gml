@@ -76,15 +76,9 @@ if(ds_map_exists(room_map, room))
 }
 
 // Reattach interactibles to associated objects
-with(obj_lever)
+with(obj_interactible)
 {
 	event_user(1);	
-}
-
-// Reattach environment triggers to associated objects
-with(obj_environment_trigger)
-{
-	event_user(0);	
 }
 
 // Initialize Obstacle Speeds
