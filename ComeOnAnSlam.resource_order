@@ -42,7 +42,6 @@
     {"name":"SwingUP","order":1,"path":"sequences/SwingUP/SwingUP.yy",},
     {"name":"dialogue_red","order":1,"path":"sprites/dialogue_red/dialogue_red.yy",},
     {"name":"obj_button_parent","order":6,"path":"objects/obj_button_parent/obj_button_parent.yy",},
-    {"name":"rmParent_Child_0","order":5,"path":"rooms/rmParent_Child_0/rmParent_Child_0.yy",},
     {"name":"obj_projectile_player","order":5,"path":"objects/obj_projectile_player/obj_projectile_player.yy",},
     {"name":"dialogue1","order":1,"path":"objects/dialogue1/dialogue1.yy",},
     {"name":"sndLustBGM","order":2,"path":"sounds/sndLustBGM/sndLustBGM.yy",},

@@ -69,7 +69,6 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"dialogue_red","path":"sprites/dialogue_red/dialogue_red.yy",},},
     {"id":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},},
-    {"id":{"name":"rmParent_Child_0","path":"rooms/rmParent_Child_0/rmParent_Child_0.yy",},},
     {"id":{"name":"obj_projectile_player","path":"objects/obj_projectile_player/obj_projectile_player.yy",},},
     {"id":{"name":"dialogue1","path":"objects/dialogue1/dialogue1.yy",},},
     {"id":{"name":"sndLustBGM","path":"sounds/sndLustBGM/sndLustBGM.yy",},},
@@ -179,7 +178,6 @@
     {"roomId":{"name":"Limbo2","path":"rooms/Limbo2/Limbo2.yy",},},
     {"roomId":{"name":"TestRoomWallJump","path":"rooms/TestRoomWallJump/TestRoomWallJump.yy",},},
     {"roomId":{"name":"rmParent","path":"rooms/rmParent/rmParent.yy",},},
-    {"roomId":{"name":"rmParent_Child_0","path":"rooms/rmParent_Child_0/rmParent_Child_0.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

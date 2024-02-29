@@ -9,6 +9,7 @@ if(move)
 	if(distance_travelled == s_height)
 	{
 		move = false;
+		active = !active;
 		distance_travelled = 0;
 		obj_player.frozen = false;
 		return;

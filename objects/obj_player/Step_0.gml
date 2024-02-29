@@ -21,7 +21,11 @@ else
 // Invulnerability Cooldown
 if(hit_timer-- > 0)
 {
-	if(hit_timer > 45) delta_x += knockback_force;
+	if(hit_timer > 55) 
+	{
+		delta_x += knockback_force_x;
+		delta_y += knockback_force_y;
+	}
 	if(hit_timer = 0) invulnerable = noone;
 }
 

@@ -14,15 +14,20 @@ if(ds_map_exists(room_map, room))
 {
 	var _data = ds_map_find_value(room_map, room)
 	instance_destroy(obj_collectible_parent);
-	instance_destroy(obj_enemy);
+	instance_destroy(obj_obstacle);
+	
+	// Uncomment if loading enemy data
+	//instance_destroy(obj_enemy);
 	
 	var _coll_list = _data.collectibles;
 	var _enemy_list = _data.enemies;
+	var _obstacle_list = _data.obstacles;
 	
 	for(var i = 0; i < max(ds_list_size(_enemy_list), ds_list_size(_coll_list)); i++)
 	{
 		var _struct_coll = noone;
 		var _struct_enemy = noone;
+		var _struct_obs = noone;
 		var inst = noone;
 		
 		if(ds_list_size(_enemy_list) > i)
@@ -33,6 +38,10 @@ if(ds_map_exists(room_map, room))
 		{
 			_struct_coll = ds_list_find_value(_coll_list, i);
 		}
+		if(ds_list_size(_obstacle_list) > i)
+		{
+			_struct_obs = ds_list_find_value(_obstacle_list, i);
+		}
 		
 		if(_struct_coll)
 		{
@@ -41,19 +50,45 @@ if(ds_map_exists(room_map, room))
 			inst.image_yscale = _struct_coll.y_scale;
 		
 		}
-		if(_struct_enemy)
-		{
-			inst = instance_create_layer(_struct_enemy.x, _struct_enemy.y, "Instances", asset_get_index(_struct_enemy.object));
-			inst.image_xscale = _struct_enemy.x_scale;
-			inst.image_yscale = _struct_enemy.y_scale;
-			inst.follow_path = asset_get_index(_struct_enemy.path);
-			inst.absolute_path = _struct_enemy.absolute;
-			inst.path_action = _struct_enemy.path_action;
-			inst.detection_radius = _struct_enemy.detect;
+		
+		// Load Enemy Data
+		//if(_struct_enemy)
+		//{
+		//	inst = instance_create_layer(_struct_enemy.x, _struct_enemy.y, "Instances", asset_get_index(_struct_enemy.object));
+		//	inst.image_xscale = _struct_enemy.x_scale;
+		//	inst.image_yscale = _struct_enemy.y_scale;
+		//	inst.follow_path = asset_get_index(_struct_enemy.path);
+		//	inst.absolute_path = _struct_enemy.absolute;
+		//	inst.path_action = _struct_enemy.path_action;
+		//	inst.detection_radius = _struct_enemy.detect;
 			
-		}
+		//}
 		
-		
+		if(_struct_obs)
+		{
+			inst = instance_create_layer(_struct_obs.x, _struct_obs.y, "Instances", asset_get_index(_struct_obs.object));
+			inst.image_xscale = _struct_obs.x_scale;
+			inst.image_yscale = _struct_obs.y_scale;
+			inst.active = _struct_obs.active;
+			inst.room_index = _struct_obs.room_index;
+		}	
 	}
-	
+}
+
+// Reattach interactibles to associated objects
+with(obj_lever)
+{
+	event_user(1);	
+}
+
+// Reattach environment triggers to associated objects
+with(obj_environment_trigger)
+{
+	event_user(0);	
+}
+
+// Initialize Obstacle Speeds
+with(obj_gate)
+{
+	event_user(2);	
 }

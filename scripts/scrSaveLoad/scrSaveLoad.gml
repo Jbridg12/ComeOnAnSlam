@@ -57,7 +57,7 @@ function load_game()
 		var json = file_text_read_string(file);
 		var array = json_parse(json);
 		
-		obj_game_manager.room_map = array[@1].room_map;
+		ds_map_copy(obj_game_manager.room_map, array[@1].room_map);
 		obj_game_manager.room_entrance_id = -1;
 		room_goto(array[1].curr_room);
 		

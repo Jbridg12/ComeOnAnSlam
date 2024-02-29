@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Trigger Object
 // You can write your code in this editor
 
 // Inherit the parent event
@@ -9,7 +9,7 @@ if(tied_object != noone)
 	with(tied_object)
 	{
 
-		if(extended)
+		if(active)
 		{
 			event_user(0);
 		}

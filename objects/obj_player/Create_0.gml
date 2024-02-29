@@ -30,8 +30,8 @@ charged_vert_enabled = true;
 attacking_enable_collision = false;
 active_hitbox = noone;
 invulnerable = false;
-knockback_force = 0;
-
+knockback_force_x = 0;
+knockback_force_y = 0;
 
 // Ranged Control
 in_ranged = false;
