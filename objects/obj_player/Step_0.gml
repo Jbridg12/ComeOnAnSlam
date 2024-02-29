@@ -21,12 +21,31 @@ else
 // Invulnerability Cooldown
 if(hit_timer-- > 0)
 {
-	if(hit_timer > 55) 
+	if(hit_timer > 50) 
 	{
-		delta_x += knockback_force_x;
-		delta_y += knockback_force_y;
+		if(!grounded)
+		{
+			delta_x = knockback_force_x;
+		}
+		else
+		{
+			delta_x += knockback_force_x;
+		}
+		// Check to make sure compunding velocities don't cause leaps
+		if(sign(contact_dy) == sign(knockback_force_y))
+		{
+			delta_y += knockback_force_y  * 0.1;
+		}
+		else
+		{
+			delta_y = knockback_force_y;
+		}
 	}
-	if(hit_timer = 0) invulnerable = noone;
+	if(hit_timer = 0) 
+	{
+		contact_dy = 0;
+		invulnerable = noone;
+	}
 }
 
 // Update position by speed

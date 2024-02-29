@@ -16,7 +16,7 @@ if(active_hitbox)
 	active_hitbox = noone;
 }
 
-if(!grounded && (keyboard_check(ord("S")) || gamepad_axis_value(0, gp_axislv) < 0))
+if(!grounded && (keyboard_check(ord("S")) || gamepad_axis_value(0, gp_axislv) > 0))
 {
 	sprite_index = TestAttackDown;
 	active_hitbox = instance_create_layer(x, y, instance_layer, obj_down_attack);

@@ -11,4 +11,5 @@ if(!invulnerable)
 	var _angle = point_direction(obj_player.x, obj_player.y, other.x, other.y);
 	knockback_force_x = -12 * dcos(_angle);
 	knockback_force_y = 6 * dsin(_angle);
+	contact_dy = delta_y;
 }

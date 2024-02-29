@@ -2,11 +2,23 @@
 // TODO: Gamepad Input gp_()
 function handle_input(){
 	var isJump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
-	var isSprint =  keyboard_check(vk_lshift) || gamepad_button_check_released(0, gp_shoulderlb);
+	var isSprint =  keyboard_check(vk_lshift) || gamepad_button_check(0, gp_shoulderlb);
 	var isHoldJump = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
 	
-	var isUp = keyboard_check(ord("W")) + ceil(gamepad_axis_value(0, gp_axislv));
-	var isDown = keyboard_check(ord("S")) + floor(gamepad_axis_value(0, gp_axislv));
+	var isUp = keyboard_check(ord("W"));
+	var isDown = keyboard_check(ord("S"));
+	
+	if(gamepad_axis_value(0, gp_axislv) != 0)
+	{
+		if(sign(gamepad_axis_value(0, gp_axislv) > 0))
+		{
+			isDown = 1;
+		}
+		else
+		{
+			isUp = 1;	
+		}
+	}
 	
 	//var isLeft = keyboard_check(ord("A"));
 	//var isRight = keyboard_check(ord("D"));
@@ -92,6 +104,9 @@ function handle_input(){
 	{
 		ranged_angle += move_x * ranged_rotation_speed;
 		ranged_angle = clamp(ranged_angle, -30, 210);
+		
+		delta_x = grounded ? delta_x * 0.5 : (delta_x * air_resistance);
+		
 	}
 	else
 	{
@@ -181,7 +196,7 @@ function handle_input(){
 	var _chargePrimary = keyboard_check(ord("2")) || keyboard_check(ord("K")) || mouse_check_button(mb_left) || gamepad_button_check(0, gp_face3);
 	var _releasePrimary = keyboard_check_released(ord("2")) || keyboard_check_released(ord("K")) || mouse_check_button_released(mb_left) || gamepad_button_check_released(0, gp_face3);
 	
-	if(charge_attack_enabled && _chargePrimary)
+	if(charging && _chargePrimary)
 	{
 		charge_timer++;
 		
@@ -189,8 +204,9 @@ function handle_input(){
 		var _img = floor(sprite_get_number(sprite_index) * (charge_timer / timer_max))
 		image_index = clamp(_img, 0, sprite_get_number(sprite_index)-1);
 	}
-	if(charge_attack_enabled && _releasePrimary)
+	if(charging && _releasePrimary)
 	{
+		
 		if(charge_timer > timer_max)
 		{
 			event_user(5); // Charge Attack

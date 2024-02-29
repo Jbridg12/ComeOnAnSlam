@@ -9,7 +9,7 @@ var _unSelectOption = 0;
 
 
 var _moveSelect =  keyboard_check_released(ord("W")) - keyboard_check_released(ord("S"));
-_moveSelect += gamepad_axis_value(0, gp_axislv) > 0 ? ceil(gamepad_axis_value(0, gp_axislv)) : floor(gamepad_axis_value(0, gp_axislv));
+_moveSelect += gamepad_button_check_pressed(0, gp_padu) - gamepad_button_check_pressed(0, gp_padd);
 
 
 if(unlock_escape)
@@ -98,6 +98,8 @@ else
 	
 	if(_sel > -1)
 	{
+		if(global.fullscreen && _name == "Window Size") return;
+		
 		_sel += _moveSelect;
 		_sel = clamp(_sel, 0, array_length(_vals) - 1);
 				

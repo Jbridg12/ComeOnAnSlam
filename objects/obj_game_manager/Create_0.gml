@@ -12,6 +12,7 @@ bgm_map = ds_map_create();
 ds_map_add(bgm_map, REALM.LIMBO, sndLimboBGM);
 ds_map_add(bgm_map, REALM.LUST, sndLustBGM);
 ds_map_add(bgm_map, REALM.MAINMENU, sndLustBGM);
+gamepad_set_axis_deadzone(0, 0.5);
 
 in_pause = false;
 in_dialogue = false;
