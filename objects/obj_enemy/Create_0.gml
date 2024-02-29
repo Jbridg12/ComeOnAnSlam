@@ -8,9 +8,12 @@ event_inherited();
 
 // Object Parameters
 invulnerable = false;
+invulnerable_timer_max = 30;
+invulnerable_timer = 0;
 path_distance = 0;
 knockback_force = 0;
 knockback_angle = 0;
+hit_list = ds_list_create();
 
 // Instantiation
 

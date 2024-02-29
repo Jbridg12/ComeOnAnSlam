@@ -18,7 +18,7 @@ image_speed = 1;
 
 ranged_enabled = false;
 wall_jump_enabled = false;
-charge_attack_enabled = false;
+charge_attack_enabled = true;
 dummy_enabled = false;
 charged_vert_enabled = true;
 
@@ -30,6 +30,7 @@ charged_vert_enabled = true;
 attacking_enable_collision = false;
 active_hitbox = noone;
 invulnerable = false;
+knockback_force = 0;
 
 
 // Ranged Control
@@ -39,6 +40,11 @@ ranged_angle = 180;
 max_ammo = 5;
 current_ammo = max_ammo;
 ammo_countdown = 300;
+
+// Charge Control
+charge_timer = 0;
+timer_max = 90;
+charging = false;
 
 //------------------------------------------------------------------
 

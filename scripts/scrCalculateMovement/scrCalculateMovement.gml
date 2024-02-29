@@ -90,9 +90,22 @@ function calculate_movement()
 	}
 	else
 	{
+		// Overlappable enemies
 		colliding_instances_x = move_and_collide(delta_x, 0, [room_collision_layer, platform_collision_layer, obj_obstacle]);
 		colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, platform_collision_layer, obj_obstacle]);
-	
+		
+		
+		// Case if we want enemies to not be overlappable
+		//if(object_index == obj_player)
+		//{
+		//	colliding_instances_x = move_and_collide(delta_x, 0, [room_collision_layer, platform_collision_layer, obj_obstacle, obj_enemy]);
+		//	colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, platform_collision_layer, obj_obstacle, obj_enemy]);
+		//}
+		//else
+		//{
+		//	colliding_instances_x = move_and_collide(delta_x, 0, [room_collision_layer, platform_collision_layer, obj_obstacle, obj_player]);
+		//	colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, platform_collision_layer, obj_obstacle, obj_player]);
+		//}
 		
 	}
 
@@ -101,6 +114,11 @@ function calculate_movement()
 	// We're gonna be grounded from the ceiling but ill fix that later
 	if (array_length(colliding_instances_y) != 0 )
 	{
+		// Catch case for collision if enemies are made collidable
+		//if(array_contains(colliding_instances_x, obj_enemy))
+		//{
+			
+		//}
 		if(object_get_name(object_index) == "obj_player" && delta_y > 0)
 		{
 			grounded = 1;

@@ -10,7 +10,16 @@ if(on_vine)
 }
 else
 {
-	draw_sprite_ext(sprite_index, image_index, x, y, orientation, 1, 0, c_white, 1);	
+	// Draw Charged as Red
+	if(charge_timer > 90)
+	{
+		draw_sprite_ext(sprite_index, image_index, x, y, orientation, 1, 0, c_red, 1);	
+		
+	}
+	else
+	{
+		draw_sprite_ext(sprite_index, image_index, x, y, orientation, 1, 0, c_white, 1);	
+	}
 }
 
 // Bugtesting ranged movement direction

@@ -18,6 +18,12 @@ else
 	orientation = sign(ranged_angle - 90);	
 }
 
+// Invulnerability Cooldown
+if(hit_timer-- > 0)
+{
+	if(hit_timer > 45) delta_x += knockback_force;
+	if(hit_timer = 0) invulnerable = noone;
+}
 
 // Update position by speed
 if(!frozen) calculate_movement();
@@ -44,13 +50,6 @@ else
 {
 	current_ammo = max_ammo;
 	ammo_countdown = 300;
-}
-
-// Invulnerability Cooldown
-if(hit_timer > 0)
-{
-	hit_timer--;
-	if(hit_timer = 0) invulnerable = noone;
 }
 
 

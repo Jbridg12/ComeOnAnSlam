@@ -175,8 +175,34 @@ function handle_input(){
 	}
 	
 	
-	var primaryAttack = keyboard_check_pressed(ord("2")) || keyboard_check_pressed(ord("K")) || mouse_check_button_released(mb_left) || gamepad_button_check(0, gp_face3);
+	var primaryAttack = keyboard_check_pressed(ord("2")) || keyboard_check_pressed(ord("K")) || mouse_check_button_pressed(mb_left) || gamepad_button_check_pressed(0, gp_face3);
 	var secondaryAttack = keyboard_check(ord("3")) || keyboard_check(ord("L")) || mouse_check_button(mb_right) || gamepad_button_check(0, gp_shoulderrb);
+	
+	var _chargePrimary = keyboard_check(ord("2")) || keyboard_check(ord("K")) || mouse_check_button(mb_left) || gamepad_button_check(0, gp_face3);
+	var _releasePrimary = keyboard_check_released(ord("2")) || keyboard_check_released(ord("K")) || mouse_check_button_released(mb_left) || gamepad_button_check_released(0, gp_face3);
+	
+	if(charge_attack_enabled && _chargePrimary)
+	{
+		charge_timer++;
+		
+		// Step through charge sprite over duration of charge
+		var _img = floor(sprite_get_number(sprite_index) * (charge_timer / timer_max))
+		image_index = clamp(_img, 0, sprite_get_number(sprite_index)-1);
+	}
+	if(charge_attack_enabled && _releasePrimary)
+	{
+		if(charge_timer > timer_max)
+		{
+			event_user(5); // Charge Attack
+		}
+		else
+		{
+			show_debug_message("ATTACK"); // Normal Attack
+			event_user(2);	
+		}
+		charging = false;
+		charge_timer = 0;
+	}
 	
 	if(primaryAttack)
 	{
@@ -184,10 +210,18 @@ function handle_input(){
 		{
 			event_user(3);
 		}
-		else
+		else if(!charge_attack_enabled)
 		{
 			show_debug_message("ATTACK");
 			event_user(2);
+		}
+		else if(charge_attack_enabled)
+		{
+			charging = true;
+			
+			// Set sprite to charging animation sprite
+			//sprite_index = TestAttackRight;
+			//image_speed = 0;
 		}
 	}
 	

@@ -35,7 +35,6 @@ if(point_in_circle(obj_player.x, obj_player.y, x, y, detection_radius))
 		
 		if(hit_timer == 0) 
 		{
-			invulnerable = false;
 			knockback_angle = 0;
 			knockback_force = 0;
 		}
