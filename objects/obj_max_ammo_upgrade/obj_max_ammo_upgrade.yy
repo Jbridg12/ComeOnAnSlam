@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_wall_jump_upgrade",
+  "name": "obj_max_ammo_upgrade",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sUpgradePickup",
-    "path": "sprites/sUpgradePickup/sUpgradePickup.yy",
+    "name": "sAmmoPickup",
+    "path": "sprites/sAmmoPickup/sAmmoPickup.yy",
   },
   "spriteMaskId": null,
   "visible": true,
