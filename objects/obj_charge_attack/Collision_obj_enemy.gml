@@ -2,9 +2,11 @@
 // You can write your code in this editor
 
 
-if(other.invulnerable) return;
 
-other.invulnerable = true;
+if(ds_list_find_index(other.hit_list, object_index) != -1) return;
+ds_list_add(other.hit_list, object_index);
+other.invulnerable_timer = other.invulnerable_timer_max;
+
 screenshake(20, 3, 0.4);
 
 var damage = 0;

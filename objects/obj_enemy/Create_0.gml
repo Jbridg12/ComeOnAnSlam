@@ -7,13 +7,21 @@
 event_inherited();
 
 // Object Parameters
+// Contact Parameters
 invulnerable = false;
 invulnerable_timer_max = 30;
 invulnerable_timer = 0;
-path_distance = 0;
 knockback_force = 0;
 knockback_angle = 0;
 hit_list = ds_list_create();
+
+// Movement Parameters 
+path_distance = 0;
+x_previous = x;
+y_previous = y;
+orient_x = 1;
+orient_y = 1;
+rotation = 0;
 
 // Instantiation
 

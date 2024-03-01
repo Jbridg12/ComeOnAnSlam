@@ -207,6 +207,8 @@ function handle_input(){
 	if(charging && _releasePrimary)
 	{
 		
+		charging = false;
+		charge_timer = 0;
 		if(charge_timer > timer_max)
 		{
 			event_user(5); // Charge Attack
@@ -216,8 +218,6 @@ function handle_input(){
 			show_debug_message("ATTACK"); // Normal Attack
 			event_user(2);	
 		}
-		charging = false;
-		charge_timer = 0;
 	}
 	
 	if(primaryAttack)

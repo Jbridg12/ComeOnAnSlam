@@ -8,4 +8,6 @@ if(hp <= 0) event_user(2)
 if(invulnerable_timer-- == 0)
 {
 	ds_list_clear(hit_list);	
+	knockback_angle = 0;
+	knockback_force = 0;
 }

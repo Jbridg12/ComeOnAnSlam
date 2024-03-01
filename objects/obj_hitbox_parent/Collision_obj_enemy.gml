@@ -25,7 +25,7 @@ switch(obj_player.weapon_id)
 		break;
 }
 
-other.hp = damage;
+other.hp -= damage;
 other.hit_timer = 15;
 
 other.knockback_angle = point_direction(obj_player.x, obj_player.y, other.x, other.y);

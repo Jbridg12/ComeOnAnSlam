@@ -21,22 +21,14 @@ if(point_in_circle(obj_player.x, obj_player.y, x, y, detection_radius))
 	delta_x = sign(cos(-dir)) * move_speed;
 	
 	// Process Hit Bounceback
-	if(hit_timer > 0)
+	if(invulnerable_timer > 0)
 	{
-		if(hit_timer >= 10) 
+		if(invulnerable_timer >= (invulnerable_timer_max - 5)) 
 		{
 			var _knockback_x = knockback_force * dcos(knockback_angle);
 			var _knockback_y = knockback_force * dsin(knockback_angle) * 0.5;
 			delta_x += _knockback_x;
 			delta_y -= _knockback_y;
-		}
-		
-		hit_timer--;
-		
-		if(hit_timer == 0) 
-		{
-			knockback_angle = 0;
-			knockback_force = 0;
 		}
 	}
 	
