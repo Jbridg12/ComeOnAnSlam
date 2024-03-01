@@ -28,7 +28,7 @@ if(ds_map_exists(room_map, room))
 		var _struct_coll = noone;
 		var _struct_enemy = noone;
 		var _struct_obs = noone;
-		var inst = noone;
+		var _inst = noone;
 		
 		if(ds_list_size(_enemy_list) > i)
 		{
@@ -45,32 +45,32 @@ if(ds_map_exists(room_map, room))
 		
 		if(_struct_coll)
 		{
-			inst = instance_create_layer(_struct_coll.x, _struct_coll.y, "Instances", asset_get_index(_struct_coll.object));
-			inst.image_xscale = _struct_coll.x_scale;
-			inst.image_yscale = _struct_coll.y_scale;
+			_inst = instance_create_layer(_struct_coll.x, _struct_coll.y, "Instances", asset_get_index(_struct_coll.object));
+			_inst.image_xscale = _struct_coll.x_scale;
+			_inst.image_yscale = _struct_coll.y_scale;
 		
 		}
 		
 		// Load Enemy Data
 		//if(_struct_enemy)
 		//{
-		//	inst = instance_create_layer(_struct_enemy.x, _struct_enemy.y, "Instances", asset_get_index(_struct_enemy.object));
-		//	inst.image_xscale = _struct_enemy.x_scale;
-		//	inst.image_yscale = _struct_enemy.y_scale;
-		//	inst.follow_path = asset_get_index(_struct_enemy.path);
-		//	inst.absolute_path = _struct_enemy.absolute;
-		//	inst.path_action = _struct_enemy.path_action;
-		//	inst.detection_radius = _struct_enemy.detect;
+		//	_inst = instance_create_layer(_struct_enemy.x, _struct_enemy.y, "Instances", asset_get_index(_struct_enemy.object));
+		//	_inst.image_xscale = _struct_enemy.x_scale;
+		//	_inst.image_yscale = _struct_enemy.y_scale;
+		//	_inst.follow_path = asset_get_index(_struct_enemy.path);
+		//	_inst.absolute_path = _struct_enemy.absolute;
+		//	_inst.path_action = _struct_enemy.path_action;
+		//	_inst.detection_radius = _struct_enemy.detect;
 			
 		//}
 		
 		if(_struct_obs)
 		{
-			inst = instance_create_layer(_struct_obs.x, _struct_obs.y, "Instances", asset_get_index(_struct_obs.object));
-			inst.image_xscale = _struct_obs.x_scale;
-			inst.image_yscale = _struct_obs.y_scale;
-			inst.active = _struct_obs.active;
-			inst.room_index = _struct_obs.room_index;
+			_inst = instance_create_layer(_struct_obs.x, _struct_obs.y, "Instances", asset_get_index(_struct_obs.object));
+			_inst.image_xscale = _struct_obs.x_scale;
+			_inst.image_yscale = _struct_obs.y_scale;
+			_inst.active = _struct_obs.active;
+			_inst.room_index = _struct_obs.room_index;
 		}	
 	}
 }

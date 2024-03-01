@@ -73,10 +73,7 @@ function handle_input(){
 	
 		if(isJump)
 		{
-			use_gravity = true;
-			on_vine = false;
-			vine_cooldown = 30;
-			attached_vine.vine_input = 0;
+			event_user(7);
 		}
 		
 		return;
@@ -87,11 +84,6 @@ function handle_input(){
 	if(keyboard_check_released(ord("W")) || gamepad_button_check_released(0, gp_face2))
 	{
 		trigger_interactibles();
-		//Player.max_health = 150;
-		//Player.hp = 150;
-		//screenshake(30, 5, 0.4);
-		//Player.weapon_id++;
-		//instance_create_layer(0,0, "Instances", dialogue1);
 	}
 	
 	if(isSprint) 
@@ -120,7 +112,8 @@ function handle_input(){
 		}
 		if(isJump)
 		{	
-			if(keyboard_check(vk_shift) && move_x == 0)
+			// Handle Charged Vertical Launch
+			if(keyboard_check(vk_shift) && move_x == 0 && charged_vert_enabled)
 			{
 				delta_y = 0;
 				charging_jump = true;
@@ -138,7 +131,6 @@ function handle_input(){
 				{
 				
 					delta_y = jump_speed;
-					//if(isSprint) delta_x *= 1.5;
 				
 					grounded = 0;
 					platform_transparent = true;
@@ -274,11 +266,5 @@ function handle_input(){
 			
 		}
 	}
-	
-	
-	// Space is used for jump so W will be mapped to miscellaneous functions
-	// for testing. 
-	// Final verison will use W for interacting with background elements and
-	// character dialogues.
 	
 }

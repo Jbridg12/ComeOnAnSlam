@@ -17,8 +17,8 @@ function save_game()
 			charge_attack_enabled : charge_attack_enabled,
 			dummy_enabled : dummy_enabled,
 			charged_vert_enabled : charged_vert_enabled,
-			max_health : max_health
-			
+			max_health : max_health,
+			max_ammo : max_ammo
 		};
 		
 		array_push(array, struct);
@@ -57,9 +57,13 @@ function load_game()
 		var json = file_text_read_string(file);
 		var array = json_parse(json);
 		
+		
 		ds_map_copy(obj_game_manager.room_map, array[@1].room_map);
 		obj_game_manager.room_entrance_id = -1;
 		room_goto(array[1].curr_room);
+		
+		instance_destroy(obj_player);
+		var inst = instance_create_layer(array[0].x, array[0].y, "Instances", obj_player);
 		
 		with(obj_player)
 		{
@@ -73,6 +77,8 @@ function load_game()
 			charged_vert_enabled = array[0].charged_vert_enabled;
 			max_health = array[0].max_health;
 			hp = max_health;
+			max_ammo = max_ammo;
+			current_ammo = max_ammo;
 		}
 		
 		

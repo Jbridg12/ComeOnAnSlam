@@ -39,6 +39,7 @@
     {"name":"Timelines","order":14,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sCrawler2","order":3,"path":"sprites/sCrawler2/sCrawler2.yy",},
     {"name":"SwingUP","order":1,"path":"sequences/SwingUP/SwingUP.yy",},
     {"name":"dialogue_red","order":1,"path":"sprites/dialogue_red/dialogue_red.yy",},
     {"name":"obj_button_parent","order":6,"path":"objects/obj_button_parent/obj_button_parent.yy",},

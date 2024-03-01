@@ -64,6 +64,7 @@
   },
   "resources": [
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
+    {"id":{"name":"sCrawler2","path":"sprites/sCrawler2/sCrawler2.yy",},},
     {"id":{"name":"SwingUP","path":"sequences/SwingUP/SwingUP.yy",},},
     {"id":{"name":"obj_weapon","path":"objects/obj_weapon/obj_weapon.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},

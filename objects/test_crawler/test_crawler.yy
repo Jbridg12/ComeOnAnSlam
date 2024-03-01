@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "test_crawler",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"absolute_path","path":"objects/obj_enemy/obj_enemy.yy",},"value":"True",},
@@ -33,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sCrawler",
-    "path": "sprites/sCrawler/sCrawler.yy",
+    "name": "sCrawler2",
+    "path": "sprites/sCrawler2/sCrawler2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

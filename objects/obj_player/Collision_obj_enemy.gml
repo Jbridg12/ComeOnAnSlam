@@ -12,4 +12,6 @@ if(!invulnerable)
 	knockback_force_x = -12 * dcos(_angle);
 	knockback_force_y = 6 * dsin(_angle);
 	contact_dy = delta_y;
+	
+	if(on_vine) event_user(7);
 }
