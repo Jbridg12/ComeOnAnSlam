@@ -5,7 +5,7 @@
 var _coll_list = ds_list_create();
 var _obs_list = ds_list_create();
 var _enemy_list = ds_list_create();
-
+var _interactible_list = ds_list_create();
 
 with(obj_collectible_parent)
 {
@@ -55,11 +55,57 @@ with(obj_enemy)
 	ds_list_add(_enemy_list, _enemy_struct);
 }
 
+with(obj_interactible)
+{
+	var _int_struct;
+	
+	if(object_get_name(object_index) == "obj_environment_trigger")
+	{
+		_int_struct = 
+		{
+			object : object_get_name(object_index),
+			x : x,
+			y : y,
+			x_scale : image_xscale,
+			y_scale : image_yscale,
+			sprite_index : sprite_index,
+			image_index : image_index,
+			image_speed : image_speed,
+			image_angle : image_angle,
+			activated : activated,
+			tied_room_index : tied_room_index,
+			priority : priority,
+			event_id : event_id
+		};
+	}
+	else
+	{
+		_int_struct = 
+		{
+			object : object_get_name(object_index),
+			x : x,
+			y : y,
+			x_scale : image_xscale,
+			y_scale : image_yscale,
+			sprite_index : sprite_index,
+			image_index : image_index,
+			image_speed : image_speed,
+			image_angle : image_angle,
+			activated : activated,
+			tied_room_index : tied_room_index,
+			priority : priority
+		};
+	}
+
+	ds_list_add(_interactible_list, _int_struct);
+}
+
 var _room_data = 
 {
 	collectibles : _coll_list,
 	obstacles  : _obs_list,
-	enemies : _enemy_list
+	enemies : _enemy_list,
+	interactible : _interactible_list
 };
 
 if(ds_map_exists(room_map, room))

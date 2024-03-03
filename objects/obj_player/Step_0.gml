@@ -76,4 +76,6 @@ else
 }
 
 
+if(staple_cooldown > 0) staple_cooldown--;
+
 if(hazard_cooldown > 0) hazard_cooldown--;

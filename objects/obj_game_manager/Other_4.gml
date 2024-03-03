@@ -15,6 +15,7 @@ if(ds_map_exists(room_map, room))
 	var _data = ds_map_find_value(room_map, room)
 	instance_destroy(obj_collectible_parent);
 	instance_destroy(obj_obstacle);
+	instance_destroy(obj_interactible);
 	
 	// Uncomment if loading enemy data
 	//instance_destroy(obj_enemy);
@@ -22,12 +23,14 @@ if(ds_map_exists(room_map, room))
 	var _coll_list = _data.collectibles;
 	var _enemy_list = _data.enemies;
 	var _obstacle_list = _data.obstacles;
+	var _interactible_list = _data.interactible;
 	
 	for(var i = 0; i < max(ds_list_size(_enemy_list), ds_list_size(_coll_list)); i++)
 	{
 		var _struct_coll = noone;
 		var _struct_enemy = noone;
 		var _struct_obs = noone;
+		var _struct_int = noone;
 		var _inst = noone;
 		
 		if(ds_list_size(_enemy_list) > i)
@@ -41,6 +44,10 @@ if(ds_map_exists(room_map, room))
 		if(ds_list_size(_obstacle_list) > i)
 		{
 			_struct_obs = ds_list_find_value(_obstacle_list, i);
+		}
+		if(ds_list_size(_interactible_list) > i)
+		{
+			_struct_int = ds_list_find_value(_interactible_list, i);
 		}
 		
 		if(_struct_coll)
@@ -72,6 +79,21 @@ if(ds_map_exists(room_map, room))
 			_inst.active = _struct_obs.active;
 			_inst.room_index = _struct_obs.room_index;
 		}	
+		
+		if(_struct_int)
+		{
+			_inst = instance_create_layer(_struct_int.x, _struct_int.y, "Instances", asset_get_index(_struct_int.object));
+			_inst.image_xscale = _struct_int.x_scale;
+			_inst.image_yscale = _struct_int.y_scale;
+			_inst.image_index = _struct_int.image_index;
+			_inst.image_speed = _struct_int.image_speed;
+			_inst.sprite_index = _struct_int.sprite_index;
+			_inst.image_angle = _struct_int.image_angle;
+			_inst.activated = _struct_int.activated;
+			_inst.tied_room_index = _struct_int.tied_room_index;
+			_inst.priority = _struct_int.priority;
+			if(_struct_int.object == "obj_environment_trigger") _inst.event_id = _struct_int.event_id;
+		}
 	}
 }
 
