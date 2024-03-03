@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-event_inherited();
-distance_travelled = 0;
+s_height = 0;
+move = false;
+
+move_speed = 0;
+move_time = 0;

@@ -1,17 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_lever",
+  "name": "obj_weighted_trigger",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_interactible","path":"objects/obj_interactible/obj_interactible.yy",},"propertyId":{"name":"priority","path":"objects/obj_interactible/obj_interactible.yy",},"value":"1",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_interactible","path":"objects/obj_interactible/obj_interactible.yy",},"propertyId":{"name":"tied_room_index","path":"objects/obj_interactible/obj_interactible.yy",},"value":"0",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Triggers",
     "path": "folders/Objects/Environement Props/Triggers.yy",
@@ -36,8 +35,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sLever",
-    "path": "sprites/sLever/sLever.yy",
+    "name": "sWeightedPad",
+    "path": "sprites/sWeightedPad/sWeightedPad.yy",
   },
   "spriteMaskId": null,
   "visible": true,
