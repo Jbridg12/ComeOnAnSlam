@@ -5,8 +5,8 @@
   "closed": true,
   "kind": 0,
   "parent": {
-    "name": "Limbo paths",
-    "path": "folders/Paths/Limbo paths.yy",
+    "name": "Paths",
+    "path": "folders/Paths.yy",
   },
   "points": [
     {"speed":100.0,"x":0.0,"y":608.0,},
