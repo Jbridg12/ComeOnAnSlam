@@ -25,7 +25,8 @@ if(ds_map_exists(room_map, room))
 	var _obstacle_list = _data.obstacles;
 	var _interactible_list = _data.interactible;
 	
-	for(var i = 0; i < max(ds_list_size(_enemy_list), ds_list_size(_coll_list)); i++)
+	
+	for(var i = 0; i < max(ds_list_size(_enemy_list), ds_list_size(_coll_list), ds_list_size(_obstacle_list), ds_list_size(_interactible_list)); i++)
 	{
 		var _struct_coll = noone;
 		var _struct_enemy = noone;
