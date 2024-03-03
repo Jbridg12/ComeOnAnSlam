@@ -13,8 +13,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_interactible","path":"objects/obj_interactible/obj_interactible.yy",},"propertyId":{"name":"tied_room_index","path":"objects/obj_interactible/obj_interactible.yy",},"value":"0",},
   ],
   "parent": {
-    "name": "Triggers",
-    "path": "folders/Objects/Environement Props/Triggers.yy",
+    "name": "Environement Props",
+    "path": "folders/Objects/Environement Props.yy",
   },
   "parentObjectId": {
     "name": "obj_interactible",
