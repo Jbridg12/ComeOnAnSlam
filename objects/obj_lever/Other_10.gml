@@ -4,6 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
+activated = !activated;
+image_index = activated ? 1 : 0;
+
 if(tied_object != noone)
 {
 	with(tied_object)
