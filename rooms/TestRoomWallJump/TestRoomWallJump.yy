@@ -16,8 +16,6 @@
     {"name":"inst_564207D7","path":"rooms/TestRoomWallJump/TestRoomWallJump.yy",},
     {"name":"inst_165ADB3D","path":"rooms/TestRoomWallJump/TestRoomWallJump.yy",},
     {"name":"inst_72581F07","path":"rooms/TestRoomWallJump/TestRoomWallJump.yy",},
-    {"name":"inst_23D7DB36","path":"rooms/TestRoomWallJump/TestRoomWallJump.yy",},
-    {"name":"inst_246C5658","path":"rooms/TestRoomWallJump/TestRoomWallJump.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -56,12 +54,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_72581F07","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"test_crawler","path":"objects/test_crawler/test_crawler.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"follow_path","path":"objects/obj_enemy/obj_enemy.yy",},"value":"Path3",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1696.0,"y":512.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_23D7DB36","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_weighted_gate","path":"objects/obj_weighted_gate/obj_weighted_gate.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},"propertyId":{"name":"room_index","path":"objects/obj_obstacle/obj_obstacle.yy",},"value":"1",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":2.0,"x":800.0,"y":640.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_246C5658","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_weighted_trigger","path":"objects/obj_weighted_trigger/obj_weighted_trigger.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_interactible","path":"objects/obj_interactible/obj_interactible.yy",},"propertyId":{"name":"tied_room_index","path":"objects/obj_interactible/obj_interactible.yy",},"value":"1",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":736.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],

@@ -82,7 +82,7 @@ with(obj_interactible)
 }
 
 // Initialize Obstacle Speeds
-with(obj_obstacle)
+with(obj_gate)
 {
 	event_user(2);	
 }
