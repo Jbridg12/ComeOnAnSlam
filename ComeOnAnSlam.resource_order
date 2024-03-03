@@ -9,6 +9,7 @@
     {"name":"Entities","order":1,"path":"folders/Objects/Entities.yy",},
     {"name":"Environement Props","order":5,"path":"folders/Objects/Environement Props.yy",},
     {"name":"Hazards","order":3,"path":"folders/Objects/Environement Props/Hazards.yy",},
+    {"name":"Triggers","order":7,"path":"folders/Objects/Environement Props/Triggers.yy",},
     {"name":"Globals","order":4,"path":"folders/Objects/Globals.yy",},
     {"name":"GUI","order":9,"path":"folders/Objects/GUI.yy",},
     {"name":"Options","order":1,"path":"folders/Objects/GUI/Options.yy",},
@@ -38,7 +39,6 @@
     {"name":"SaveSprites","order":5,"path":"folders/Sprites/ObjectSprites/SaveSprites.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":14,"path":"folders/Timelines.yy",},
-    {"name":"Triggers","order":7,"path":"folders/Objects/Environement Props/Triggers.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"sCrawler2","order":3,"path":"sprites/sCrawler2/sCrawler2.yy",},
