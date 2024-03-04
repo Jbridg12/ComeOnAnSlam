@@ -18,6 +18,17 @@ else
 	orientation = sign(ranged_angle - 90);	
 }
 
+if(grounded && !hanging && delta_x != 0)
+{
+	if(step_cooldown <= 0)
+	{
+		var _sfx = second_step ? sndStep_1 : sndStep_2;
+		second_step = !second_step;
+		audio_play_sound(_sfx, 0, false);
+		step_cooldown = 20;
+	}
+}
+
 // Invulnerability Cooldown
 if(hit_timer-- > 0)
 {
@@ -51,6 +62,7 @@ if(hit_timer-- > 0)
 // Update position by speed
 if(!frozen) calculate_movement();
 
+// Update Last Safe Position
 if(grounded && !hanging && safety_timer-- < 0)
 {
 	safe_x = x;
@@ -75,6 +87,7 @@ else
 	ammo_countdown = 300;
 }
 
+if(step_cooldown > 0) step_cooldown--;
 
 if(staple_cooldown > 0) staple_cooldown--;
 
