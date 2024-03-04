@@ -16,5 +16,9 @@ if(tied_object != noone)
 		{
 			event_user(0);
 		}
+		else
+		{
+			event_user(1);
+		}
 	}
 }

@@ -129,6 +129,7 @@
     {"id":{"name":"sRoomLanding","path":"sprites/sRoomLanding/sRoomLanding.yy",},},
     {"id":{"name":"scrScreenshake","path":"scripts/scrScreenshake/scrScreenshake.yy",},},
     {"id":{"name":"obj_walking_entity","path":"objects/obj_walking_entity/obj_walking_entity.yy",},},
+    {"id":{"name":"obj_dummy","path":"objects/obj_dummy/obj_dummy.yy",},},
     {"id":{"name":"sWeaponUpgradePickup","path":"sprites/sWeaponUpgradePickup/sWeaponUpgradePickup.yy",},},
     {"id":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},},
     {"id":{"name":"obj_health_coll","path":"objects/obj_health_coll/obj_health_coll.yy",},},

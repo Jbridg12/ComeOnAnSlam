@@ -88,6 +88,7 @@
     {"name":"sRoomLanding","order":2,"path":"sprites/sRoomLanding/sRoomLanding.yy",},
     {"name":"scrScreenshake","order":6,"path":"scripts/scrScreenshake/scrScreenshake.yy",},
     {"name":"obj_walking_entity","order":3,"path":"objects/obj_walking_entity/obj_walking_entity.yy",},
+    {"name":"obj_dummy","order":4,"path":"objects/obj_dummy/obj_dummy.yy",},
     {"name":"sWeaponUpgradePickup","order":3,"path":"sprites/sWeaponUpgradePickup/sWeaponUpgradePickup.yy",},
     {"name":"obj_obstacle","order":5,"path":"objects/obj_obstacle/obj_obstacle.yy",},
     {"name":"obj_load_button","order":1,"path":"objects/obj_load_button/obj_load_button.yy",},
