@@ -159,6 +159,12 @@ function handle_input(){
 				if(charge_jump_timer > 0) charge_jump_timer--;
 			}
 		}
+		
+		// Deploy Dummy
+		if(isSprint && (keyboard_check_released(ord("W")) || gamepad_button_check_released(0, gp_face2)))
+		{
+			event_user(9);
+		}
 	
 		if(keyboard_check_released(vk_space) || keyboard_check_released(vk_shift) || gamepad_button_check_released(0, gp_face1) || gamepad_button_check_released(0, gp_shoulderlb))
 		{

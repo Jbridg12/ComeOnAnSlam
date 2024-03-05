@@ -41,6 +41,7 @@ ranged_angle = 180;
 max_ammo = 5;
 current_ammo = max_ammo;
 ammo_countdown = 300;
+staple_cooldown = 0;
 
 // Charge Control
 charge_timer = 0;
@@ -108,6 +109,13 @@ charging_jump = false;
 charge_jump_timer = 0;
 charge_jump_speed = -100;
 
+
+//------------------------------------------------------------------
+
+//------------------------SFX Interaction---------------------------
+
+second_step = 0;
+step_cooldown = 0;
 
 //------------------------------------------------------------------
 

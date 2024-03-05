@@ -4,6 +4,9 @@
 //if(other.invulnerable) return;
 //other.invulnerable = true;
 
+//Trigger SFX
+audio_play_sound(sndAttack_Hit, 0, false);
+
 if(ds_list_find_index(other.hit_list, object_index) != -1) return;
 ds_list_add(other.hit_list, object_index);
 other.invulnerable_timer = other.invulnerable_timer_max;

@@ -10,6 +10,9 @@ var _right = x + ((sprite_get_width(sprite_index)/2) * orientation);
 var _top = y - (sprite_get_height(sprite_index)/2);
 var _bottom = y + (sprite_get_height(sprite_index)/2);
 
+// Trigger SFX
+audio_play_sound(sndAttack, 0, false);
+
 if(active_hitbox)
 {
 	instance_destroy(active_hitbox);
