@@ -7,7 +7,7 @@
 event_inherited();
 
 with(obj_player) hp = max_health;
-
+instance_create_layer(0, 0, layer_get_id("Instances"), dialogue1);
 save_game();
 
 alarm[0] = 60;

@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "Man",
   "bbox_bottom": 63,
-  "bbox_left": 16,
+  "bbox_left": 0,
   "bbox_right": 46,
   "bbox_top": 0,
   "bboxMode": 0,

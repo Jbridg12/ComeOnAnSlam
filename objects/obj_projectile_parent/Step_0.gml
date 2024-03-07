@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
 var _colliding_instances_x = [];
 var _colliding_instances_y = [];
 
@@ -17,3 +16,4 @@ if (array_length(_colliding_instances_y) != 0 || array_length(_colliding_instanc
 {
 	instance_destroy();
 }
+

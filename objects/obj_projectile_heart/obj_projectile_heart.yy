@@ -1,15 +1,14 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_projectile_player",
+  "name": "obj_projectile_heart",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_projectile_parent","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"propertyId":{"name":"damage","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"value":"100",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_projectile_parent","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"propertyId":{"name":"damage","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"value":"5",},
   ],
   "parent": {
     "name": "Projectiles",
@@ -35,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sPlayerProjectile",
-    "path": "sprites/sPlayerProjectile/sPlayerProjectile.yy",
+    "name": "sprHeart",
+    "path": "sprites/sprHeart/sprHeart.yy",
   },
   "spriteMaskId": null,
   "visible": true,
