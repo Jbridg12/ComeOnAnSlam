@@ -10,7 +10,9 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":13,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"path_action","path":"objects/obj_enemy/obj_enemy.yy",},"value":"reverse",},
+  ],
   "parent": {
     "name": "Parents",
     "path": "folders/Objects/Parents.yy",

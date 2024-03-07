@@ -65,6 +65,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemies","folderPath":"folders/Objects/Entities/Enemies.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lust","folderPath":"folders/Objects/Entities/Enemies/Lust.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Projectiles","folderPath":"folders/Objects/Weapons/Projectiles.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Projectiles","folderPath":"folders/Sprites/ObjectSprites/Projectiles.yy",},
   ],
   "IncludedFiles": [],
   "isEcma": false,

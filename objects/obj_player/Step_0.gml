@@ -18,17 +18,6 @@ else
 	orientation = sign(ranged_angle - 90);	
 }
 
-if(grounded && !hanging && delta_x != 0)
-{
-	if(step_cooldown <= 0)
-	{
-		var _sfx = second_step ? sndStep_1 : sndStep_2;
-		second_step = !second_step;
-		audio_play_sound(_sfx, 0, false);
-		step_cooldown = 20;
-	}
-}
-
 // Invulnerability Cooldown
 if(hit_timer-- > 0)
 {

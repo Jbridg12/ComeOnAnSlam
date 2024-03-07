@@ -8,7 +8,7 @@ event_inherited();
 
 if(target != noone)
 {
-	var _angle = point_direction(target.x, target.y, x, y);
+	var _angle = point_direction(target.x, target.y, x, y) + 180;
 	orient_x = sign(dcos(_angle));
 	
 	// Trigger Projectile Behaviour

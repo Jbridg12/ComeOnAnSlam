@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "ComeOnAnSlam",
-    "path": "ComeOnAnSlam.yyp",
+    "name": "Projectiles",
+    "path": "folders/Sprites/ObjectSprites/Projectiles.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -101,6 +101,10 @@ hazard_cooldown = 0;
 last_x = x;
 last_y = y;
 
+// Last coordinates for SFX
+x_previous = x;
+y_previous = y;
+
 // Hitbox Bounce Speed
 bounce_speed = -15;
 
