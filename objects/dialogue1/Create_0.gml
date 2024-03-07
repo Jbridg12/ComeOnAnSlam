@@ -6,5 +6,5 @@
 // Inherit the parent event
 event_inherited();
 
-dialog.add(dialogue_red, "Hi I'm Mr. Red.");
-dialog.add(dialogue_red, "Welcome to the underworld Noel.");
+dialog.add(dialogue_red, "Hi I'm Bear Johnson.");
+dialog.add(dialogue_red, "Welcome to the underworld Nadia.");

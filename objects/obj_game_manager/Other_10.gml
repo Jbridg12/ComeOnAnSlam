@@ -78,6 +78,26 @@ with(obj_interactible)
 			event_id : event_id
 		};
 	}
+	else if(object_get_parent(object_index) == obj_interactible_char)
+	{
+		_int_struct = 
+		{
+			object : object_get_name(object_index),
+			x : x,
+			y : y,
+			x_scale : image_xscale,
+			y_scale : image_yscale,
+			sprite_index : sprite_index,
+			image_index : image_index,
+			image_speed : image_speed,
+			image_angle : image_angle,
+			activated : activated,
+			priority : priority,
+			tied_room_index : tied_room_index,
+			initial_d : initial_dialogue,
+			repeat_d : repeat_dialogue
+		};	
+	}
 	else
 	{
 		_int_struct = 

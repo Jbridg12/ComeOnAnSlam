@@ -6,6 +6,29 @@ if(curr_realm != last_realm && curr_realm >= 0)
 {
 	if(curr_bgm) audio_stop_sound(curr_bgm);
 	curr_bgm = audio_play_sound(ds_map_find_value(bgm_map, curr_realm), 1, true);
+	
+	switch(curr_realm)
+	{
+		case REALM.LIMBO:
+			audio_sound_loop_start(curr_bgm, 19);
+			audio_sound_loop_end(curr_bgm, 115);
+			break;
+		case REALM.LUST:
+			audio_sound_loop_start(curr_bgm, 19);
+			audio_sound_loop_end(curr_bgm, 115);
+			break;
+		case REALM.TREACHERY:
+			audio_sound_loop_start(curr_bgm, 19);
+			audio_sound_loop_end(curr_bgm, 115);
+			break;
+		case REALM.MAINMENU:
+			audio_sound_loop_start(curr_bgm, 19);
+			audio_sound_loop_end(curr_bgm, 115);
+			break;
+		default:
+			break;
+	}
+	
 	last_realm = curr_realm;
 }
 
@@ -94,6 +117,11 @@ if(ds_map_exists(room_map, room))
 			_inst.tied_room_index = _struct_int.tied_room_index;
 			_inst.priority = _struct_int.priority;
 			if(_struct_int.object == "obj_environment_trigger") _inst.event_id = _struct_int.event_id;
+			if(object_get_parent(_inst.object_index) == obj_interactible_char)
+			{
+				_inst.initial_dialogue = _struct_int.initial_d;
+				_inst.repeat_dialogue = _struct_int.repeat_d;
+			}
 		}
 	}
 }
