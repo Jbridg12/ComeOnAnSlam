@@ -29,6 +29,10 @@
   "properties":[
     {"$GMObjectProperty":"","%Name":"active","filters":[],"listItems":[],"multiselect":false,"name":"active","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"","%Name":"room_index","filters":[],"listItems":[],"multiselect":false,"name":"room_index","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"","%Name":"axis","filters":[],"listItems":[
+        "\"X\"",
+        "\"Y\"",
+      ],"multiselect":false,"name":"axis","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Y\"","varType":6,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

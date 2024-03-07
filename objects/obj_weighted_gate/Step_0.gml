@@ -1,18 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+var _pos = axis == "Y" ? y : x;
 
-
-if(move && abs(y - y_org) >= s_height)
+if(move && abs(_pos - org) >= s_height)
 {
 	return;
 }
-if(!move && y >= y_org)
+if(!move && _pos >= org)
 {
-	y = y_org;
+	_pos = org;
 	return;
 }
 	
-y += move_speed;
+_pos += move_speed;
 	
 

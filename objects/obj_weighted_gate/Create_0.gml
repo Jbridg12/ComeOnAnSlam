@@ -3,4 +3,5 @@
 
 event_inherited();
 
-y_org = y;
+
+org = axis == "Y" ? y : x;

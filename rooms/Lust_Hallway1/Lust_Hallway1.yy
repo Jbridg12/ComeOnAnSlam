@@ -7,6 +7,10 @@
   "inheritLayers":true,
   "instanceCreationOrder":[
     {"name":"inst_64C7D7D4_2","path":"rooms/Lust_Hallway1/Lust_Hallway1.yy",},
+    {"name":"inst_787A67F5","path":"rooms/Lust_Hallway1/Lust_Hallway1.yy",},
+    {"name":"inst_3D29E939","path":"rooms/Lust_Hallway1/Lust_Hallway1.yy",},
+    {"name":"inst_559F0210","path":"rooms/Lust_Hallway1/Lust_Hallway1.yy",},
+    {"name":"inst_7DAA20AB","path":"rooms/Lust_Hallway1/Lust_Hallway1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -32,13 +36,22 @@
               11,11,26,-5,805306379,4,26,11,11,26,-7,11,-3,26,-3,805306379,1,26,-6,805306379,-2,11,5,0,11,11,805306379,
               12,-4,-2147483648,15,0,-2147483648,9,11,11,26,11,11,26,11,11,26,26,805306379,805306379,-14,26,-2,805306379,
               -5,26,3,805306379,26,26,-4,805306379,1,0,-3,805306379,1,12,-6,-2147483648,1,9,-4,26,-2,11,3,26,11,11,
-              -31,18,1,0,-3,18,1,20,-6,-2147483648,1,268435476,-9,18,-468,-2147483648,-3,2,-19,29,-8,2,-8,29,-6,2,
-              -7,29,1,2,-104,26,
+              -31,18,1,0,-3,18,1,20,-6,-2147483648,1,268435476,-9,18,-193,-2147483648,-3,0,-48,-2147483648,-2,0,4,
+              56,57,60,0,-218,-2147483648,-3,2,-19,29,-8,2,-8,29,-6,2,-7,29,1,2,-104,26,
             ],"TileDataFormat":1,},"tilesetId":{"name":"tsLust","path":"tilesets/tsLust/tsLust.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
       ],"name":"Render_Above_Instances","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"GUI","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"GUI","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_64C7D7D4_2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":true,"inheritedItemId":{"name":"inst_64C7D7D4","path":"rooms/rmParent/rmParent.yy",},"inheritItemSettings":true,"isDnd":false,"name":"inst_64C7D7D4_2","objectId":{"name":"obj_room_BGM","path":"objects/obj_room_BGM/obj_room_BGM.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":736.0,"y":416.0,},
+        {"$GMRInstance":"","%Name":"inst_787A67F5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_787A67F5","objectId":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},"propertyId":{"name":"axis","path":"objects/obj_obstacle/obj_obstacle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"X\"",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":1.0,"scaleY":4.0,"x":1120.0,"y":352.0,},
+        {"$GMRInstance":"","%Name":"inst_3D29E939","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D29E939","objectId":{"name":"obj_lever","path":"objects/obj_lever/obj_lever.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1056.0,"y":608.0,},
+        {"$GMRInstance":"","%Name":"inst_559F0210","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_559F0210","objectId":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},"propertyId":{"name":"destination","path":"objects/obj_room_transition/obj_room_transition.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Lust_Break",},
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},"propertyId":{"name":"dest_entrance_id","path":"objects/obj_room_transition/obj_room_transition.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":4.5,"x":0.0,"y":384.0,},
+        {"$GMRInstance":"","%Name":"inst_7DAA20AB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7DAA20AB","objectId":{"name":"obj_room_entrance","path":"objects/obj_room_entrance/obj_room_entrance.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":640.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Render_Below_Instances","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRLayer":"","%Name":"Enemy_Paths","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Enemy_Paths","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

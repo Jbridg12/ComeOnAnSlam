@@ -37,6 +37,22 @@ with(obj_gate)
 	ds_list_add(_obs_list, _obstacles_struct);
 }
 
+with(obj_weighted_gate)
+{
+	var _obstacles_struct = 
+	{
+		object : object_get_name(object_index),
+		x : x,
+		y : y,
+		x_scale : image_xscale,
+		y_scale : image_yscale,
+		room_index : room_index,
+		y_org : y_org
+	};
+
+	ds_list_add(_obs_list, _obstacles_struct);
+}
+
 with(obj_enemy)
 {
 	var _enemy_struct = 

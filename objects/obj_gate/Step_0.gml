@@ -5,7 +5,6 @@
 
 if(move)
 {
-	
 	if(distance_travelled == s_height)
 	{
 		move = false;
@@ -15,7 +14,14 @@ if(move)
 		return;
 	}
 	
-	y += move_speed;
+	if(axis == "Y")
+	{
+		y += move_speed;
+	}
+	else
+	{
+		x += move_speed;	
+	}
 	distance_travelled += abs(move_speed);
 	
 }
