@@ -1,19 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_flying_enemy",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "obj_bellboy",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Entities/Enemies.yy",
+    "name": "Lust",
+    "path": "folders/Objects/Entities/Enemies/Lust.yy",
   },
   "parentObjectId": {
-    "name": "obj_flying_parent",
-    "path": "objects/obj_flying_parent/obj_flying_parent.yy",
+    "name": "obj_walking_entity",
+    "path": "objects/obj_walking_entity/obj_walking_entity.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -30,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sFlyer",
-    "path": "sprites/sFlyer/sFlyer.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
