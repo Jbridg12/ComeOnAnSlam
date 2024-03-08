@@ -20,7 +20,7 @@ if(move)
 	}
 	else
 	{
-		x += move_speed;	
+		x -= move_speed;	
 	}
 	distance_travelled += abs(move_speed);
 	

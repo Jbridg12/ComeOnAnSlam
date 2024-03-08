@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bellboy",
+  "%Name":"obj_flying_heart",
   "eventList":[],
   "managed":true,
-  "name":"obj_bellboy",
+  "name":"obj_flying_heart",
   "overriddenProperties":[],
   "parent":{
     "name":"Lust",
     "path":"folders/Objects/Entities/Enemies/Lust.yy",
   },
   "parentObjectId":{
-    "name":"obj_walking_entity",
-    "path":"objects/obj_walking_entity/obj_walking_entity.yy",
+    "name":"obj_flying_parent",
+    "path":"objects/obj_flying_parent/obj_flying_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBearPH",
-    "path":"sprites/sBearPH/sBearPH.yy",
+    "name":"sHeartEnemy",
+    "path":"sprites/sHeartEnemy/sHeartEnemy.yy",
   },
   "spriteMaskId":null,
   "visible":true,

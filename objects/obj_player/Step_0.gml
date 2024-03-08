@@ -15,7 +15,8 @@ if(!in_ranged)
 }
 else
 {
-	orientation = sign(ranged_angle - 90);	
+	if(sign(ranged_angle - 90) != 0)
+		orientation = sign(ranged_angle - 90);	
 }
 
 
