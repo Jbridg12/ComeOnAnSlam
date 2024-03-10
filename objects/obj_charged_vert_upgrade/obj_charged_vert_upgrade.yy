@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall_jump_upgrade",
+  "%Name":"obj_charged_vert_upgrade",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_wall_jump_upgrade",
+  "name":"obj_charged_vert_upgrade",
   "overriddenProperties":[],
   "parent":{
     "name":"ProgressionUpgrades",
