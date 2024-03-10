@@ -179,6 +179,7 @@
     {"name":"Terrain_and_Props","order":3,"path":"sprites/Terrain_and_Props/Terrain_and_Props.yy",},
     {"name":"TestAttackDown","order":1,"path":"sprites/TestAttackDown/TestAttackDown.yy",},
     {"name":"TestAttackRight","order":2,"path":"sprites/TestAttackRight/TestAttackRight.yy",},
+    {"name":"TileSet7","order":7,"path":"tilesets/TileSet7/TileSet7.yy",},
     {"name":"tsBar","order":1,"path":"tilesets/tsBar/tsBar.yy",},
     {"name":"tsBGs","order":5,"path":"tilesets/tsBGs/tsBGs.yy",},
     {"name":"tsLust","order":2,"path":"tilesets/tsLust/tsLust.yy",},
