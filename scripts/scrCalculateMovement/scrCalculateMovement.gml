@@ -76,10 +76,10 @@ function calculate_movement()
 		if(object_get_name(object_index) == "obj_player")
 		{
 			var inst;
-			inst = collision_rectangle(x - sprite_get_width(sprite_index)/2 , 
-										y - sprite_get_height(sprite_index)/2, 
+			inst = collision_rectangle( x - sprite_get_width(sprite_index)/2 , 
+										y - sprite_get_height(sprite_index)/ 1.5, 
 										x + sprite_get_width(sprite_index)/2 ,
-										y + sprite_get_height(sprite_index)/2,  
+										y + sprite_get_height(sprite_index)/ 3,  
 										platform_collision_layer, false, true);
 			if (inst == noone)
 			{

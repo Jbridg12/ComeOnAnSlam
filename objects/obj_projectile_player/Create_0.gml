@@ -4,8 +4,3 @@
 
 // Inherit the parent event
 event_inherited();
-
-fire_angle = 0;
-move_speed = 10;
-
-damage = 40;

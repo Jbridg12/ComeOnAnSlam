@@ -1,0 +1,47 @@
+{
+  "$GMTileSet":"",
+  "%Name":"tsTubeMan",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tsTubeMan",
+  "out_columns":3,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"sArmGuy",
+    "path":"sprites/sArmGuy/sArmGuy.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimation":{
+    "FrameData":[
+      0,0,0,0,0,0,0,0,1,2,3,4,5,6,7,8,2,3,4,5,6,7,8,1,3,4,5,6,7,8,1,2,4,5,6,7,8,1,2,3,5,6,7,8,1,2,3,4,6,7,
+      8,1,2,3,4,5,7,8,1,2,3,4,5,6,8,1,2,3,4,5,6,7,
+    ],
+    "SerialiseFrameCount":8,
+  },
+  "tileAnimationFrames":[
+    {"$GMTileAnimation":"","%Name":"animation_1","frames":[1,2,3,4,5,6,7,8,],"name":"animation_1","resourceType":"GMTileAnimation","resourceVersion":"2.0",},
+  ],
+  "tileAnimationSpeed":8.0,
+  "tileHeight":72,
+  "tilehsep":8,
+  "tilevsep":0,
+  "tileWidth":64,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":9,
+}

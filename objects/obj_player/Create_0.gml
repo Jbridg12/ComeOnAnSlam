@@ -17,7 +17,7 @@ image_speed = 1;
 //--------------------Progression Upgrade Flags---------------------
 
 ranged_enabled = false;
-wall_jump_enabled = false;
+wall_jump_enabled = true;
 charge_attack_enabled = false;
 dummy_enabled = false;
 charged_vert_enabled = false;
@@ -100,6 +100,10 @@ hazard_cooldown = 0;
 // Past Frame Location for hitbox tracking
 last_x = x;
 last_y = y;
+
+// Last coordinates for SFX
+x_previous = x;
+y_previous = y;
 
 // Hitbox Bounce Speed
 bounce_speed = -15;

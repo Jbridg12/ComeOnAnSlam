@@ -6,3 +6,6 @@
 // Inherit the parent event
 event_inherited();
 
+
+dialog.add(dialogue_red, "I'm tired now.");
+dialog.add(dialogue_red, "GO AWAY!");

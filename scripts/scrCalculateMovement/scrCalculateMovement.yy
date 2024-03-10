@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "scrCalculateMovement",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Movement",
-    "path": "folders/Scripts/Movement.yy",
+  "$GMScript":"",
+  "%Name":"scrCalculateMovement",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrCalculateMovement",
+  "parent":{
+    "name":"Movement",
+    "path":"folders/Scripts/Movement.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

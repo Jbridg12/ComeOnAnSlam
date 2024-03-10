@@ -5,7 +5,7 @@ screenshake(5, 1, 0.4);
 
 
 other.hp -= damage;
-other.hit_timer = 15;
+other.invulnerable_timer = other.invulnerable_timer_max;
 
 //other.knockback_angle = point_direction(x, y, other.x, other.y);
 other.knockback_angle = image_angle;

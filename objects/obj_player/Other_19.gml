@@ -1,7 +1,7 @@
 /// @description Spawn Dummy
 // You can write your code in this editor
 
-if(grounded)
+if(grounded && dummy_enabled)
 {
 	with(obj_dummy) instance_destroy();
 

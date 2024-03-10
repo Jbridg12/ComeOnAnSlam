@@ -15,19 +15,43 @@ if(!in_ranged)
 }
 else
 {
-	orientation = sign(ranged_angle - 90);	
+	if(sign(ranged_angle - 90) != 0)
+		orientation = sign(ranged_angle - 90);	
 }
 
-if(grounded && !hanging && delta_x != 0)
+
+// Update Last Safe Position
+if(grounded && !hanging && safety_timer-- < 0)
 {
-	if(step_cooldown <= 0)
-	{
-		var _sfx = second_step ? sndStep_1 : sndStep_2;
-		second_step = !second_step;
-		audio_play_sound(_sfx, 0, false);
-		step_cooldown = 20;
-	}
+	safe_x = x;
+	safe_y = y;
+	safety_timer = 20;
 }
+
+// Vine Cooldown
+if(vine_cooldown > 0)
+{
+	vine_cooldown--;
+	if(vine_cooldown = 0) attached_vine = noone;
+}
+
+if(ammo_countdown > 0)
+{
+	ammo_countdown--;	
+}
+else
+{
+	current_ammo = max_ammo;
+	ammo_countdown = 300;
+}
+
+if(step_cooldown > 0)	step_cooldown--;
+if(staple_cooldown > 0) staple_cooldown--;
+if(hazard_cooldown > 0) hazard_cooldown--;
+if(hit_timer > 0)		hit_timer--;
+	
+if(obj_game_manager.in_dialogue) return;
+
 
 // Invulnerability Cooldown
 if(hit_timer-- > 0)
@@ -61,34 +85,3 @@ if(hit_timer-- > 0)
 
 // Update position by speed
 if(!frozen) calculate_movement();
-
-// Update Last Safe Position
-if(grounded && !hanging && safety_timer-- < 0)
-{
-	safe_x = x;
-	safe_y = y;
-	safety_timer = 20;
-}
-
-// Vine Cooldown
-if(vine_cooldown > 0)
-{
-	vine_cooldown--;
-	if(vine_cooldown = 0) attached_vine = noone;
-}
-
-if(ammo_countdown > 0)
-{
-	ammo_countdown--;	
-}
-else
-{
-	current_ammo = max_ammo;
-	ammo_countdown = 300;
-}
-
-if(step_cooldown > 0) step_cooldown--;
-
-if(staple_cooldown > 0) staple_cooldown--;
-
-if(hazard_cooldown > 0) hazard_cooldown--;

@@ -6,6 +6,29 @@ if(curr_realm != last_realm && curr_realm >= 0)
 {
 	if(curr_bgm) audio_stop_sound(curr_bgm);
 	curr_bgm = audio_play_sound(ds_map_find_value(bgm_map, curr_realm), 1, true);
+	
+	switch(curr_realm)
+	{
+		case REALM.LIMBO:
+			audio_sound_loop_start(curr_bgm, 19);
+			audio_sound_loop_end(curr_bgm, 115);
+			break;
+		case REALM.LUST:
+			audio_sound_loop_start(curr_bgm, 19);
+			audio_sound_loop_end(curr_bgm, 115);
+			break;
+		case REALM.TREACHERY:
+			audio_sound_loop_start(curr_bgm, 19);
+			audio_sound_loop_end(curr_bgm, 115);
+			break;
+		case REALM.MAINMENU:
+			audio_sound_loop_start(curr_bgm, 19);
+			audio_sound_loop_end(curr_bgm, 115);
+			break;
+		default:
+			break;
+	}
+	
 	last_realm = curr_realm;
 }
 
@@ -14,7 +37,8 @@ if(ds_map_exists(room_map, room))
 {
 	var _data = ds_map_find_value(room_map, room)
 	instance_destroy(obj_collectible_parent);
-	instance_destroy(obj_obstacle);
+	instance_destroy(obj_gate);
+	instance_destroy(obj_weighted_gate);
 	instance_destroy(obj_interactible);
 	
 	// Uncomment if loading enemy data
@@ -77,8 +101,10 @@ if(ds_map_exists(room_map, room))
 			_inst = instance_create_layer(_struct_obs.x, _struct_obs.y, "Instances", asset_get_index(_struct_obs.object));
 			_inst.image_xscale = _struct_obs.x_scale;
 			_inst.image_yscale = _struct_obs.y_scale;
-			_inst.active = _struct_obs.active;
 			_inst.room_index = _struct_obs.room_index;
+			_inst.axis = _struct_obs.axis;
+			if(_struct_int.object == "obj_gate") _inst.active = _struct_obs.active;
+			if(_struct_int.object == "obj_weighted_gate") _inst.org = _struct_obs.org;
 		}	
 		
 		if(_struct_int)
@@ -94,6 +120,11 @@ if(ds_map_exists(room_map, room))
 			_inst.tied_room_index = _struct_int.tied_room_index;
 			_inst.priority = _struct_int.priority;
 			if(_struct_int.object == "obj_environment_trigger") _inst.event_id = _struct_int.event_id;
+			if(object_get_parent(_inst.object_index) == obj_interactible_char)
+			{
+				_inst.initial_dialogue = _struct_int.initial_d;
+				_inst.repeat_dialogue = _struct_int.repeat_d;
+			}
 		}
 	}
 }

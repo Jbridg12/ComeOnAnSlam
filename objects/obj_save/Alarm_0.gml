@@ -2,5 +2,5 @@
 // You can write your code in this editor
 
 
-obj_player.frozen = false;
+//obj_player.frozen = false;
 
