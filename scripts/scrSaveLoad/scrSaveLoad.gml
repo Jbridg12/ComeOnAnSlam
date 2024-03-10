@@ -3,11 +3,11 @@
 function save_game()
 {
 	// Write save data from player and manager to an array
-	var array = [];
+	var _array = [];
 	
 	with (obj_player)
 	{
-		var struct = 
+		var _struct = 
 		{
 			x : x,
 			y : y,
@@ -21,7 +21,7 @@ function save_game()
 			max_ammo : max_ammo
 		};
 		
-		array_push(array, struct);
+		array_push(_array, _struct);
 	}
 	
 	with (obj_game_manager)
@@ -30,13 +30,14 @@ function save_game()
 		event_user(0);
 		ds_map_copy(_map_copy, room_map);
 		
-		var struct =
+		var _struct =
 		{
 			room_map : _map_copy,
-			curr_room : room
+			curr_room : room,
+			boss_defeated : boss_defeated
 		};
 		
-		array_push(array, struct);
+		array_push(_array, _struct);
 	}
 	
 	var stringify = json_stringify(array);
@@ -60,6 +61,7 @@ function load_game()
 		
 		ds_map_copy(obj_game_manager.room_map, array[@1].room_map);
 		obj_game_manager.room_entrance_id = -1;
+		obj_game_manager.boss_defeated = array[1].boss_defeated;
 		room_goto(array[1].curr_room);
 		
 		instance_destroy(obj_player);
