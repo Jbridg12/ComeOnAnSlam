@@ -6,4 +6,4 @@ event_inherited();
 
 move_speed = 5;
 
-alarm[0] = 60;
+alarm[0] = 180;

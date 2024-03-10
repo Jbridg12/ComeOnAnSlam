@@ -1,10 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(obj_game_manager.in_dialogue) return;
+	
 var _inst = collision_circle(x, y, detection_radius, obj_dummy, 0, 1)
 if(_inst != noone)
 {
-	if(obj_game_manager.in_dialogue) return;
+
 	
 	if(in_path) 
 	{

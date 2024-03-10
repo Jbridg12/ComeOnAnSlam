@@ -41,8 +41,8 @@ if(ds_map_exists(room_map, room))
 	instance_destroy(obj_weighted_gate);
 	instance_destroy(obj_interactible);
 	
-	// Uncomment if loading enemy data
-	//instance_destroy(obj_enemy);
+	if(boss_defeated >= curr_realm)
+		instace_destroy(obj_boss_enemy);
 	
 	var _coll_list = _data.collectibles;
 	var _enemy_list = _data.enemies;

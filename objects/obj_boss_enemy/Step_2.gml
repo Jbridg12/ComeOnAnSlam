@@ -2,5 +2,8 @@
 // You can write your code in this editor
 
 
-primary_sequence = SwingUP;
-secondary_sequence = SwingDown;
+var _dir = sign(target_x - x);
+
+if(_dir != 0)
+	orient_x = _dir;
+

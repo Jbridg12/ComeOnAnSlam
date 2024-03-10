@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ranged_weapon",
+  "%Name":"obj_safe_spot",
   "eventList":[],
   "managed":true,
-  "name":"obj_ranged_weapon",
+  "name":"obj_safe_spot",
   "overriddenProperties":[],
   "parent":{
-    "name":"Parents",
-    "path":"folders/Objects/Weapons/Parents.yy",
+    "name":"RoomObjects",
+    "path":"folders/Objects/RoomObjects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_weapon",
-    "path":"objects/obj_weapon/obj_weapon.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sRoomLanding",
+    "path":"sprites/sRoomLanding/sRoomLanding.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
