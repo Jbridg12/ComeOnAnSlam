@@ -25,6 +25,15 @@ switch(obj_player.weapon_id)
 	case 1:
 		damage = 10;
 		break;
+	case 2:
+		damage = 25;
+		break;
+	case 3:
+		damage = 50;
+		break;
+	case 4:
+		damage = 100;
+		break;
 	default:
 		damage = 100;
 		break;

@@ -9,7 +9,4 @@ with(obj_player)
 	max_ammo++;
 	current_ammo = max_ammo;
 
-	// Then play animation (TEMP ANIMATION)
-	var attack_sequence = attack_animation(weapon_id)
-	StartAnimation(attack_sequence);
 }
