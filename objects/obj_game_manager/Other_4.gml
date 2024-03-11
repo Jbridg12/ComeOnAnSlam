@@ -10,20 +10,20 @@ if(curr_realm != last_realm && curr_realm >= 0)
 	switch(curr_realm)
 	{
 		case REALM.LIMBO:
-			audio_sound_loop_start(curr_bgm, 19);
-			audio_sound_loop_end(curr_bgm, 115);
+			audio_sound_loop_start(curr_bgm, 19.2);
+			audio_sound_loop_end(curr_bgm, 115.2);
 			break;
 		case REALM.LUST:
-			audio_sound_loop_start(curr_bgm, 19);
-			audio_sound_loop_end(curr_bgm, 115);
+			audio_sound_loop_start(curr_bgm, 14.117);
+			audio_sound_loop_end(curr_bgm, 63.59);
 			break;
 		case REALM.TREACHERY:
-			audio_sound_loop_start(curr_bgm, 19);
-			audio_sound_loop_end(curr_bgm, 115);
+			audio_sound_loop_start(curr_bgm, 9.6);
+			audio_sound_loop_end(curr_bgm, 86.4);
 			break;
 		case REALM.MAINMENU:
-			audio_sound_loop_start(curr_bgm, 19);
-			audio_sound_loop_end(curr_bgm, 115);
+			audio_sound_loop_start(curr_bgm, 14.117);
+			audio_sound_loop_end(curr_bgm, 63.59);
 			break;
 		default:
 			break;
