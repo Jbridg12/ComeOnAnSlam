@@ -23,6 +23,7 @@ with(obj_collectible_parent)
 
 with(obj_gate)
 {
+	event_user(3);
 	var _obstacles_struct = 
 	{
 		object : object_get_name(object_index),
@@ -32,6 +33,7 @@ with(obj_gate)
 		y_scale : image_yscale,
 		room_index : room_index,
 		active : active,
+		org : org,
 		axis : axis
 	};
 
@@ -40,6 +42,7 @@ with(obj_gate)
 
 with(obj_weighted_gate)
 {
+	event_user(3);
 	var _obstacles_struct = 
 	{
 		object : object_get_name(object_index),

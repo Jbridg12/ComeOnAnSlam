@@ -106,8 +106,11 @@ if(ds_map_exists(room_map, room))
 			_inst.image_yscale = _struct_obs.y_scale;
 			_inst.room_index = _struct_obs.room_index;
 			_inst.axis = _struct_obs.axis;
-			if(_struct_int.object == "obj_gate") _inst.active = _struct_obs.active;
 			if(_struct_int.object == "obj_weighted_gate") _inst.org = _struct_obs.org;
+			if(_struct_obs.object == "obj_gate") 
+			{
+				_inst.active = _struct_obs.active;
+			}
 		}	
 		
 		if(_struct_int)

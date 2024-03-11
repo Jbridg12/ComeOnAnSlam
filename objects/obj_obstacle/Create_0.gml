@@ -6,3 +6,5 @@ move = false;
 
 move_speed = 0;
 move_time = 0;
+
+org = axis == "Y" ? y : x;

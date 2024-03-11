@@ -29,7 +29,7 @@ else
 		return;
 	}
 	
-	x += move_speed;
+	x -= move_speed;
 }
 
 	
