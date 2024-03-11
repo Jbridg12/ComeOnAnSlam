@@ -85,3 +85,24 @@ if(hit_timer-- > 0)
 
 // Update position by speed
 if(!frozen) calculate_movement();
+
+if (sprite_index == sPlayer || sprite_index == sPlayerWalk)
+{
+	if(delta_x != 0)
+	{
+		if(!on_vine  && grounded )
+		{
+			sprite_index = 	sPlayerWalk;
+		}
+		else
+		{
+			sprite_index = sPlayer;	
+		}
+	}
+	else
+	{
+		sprite_index = sPlayer;
+	}
+	
+}
+

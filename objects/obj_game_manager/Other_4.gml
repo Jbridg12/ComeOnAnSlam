@@ -42,7 +42,10 @@ if(ds_map_exists(room_map, room))
 	instance_destroy(obj_interactible);
 	
 	if(boss_defeated >= curr_realm)
-		instace_destroy(obj_boss_enemy);
+	{
+		if(instance_exists(obj_boss_enemy))
+			instace_destroy(obj_boss_enemy);
+	}
 	
 	var _coll_list = _data.collectibles;
 	var _enemy_list = _data.enemies;

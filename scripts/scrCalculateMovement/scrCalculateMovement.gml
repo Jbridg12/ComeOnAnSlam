@@ -77,9 +77,9 @@ function calculate_movement()
 		{
 			var inst;
 			inst = collision_rectangle( x - sprite_get_width(sprite_index)/2 , 
-										y - sprite_get_height(sprite_index)/ 2, 
+										bbox_top, 
 										x + sprite_get_width(sprite_index)/2 ,
-										y + sprite_get_height(sprite_index)/ 3,  
+										bbox_bottom,  
 										platform_collision_layer, false, true);
 			if (inst == noone)
 			{

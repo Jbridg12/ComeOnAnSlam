@@ -33,15 +33,8 @@
             {"$GMRInstance":"","%Name":"inst_38AB3429","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_38AB3429","objectId":{"name":"obj_wall_bounce","path":"objects/obj_wall_bounce/obj_wall_bounce.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":15.0,"scaleY":1.0,"x":640.0,"y":352.0,},
           ],"layers":[],"name":"Bouncy","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRTileLayer":"","%Name":"Platforms","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Platforms","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":45,"SerialiseWidth":160,"TileCompressedData":[
-              1,261,-30,-2147483648,-3,0,-157,-2147483648,-3,0,-157,-2147483648,-4,0,-155,-2147483648,-5,0,-155,-2147483648,
-              -5,0,-155,-2147483648,-5,0,-155,-2147483648,-5,0,-155,-2147483648,-5,0,-155,-2147483648,-5,0,-155,-2147483648,
-              -6,0,-154,-2147483648,-6,0,-153,-2147483648,-7,0,-153,-2147483648,-7,0,-153,-2147483648,-7,0,-154,-2147483648,
-              -6,0,-3,-2147483648,-3,218,-4,0,-144,-2147483648,-7,0,-5,-2147483648,-3,218,-2,-2147483648,4,0,-2147483648,
-              0,0,-139,-2147483648,-7,0,-2,-2147483648,-6,0,-3,218,1,0,-10,-2147483648,-2,0,4,-2147483648,0,0,-2147483648,
-              -3,0,-122,-2147483648,-7,0,-11,-2147483648,-3,218,-20,0,-119,-2147483648,-6,0,-12,-2147483648,-3,0,-3,
-              -2147483648,-2,0,-134,-2147483648,-6,0,-154,-2147483648,-6,0,-152,-2147483648,2,131,132,-5,0,-164,-2147483648,
-              13,217,218,219,217,218,219,217,217,218,219,217,218,219,-3,218,-3,0,-153,-2147483648,1,0,-11,-2147483648,
-              1,0,-145,-2147483648,-17,0,-773,-2147483648,1,261,-170,-2147483648,-2,0,-2348,-2147483648,
+              1,261,-2278,0,-3,218,-160,0,-3,218,-160,0,-3,218,-160,0,-3,218,-617,0,2,131,132,-169,0,13,217,218,219,
+              217,218,219,217,217,218,219,217,218,219,-3,218,-3625,0,
             ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
         {"$GMRTileLayer":"","%Name":"Collision","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":45,"SerialiseWidth":160,"TileCompressedData":[
               -15,50,2,73,70,-11,71,5,72,69,50,50,73,-21,50,-57,112,-64,50,2,94,95,-11,-2147483648,2,89,90,-3,50,110,

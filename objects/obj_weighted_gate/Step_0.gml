@@ -3,16 +3,34 @@
 
 var _pos = axis == "Y" ? y : x;
 
-if(move && abs(_pos - org) >= s_height)
+if(axis == "Y")
 {
-	return;
-}
-if(!move && _pos >= org)
-{
-	_pos = org;
-	return;
-}
+	if(move && abs(y - org) >= s_height)
+	{
+		return;
+	}
+	if(!move && y >= org)
+	{
+		y = org;
+		return;
+	}
 	
-_pos += move_speed;
+	y += move_speed;
+}
+else
+{
+	if(move && abs(x - org) >= s_height)
+	{
+		return;
+	}
+	if(!move && x >= org)
+	{
+		x = org;
+		return;
+	}
+	
+	x += move_speed;
+}
+
 	
 

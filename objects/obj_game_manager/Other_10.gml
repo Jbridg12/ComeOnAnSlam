@@ -47,7 +47,7 @@ with(obj_weighted_gate)
 		x_scale : image_xscale,
 		y_scale : image_yscale,
 		room_index : room_index,
-		y_org : y_org
+		org : org
 	};
 
 	ds_list_add(_obs_list, _obstacles_struct);
