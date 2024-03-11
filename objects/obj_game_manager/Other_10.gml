@@ -31,8 +31,7 @@ with(obj_gate)
 		x_scale : image_xscale,
 		y_scale : image_yscale,
 		room_index : room_index,
-		active : active,
-		axis : axis
+		active : active
 	};
 
 	ds_list_add(_obs_list, _obstacles_struct);
@@ -48,8 +47,7 @@ with(obj_weighted_gate)
 		x_scale : image_xscale,
 		y_scale : image_yscale,
 		room_index : room_index,
-		org : org,
-		axis : axis
+		org : org
 	};
 
 	ds_list_add(_obs_list, _obstacles_struct);
