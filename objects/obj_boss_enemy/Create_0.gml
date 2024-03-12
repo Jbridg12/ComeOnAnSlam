@@ -20,3 +20,4 @@ y_previous = y;
 orient_x = 1;
 orient_y = 1;
 rotation = 0;
+active = false;

@@ -7,6 +7,11 @@ var _obs_list = ds_list_create();
 var _enemy_list = ds_list_create();
 var _interactible_list = ds_list_create();
 
+var coll_list = [];
+var obs_list = [];
+var enemy_list = [];
+var interactible_list = [];
+
 with(obj_collectible_parent)
 {
 	var _collectible_struct = 
@@ -19,6 +24,7 @@ with(obj_collectible_parent)
 	};
 	
 	ds_list_add(_coll_list, _collectible_struct);
+	array_push(coll_list, _collectible_struct);
 }
 
 with(obj_gate)
@@ -38,6 +44,7 @@ with(obj_gate)
 	};
 
 	ds_list_add(_obs_list, _obstacles_struct);
+	array_push(obs_list, _obstacles_struct);
 }
 
 with(obj_weighted_gate)
@@ -56,6 +63,7 @@ with(obj_weighted_gate)
 	};
 
 	ds_list_add(_obs_list, _obstacles_struct);
+	array_push(obs_list, _obstacles_struct);
 }
 
 with(obj_enemy)
@@ -74,6 +82,7 @@ with(obj_enemy)
 	};
 
 	ds_list_add(_enemy_list, _enemy_struct);
+	array_push(enemy_list, _enemy_struct);
 }
 
 with(obj_interactible)
@@ -139,23 +148,35 @@ with(obj_interactible)
 	}
 
 	ds_list_add(_interactible_list, _int_struct);
+	array_push(interactible_list, _int_struct);
 }
+
+//var _room_data = 
+//{
+//	collectibles : _coll_list,
+//	obstacles  : _obs_list,
+//	enemies : _enemy_list,
+//	interactible : _interactible_list
+//};
 
 var _room_data = 
 {
-	collectibles : _coll_list,
-	obstacles  : _obs_list,
-	enemies : _enemy_list,
-	interactible : _interactible_list
+	collectibles : coll_list,
+	obstacles  : obs_list,
+	enemies : enemy_list,
+	interactible : interactible_list
 };
 
-if(ds_map_exists(room_map, room))
-{
-	ds_map_replace(room_map, room, _room_data);	
-}
-else
-{	
-	ds_map_add(room_map, room, _room_data);
-}
+//if(ds_map_exists(room_map, room))
+//{
+//	//ds_map_replace(room_map, room, _room_data);
+//}
+//else
+//{	
+//	ds_map_add(room_map, room, _room_data);
+//}
+
+_room_map[$ room_get_name(room)] = _room_data;
+
 
 

@@ -8,6 +8,7 @@ curr_bgm = noone;
 
 // Room State Map
 room_map = ds_map_create();
+_room_map = {};
 bgm_map = ds_map_create();
 
 ds_map_add(bgm_map, REALM.LIMBO, sndLimboBGM);
