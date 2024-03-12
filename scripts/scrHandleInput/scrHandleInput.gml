@@ -242,7 +242,7 @@ function handle_input(){
 	if(secondaryAttack)
 	{
 		
-		if(!in_ranged)
+		if(!in_ranged && ranged_enabled)
 		{
 			show_debug_message("RANGED ATTACK");
 			in_ranged = true;
