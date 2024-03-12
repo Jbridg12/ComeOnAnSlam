@@ -13,8 +13,8 @@
   "name":"obj_stapler",
   "overriddenProperties":[],
   "parent":{
-    "name":"Weapons",
-    "path":"folders/Objects/Weapons.yy",
+    "name":"Projectiles",
+    "path":"folders/Objects/Weapons/Projectiles.yy",
   },
   "parentObjectId":{
     "name":"obj_pausable_object",

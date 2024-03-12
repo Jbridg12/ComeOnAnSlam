@@ -8,8 +8,8 @@
   "name":"obj_dummy_upgrade",
   "overriddenProperties":[],
   "parent":{
-    "name":"Collectible",
-    "path":"folders/Objects/Collectible.yy",
+    "name":"ProgressionUpgrades",
+    "path":"folders/Objects/Collectible/ProgressionUpgrades.yy",
   },
   "parentObjectId":{
     "name":"obj_collectible_parent",

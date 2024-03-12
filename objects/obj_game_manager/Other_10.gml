@@ -14,17 +14,24 @@ var interactible_list = [];
 
 with(obj_collectible_parent)
 {
-	var _collectible_struct = 
+	if(temporary)
 	{
-		object : object_get_name(object_index),
-		x : x,
-		y : y,
-		x_scale : image_xscale,
-		y_scale : image_yscale
-	};
+		instance_destroy();
+	}
+	else
+	{
+		var _collectible_struct = 
+		{
+			object : object_get_name(object_index),
+			x : x,
+			y : y,
+			x_scale : image_xscale,
+			y_scale : image_yscale
+		};
 	
-	ds_list_add(_coll_list, _collectible_struct);
-	array_push(coll_list, _collectible_struct);
+		ds_list_add(_coll_list, _collectible_struct);
+		array_push(coll_list, _collectible_struct);
+	}
 }
 
 with(obj_gate)

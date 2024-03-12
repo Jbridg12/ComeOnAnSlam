@@ -16,7 +16,7 @@ image_speed = 1;
 
 //--------------------Progression Upgrade Flags---------------------
 
-ranged_enabled = true;
+ranged_enabled = false;
 wall_jump_enabled = true;
 charge_attack_enabled = true;
 dummy_enabled = true;
@@ -113,6 +113,10 @@ charging_jump = false;
 charge_jump_timer = 0;
 charge_jump_speed = -100;
 
+
+// Cutscene Destination
+animation_destination = -1;
+tolerance = 5;
 
 //------------------------------------------------------------------
 

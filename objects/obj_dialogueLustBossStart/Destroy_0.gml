@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// Inherit the parent event
+event_inherited();
+
 if(obj_game_manager.curr_bgm) audio_stop_sound(obj_game_manager.curr_bgm);
 
 obj_game_manager.curr_bgm = audio_play_sound(sndCollect, 1, true);

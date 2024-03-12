@@ -17,6 +17,7 @@ function create_list(_x, _y, _width, _height, _type)
 			case LIST_TYPE.SETTINGS:
 				ds_list_add(list, ["Window Size", global.win_dim, ["960x540", "1280x720", "1920x1080"]]);
 				ds_list_add(list, ["Fullscreen", global.fullscreen, ["No", "Yes"]]);
+				ds_list_add(list, ["Main Menu", -1, []]);
 				ds_list_add(list, ["Close", -1, []]);
 				break;
 		}

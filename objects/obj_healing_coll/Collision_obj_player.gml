@@ -10,7 +10,6 @@ event_inherited();
 
 with(obj_player)
 {
-	max_health += 50;
-	hp = max_health;
-
+	hp = min(hp + 50, max_health);
 }
+

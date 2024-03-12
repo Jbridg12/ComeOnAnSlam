@@ -22,5 +22,5 @@ in_dialogue = false;
 room_entrance_id = 0;
 
 sel_menu_button = 0;
-recently_escaped = 0;
+recently_escaped = false;
 boss_defeated = 0;
