@@ -76,6 +76,15 @@ if(_selectOption)
 		}
 		return;
 	}
+	else if (_name  == "Main Menu")
+	{
+		with(obj_game_manager) 
+		{
+			event_user(1);
+		}
+		room_goto(MainMenu);
+		return;
+	}
 	else
 	{
 		locked = true;
