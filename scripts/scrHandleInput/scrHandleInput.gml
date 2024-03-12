@@ -90,7 +90,13 @@ function handle_input(){
 	{
 		air_resistance = 0.95;
 		motion_speed = sprint_speed;
+		image_speed = 1.5;
 	}
+	else
+	{
+		image_speed = 1;
+	}
+	
 	
 	if(in_ranged)
 	{
