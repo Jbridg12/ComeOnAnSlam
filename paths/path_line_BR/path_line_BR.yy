@@ -1,15 +1,15 @@
 {
   "$GMPath":"",
-  "%Name":"path_line1",
+  "%Name":"path_line_BR",
   "closed":false,
   "kind":0,
-  "name":"path_line1",
+  "name":"path_line_BR",
   "parent":{
-    "name":"Reception",
-    "path":"folders/Paths/Lust/Reception.yy",
+    "name":"bigroom",
+    "path":"folders/Paths/Treach/bigroom.yy",
   },
   "points":[
-    {"speed":100.0,"x":1088.0,"y":544.0,},
+    {"speed":100.0,"x":1056.0,"y":544.0,},
     {"speed":100.0,"x":1184.0,"y":544.0,},
   ],
   "precision":4,

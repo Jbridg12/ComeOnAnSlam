@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"path_line_tunnel",
+  "closed":false,
+  "kind":0,
+  "name":"path_line_tunnel",
+  "parent":{
+    "name":"tunnel",
+    "path":"folders/Paths/Treach/tunnel.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":288.0,"y":320.0,},
+    {"speed":100.0,"x":350.0005,"y":320.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

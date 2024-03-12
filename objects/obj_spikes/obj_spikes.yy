@@ -6,8 +6,8 @@
   "name":"obj_spikes",
   "overriddenProperties":[],
   "parent":{
-    "name":"Hazards",
-    "path":"folders/Objects/Environement Props/Hazards.yy",
+    "name":"Triggers",
+    "path":"folders/Objects/Environement Props/Triggers.yy",
   },
   "parentObjectId":{
     "name":"obj_hazard_parent",
