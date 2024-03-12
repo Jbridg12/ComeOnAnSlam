@@ -8,9 +8,9 @@ if(!triggered)
 		other.sprite_index = sPlayer;
 		
 		var _index = animation_destination;
-		with(obj_room_entrance)
+		with(obj_anim_destination)
 		{
-			if(entrance_id == _index)
+			if(index == _index)
 			{
 				obj_player.animation_destination = self.x;
 			}
