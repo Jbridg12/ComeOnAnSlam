@@ -33,9 +33,12 @@ if(curr_realm != last_realm && curr_realm >= 0)
 }
 
 
-if(ds_map_exists(room_map, room))
+//if(ds_map_exists(room_map, room))
+//{
+if(variable_struct_exists(_room_map, room_get_name(room)))
 {
-	var _data = ds_map_find_value(room_map, room)
+	//var _data = ds_map_find_value(room_map, room)
+	var _data = _room_map[$  room_get_name(room)];
 	instance_destroy(obj_collectible_parent);
 	instance_destroy(obj_gate);
 	instance_destroy(obj_weighted_gate);
@@ -44,7 +47,7 @@ if(ds_map_exists(room_map, room))
 	if(boss_defeated >= curr_realm)
 	{
 		if(instance_exists(obj_boss_enemy))
-			instace_destroy(obj_boss_enemy);
+			instance_destroy(obj_boss_enemy);
 	}
 	
 	var _coll_list = _data.collectibles;
@@ -53,7 +56,9 @@ if(ds_map_exists(room_map, room))
 	var _interactible_list = _data.interactible;
 	
 	
-	for(var i = 0; i < max(ds_list_size(_enemy_list), ds_list_size(_coll_list), ds_list_size(_obstacle_list), ds_list_size(_interactible_list)); i++)
+	//for(var i = 0; i < max(ds_list_size(_enemy_list), ds_list_size(_coll_list), ds_list_size(_obstacle_list), ds_list_size(_interactible_list)); i++)
+	//{
+	for(var i = 0; i < max(array_length(_enemy_list), array_length(_coll_list), array_length(_obstacle_list), array_length(_interactible_list)); i++)
 	{
 		var _struct_coll = noone;
 		var _struct_enemy = noone;
@@ -61,21 +66,38 @@ if(ds_map_exists(room_map, room))
 		var _struct_int = noone;
 		var _inst = noone;
 		
-		if(ds_list_size(_enemy_list) > i)
+		//if(ds_list_size(_enemy_list) > i)
+		//{
+		//	_struct_enemy = ds_list_find_value(_enemy_list, i);
+		//}
+		//if(ds_list_size(_coll_list) > i)
+		//{
+		//	_struct_coll = ds_list_find_value(_coll_list, i);
+		//}
+		//if(ds_list_size(_obstacle_list) > i)
+		//{
+		//	_struct_obs = ds_list_find_value(_obstacle_list, i);
+		//}
+		//if(ds_list_size(_interactible_list) > i)
+		//{
+		//	_struct_int = ds_list_find_value(_interactible_list, i);
+		//}
+		
+		if(array_length(_enemy_list) > i)
 		{
-			_struct_enemy = ds_list_find_value(_enemy_list, i);
+			_struct_enemy = _enemy_list[i];
 		}
-		if(ds_list_size(_coll_list) > i)
+		if(array_length(_coll_list) > i)
 		{
-			_struct_coll = ds_list_find_value(_coll_list, i);
+			_struct_coll =  _coll_list[i];
 		}
-		if(ds_list_size(_obstacle_list) > i)
+		if(array_length(_obstacle_list) > i)
 		{
-			_struct_obs = ds_list_find_value(_obstacle_list, i);
+			_struct_obs =  _obstacle_list[i];
 		}
-		if(ds_list_size(_interactible_list) > i)
+		if(array_length(_interactible_list) > i)
 		{
-			_struct_int = ds_list_find_value(_interactible_list, i);
+			_struct_int =  _interactible_list[i];
 		}
 		
 		if(_struct_coll)
@@ -106,7 +128,7 @@ if(ds_map_exists(room_map, room))
 			_inst.image_yscale = _struct_obs.y_scale;
 			_inst.room_index = _struct_obs.room_index;
 			_inst.axis = _struct_obs.axis;
-			if(_struct_int.object == "obj_weighted_gate") _inst.org = _struct_obs.org;
+			if(_struct_obs.object == "obj_weighted_gate") _inst.org = _struct_obs.org;
 			if(_struct_obs.object == "obj_gate") 
 			{
 				_inst.active = _struct_obs.active;

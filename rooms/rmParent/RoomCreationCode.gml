@@ -21,7 +21,7 @@ with(obj_game_manager)
 		obj_player.forced_y = _arr[@1];
 	}
 
-	room_entrance_id = -1;
+	room_entrance_id = 0;
 
 	curr_realm = _realm;
 }
