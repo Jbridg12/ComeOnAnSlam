@@ -145,8 +145,8 @@
   ],
   "name":"Limbo2_Tower",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Limbo",
+    "path":"folders/Rooms/Limbo.yy",
   },
   "parentRoom":{
     "name":"rmParent",
