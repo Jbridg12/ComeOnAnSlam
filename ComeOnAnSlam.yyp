@@ -299,7 +299,6 @@
     {"id":{"name":"sPlayerWalk","path":"sprites/sPlayerWalk/sPlayerWalk.yy",},},
     {"id":{"name":"sprHeart","path":"sprites/sprHeart/sprHeart.yy",},},
     {"id":{"name":"sprHeartHoming","path":"sprites/sprHeartHoming/sprHeartHoming.yy",},},
-    {"id":{"name":"Sprite68","path":"sprites/Sprite68/Sprite68.yy",},},
     {"id":{"name":"sprThrowCan","path":"sprites/sprThrowCan/sprThrowCan.yy",},},
     {"id":{"name":"sRoomLanding","path":"sprites/sRoomLanding/sRoomLanding.yy",},},
     {"id":{"name":"sSave","path":"sprites/sSave/sSave.yy",},},

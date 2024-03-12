@@ -222,7 +222,6 @@
     {"name":"sPlayerProjectile","order":1,"path":"sprites/sPlayerProjectile/sPlayerProjectile.yy",},
     {"name":"sPlayerWalk","order":5,"path":"sprites/sPlayerWalk/sPlayerWalk.yy",},
     {"name":"sprHeartHoming","order":3,"path":"sprites/sprHeartHoming/sprHeartHoming.yy",},
-    {"name":"Sprite68","order":8,"path":"sprites/Sprite68/Sprite68.yy",},
     {"name":"sprThrowCan","order":4,"path":"sprites/sprThrowCan/sprThrowCan.yy",},
     {"name":"sRoomLanding","order":8,"path":"sprites/sRoomLanding/sRoomLanding.yy",},
     {"name":"sSaveHover","order":1,"path":"sprites/sSaveHover/sSaveHover.yy",},
