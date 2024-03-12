@@ -1,24 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_stapler",
+  "%Name":"obj_projectile_bin",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":12,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_stapler",
-  "overriddenProperties":[],
+  "name":"obj_projectile_bin",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_projectile_parent","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"propertyId":{"name":"damage","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
+  ],
   "parent":{
     "name":"Projectiles",
     "path":"folders/Objects/Weapons/Projectiles.yy",
   },
   "parentObjectId":{
-    "name":"obj_pausable_object",
-    "path":"objects/obj_pausable_object/obj_pausable_object.yy",
+    "name":"obj_projectile_parent",
+    "path":"objects/obj_projectile_parent/obj_projectile_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -38,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sStapler",
-    "path":"sprites/sStapler/sStapler.yy",
+    "name":"sprThrowCan",
+    "path":"sprites/sprThrowCan/sprThrowCan.yy",
   },
   "spriteMaskId":null,
   "visible":true,
