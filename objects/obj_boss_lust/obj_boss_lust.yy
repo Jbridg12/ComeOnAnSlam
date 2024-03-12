@@ -45,8 +45,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBearPH",
-    "path":"sprites/sBearPH/sBearPH.yy",
+    "name":"sLustEx",
+    "path":"sprites/sLustEx/sLustEx.yy",
   },
   "spriteMaskId":null,
   "visible":true,
