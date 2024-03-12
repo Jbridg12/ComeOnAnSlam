@@ -16,11 +16,11 @@ image_speed = 1;
 
 //--------------------Progression Upgrade Flags---------------------
 
-ranged_enabled = false;
+ranged_enabled = true;
 wall_jump_enabled = true;
-charge_attack_enabled = false;
+charge_attack_enabled = true;
 dummy_enabled = true;
-charged_vert_enabled = false;
+charged_vert_enabled = true;
 
 
 //------------------------------------------------------------------

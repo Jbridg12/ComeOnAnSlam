@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"path_flyupdown_tunnel",
+  "closed":false,
+  "kind":0,
+  "name":"path_flyupdown_tunnel",
+  "parent":{
+    "name":"tunnel",
+    "path":"folders/Paths/Treach/tunnel.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":192.0,"y":160.0,},
+    {"speed":100.0,"x":192.0,"y":192.0,},
+    {"speed":100.0,"x":192.0,"y":224.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"path_circle",
+  "closed":true,
+  "kind":1,
+  "name":"path_circle",
+  "parent":{
+    "name":"bigroom",
+    "path":"folders/Paths/Treach/bigroom.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":1272.6697,"y":722.4458,},
+    {"speed":100.0,"x":1270.6697,"y":999.4458,},
+    {"speed":100.0,"x":1759.6697,"y":999.4458,},
+    {"speed":100.0,"x":1755.6697,"y":723.4458,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

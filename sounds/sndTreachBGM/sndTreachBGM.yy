@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sndLimboBGM",
+  "%Name":"sndTreachBGM",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":116.244896,
-  "name":"sndLimboBGM",
+  "duration":145.03183,
+  "name":"sndTreachBGM",
   "parent":{
     "name":"BGM",
     "path":"folders/Sounds/BGM.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndLimboBGM.mp3",
+  "soundFile":"sndTreachBGM.mp3",
   "type":0,
-  "volume":0.25,
+  "volume":1.0,
 }
