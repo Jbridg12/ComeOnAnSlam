@@ -16,5 +16,6 @@ dialog.add(dialogue_joan, "Its work mother Joan, you know you’d have been fire
 dialog.add(dialogue_nadia, "Right… Anyway, did you see a dog run by here?");
 dialog.add(dialogue_joan, "tsk");
 dialog.add(dialogue_joan, "Yeah, I think the boss is ripping him a new one over his plentiful smoking breaks.");
-dialog.add(dialogue_nadia, "Right… Anyway, did you see a dog run by here?");
-dialog.add(dialogue_nadia, "Right… Anyway, did you see a dog run by here?");
+dialog.add(dialogue_nadia, "Where can I find the boss?");
+dialog.add(dialogue_joan, "Oh, he’s on the top floor. Also keep an eye out for Bear Johnson.");
+dialog.add(dialogue_joan, "I need him to replace the water jug.");

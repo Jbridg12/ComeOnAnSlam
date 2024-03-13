@@ -4,34 +4,9 @@
 
 if(curr_realm != last_realm && curr_realm >= 0)
 {
-	if(curr_bgm) audio_stop_sound(curr_bgm);
-	curr_bgm = audio_play_sound(ds_map_find_value(bgm_map, curr_realm), 1, true);
-	
-	switch(curr_realm)
-	{
-		case REALM.LIMBO:
-			audio_sound_loop_start(curr_bgm, 19.2);
-			audio_sound_loop_end(curr_bgm, 115.2);
-			break;
-		case REALM.LUST:
-			audio_sound_loop_start(curr_bgm, 14.117);
-			audio_sound_loop_end(curr_bgm, 63.529);
-			break;
-		case REALM.TREACHERY:
-			audio_sound_loop_start(curr_bgm, 9.6);
-			audio_sound_loop_end(curr_bgm, 86.4);
-			break;
-		case REALM.MAINMENU:
-			audio_sound_loop_start(curr_bgm, 14.117);
-			audio_sound_loop_end(curr_bgm, 63.529);
-			break;
-		default:
-			break;
-	}
-	
+	event_user(2);
 	last_realm = curr_realm;
 }
-
 
 //if(ds_map_exists(room_map, room))
 //{
@@ -128,6 +103,7 @@ if(variable_struct_exists(_room_map, room_get_name(room)))
 			_inst.image_yscale = _struct_obs.y_scale;
 			_inst.room_index = _struct_obs.room_index;
 			_inst.axis = _struct_obs.axis;
+			_inst.image_angle = _struct_obs.angle;
 			if(_struct_obs.object == "obj_weighted_gate") _inst.org = _struct_obs.org;
 			if(_struct_obs.object == "obj_gate") 
 			{
@@ -156,6 +132,7 @@ if(variable_struct_exists(_room_map, room_get_name(room)))
 		}
 	}
 }
+
 
 // Reattach interactibles to associated objects
 with(obj_interactible)

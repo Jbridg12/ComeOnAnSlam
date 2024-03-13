@@ -10,3 +10,4 @@ with(obj_player)
 	hp = max_health;
 
 }
+instance_create_layer(0, 0, "Instances", obj_dialogue_health);

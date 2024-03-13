@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if(obj_game_manager.in_pause) return;
-if(obj_game_manager.in_dialogue) return;
+
 if(active)
 {
 	if(hp <= 0) 
@@ -34,6 +34,7 @@ if(active)
 
 	if(--attack_cooldown <= 0)
 	{
+		delta_x = 0;
 
 		if(_inst_close != noone)
 		{
@@ -50,3 +51,5 @@ if(active)
 	
 	}
 }
+
+calculate_movement();

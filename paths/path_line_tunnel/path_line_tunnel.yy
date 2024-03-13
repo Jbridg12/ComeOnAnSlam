@@ -9,8 +9,8 @@
     "path":"folders/Paths/Treach/tunnel.yy",
   },
   "points":[
-    {"speed":100.0,"x":288.0,"y":320.0,},
-    {"speed":100.0,"x":350.0005,"y":320.0,},
+    {"speed":100.0,"x":640.0,"y":352.0,},
+    {"speed":100.0,"x":672.0,"y":352.0,},
   ],
   "precision":4,
   "resourceType":"GMPath",

@@ -12,3 +12,4 @@ with(obj_player)
 {
 	charged_vert_enabled = true;	
 }
+instance_create_layer(0, 0, "Instances", obj_dialogue_chargedVert);

@@ -38,7 +38,7 @@ contact_dy = 0;
 in_ranged = false;
 ranged_rotation_speed = 2;
 ranged_angle = 180;
-max_ammo = 5;
+max_ammo = 3;
 current_ammo = max_ammo;
 ammo_countdown = 300;
 staple_cooldown = 0;
@@ -113,6 +113,10 @@ charging_jump = false;
 charge_jump_timer = 0;
 charge_jump_speed = -100;
 
+
+// Cutscene Destination
+animation_destination = -1;
+tolerance = 5;
 
 //------------------------------------------------------------------
 

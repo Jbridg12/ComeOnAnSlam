@@ -7,7 +7,13 @@ if(obj_game_manager.in_pause) return;
 CheckAnimation();
 if(in_animation) return;
 
-handle_input();
+if(hp <= 0)
+{
+	hp = max_health;
+	room_goto(rmGameOver);
+	//instance_destroy();
+	return;
+}
 
 if(!in_ranged)
 {
@@ -50,8 +56,21 @@ if(staple_cooldown > 0) staple_cooldown--;
 if(hazard_cooldown > 0) hazard_cooldown--;
 if(hit_timer > 0)		hit_timer--;
 	
-if(obj_game_manager.in_dialogue) return;
-
+if(!obj_game_manager.in_dialogue) 
+{
+	handle_input();
+}
+else
+{
+	delta_x = 0;
+	if(animation_destination != -1)
+	{
+		if(abs(animation_destination - x) > tolerance)
+		{
+			delta_x = sign(animation_destination - x) * walk_speed;
+		}
+	}
+}
 
 // Invulnerability Cooldown
 if(hit_timer-- > 0)
