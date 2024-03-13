@@ -15,6 +15,6 @@ if (inst != noone)
 }
 else
 {
-	sprite_index = sSave;
+	sprite_index = sSaveBook;
 }
 
