@@ -29,6 +29,7 @@
     {"name":"sBusinessTS","order":3,"path":"sprites/sBusinessTS/sBusinessTS.yy",},
     {"name":"sIntroProps","order":1,"path":"sprites/sIntroProps/sIntroProps.yy",},
     {"name":"sLustProps","order":2,"path":"sprites/sLustProps/sLustProps.yy",},
+    {"name":"sSaveBook","order":1,"path":"sprites/sSaveBook/sSaveBook.yy",},
     {"name":"sTSWater","order":5,"path":"sprites/sTSWater/sTSWater.yy",},
     {"name":"Terrain_and_Props","order":2,"path":"sprites/Terrain_and_Props/Terrain_and_Props.yy",},
     {"name":"tsIntroProps","order":2,"path":"tilesets/tsIntroProps/tsIntroProps.yy",},

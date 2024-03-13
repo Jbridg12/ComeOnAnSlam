@@ -364,6 +364,7 @@
     {"id":{"name":"sPlayerWalk","path":"sprites/sPlayerWalk/sPlayerWalk.yy",},},
     {"id":{"name":"sprHeart","path":"sprites/sprHeart/sprHeart.yy",},},
     {"id":{"name":"sprHeartHoming","path":"sprites/sprHeartHoming/sprHeartHoming.yy",},},
+    {"id":{"name":"sSaveBook","path":"sprites/sSaveBook/sSaveBook.yy",},},
     {"id":{"name":"sprThrowCan","path":"sprites/sprThrowCan/sprThrowCan.yy",},},
     {"id":{"name":"sRoomLanding","path":"sprites/sRoomLanding/sRoomLanding.yy",},},
     {"id":{"name":"sSave","path":"sprites/sSave/sSave.yy",},},
