@@ -1,10 +1,11 @@
 {
   "FolderOrderSettings":[
     {"name":"Collectibles","order":2,"path":"folders/Objects/Dialogue/Collectibles.yy",},
+    {"name":"PropsSheets","order":10,"path":"folders/Sprites/TilesetSprites/PropsSheets.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"obj_dialogue_ammo","order":6,"path":"objects/obj_dialogue_ammo/obj_dialogue_ammo.yy",},
-    {"name":"obj_dialogue_weapon","order":7,"path":"objects/obj_dialogue_weapon/obj_dialogue_weapon.yy",},
+    {"name":"obj_dialogue_ammo96","order":7,"path":"objects/obj_dialogue_ammo96/obj_dialogue_ammo96.yy",},
     {"name":"obj_dialogue_chargedAttack","order":5,"path":"objects/obj_dialogue_chargedAttack/obj_dialogue_chargedAttack.yy",},
     {"name":"obj_dialogue_chargedVert","order":3,"path":"objects/obj_dialogue_chargedVert/obj_dialogue_chargedVert.yy",},
     {"name":"obj_dialogue_dummy","order":2,"path":"objects/obj_dialogue_dummy/obj_dialogue_dummy.yy",},
@@ -12,5 +13,13 @@
     {"name":"obj_dialogue_walljump","order":4,"path":"objects/obj_dialogue_walljump/obj_dialogue_walljump.yy",},
     {"name":"obj_heart_spikes","order":2,"path":"objects/obj_heart_spikes/obj_heart_spikes.yy",},
     {"name":"obj_spikes","order":1,"path":"objects/obj_spikes/obj_spikes.yy",},
+    {"name":"sBarTS","order":6,"path":"sprites/sBarTS/sBarTS.yy",},
+    {"name":"sBGTiles","order":1,"path":"sprites/sBGTiles/sBGTiles.yy",},
+    {"name":"sBusiness_Tinted","order":4,"path":"sprites/sBusiness_Tinted/sBusiness_Tinted.yy",},
+    {"name":"sBusinessTS","order":3,"path":"sprites/sBusinessTS/sBusinessTS.yy",},
+    {"name":"sLimboProps","order":1,"path":"sprites/sLimboProps/sLimboProps.yy",},
+    {"name":"sLustProps","order":2,"path":"sprites/sLustProps/sLustProps.yy",},
+    {"name":"sTSWater","order":5,"path":"sprites/sTSWater/sTSWater.yy",},
+    {"name":"Terrain_and_Props","order":2,"path":"sprites/Terrain_and_Props/Terrain_and_Props.yy",},
   ],
 }
