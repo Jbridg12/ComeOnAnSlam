@@ -353,6 +353,7 @@
     {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
     {"id":{"name":"sCrawler","path":"sprites/sCrawler/sCrawler.yy",},},
     {"id":{"name":"sCrawler2","path":"sprites/sCrawler2/sCrawler2.yy",},},
+    {"id":{"name":"sCrawler3","path":"sprites/sCrawler3/sCrawler3.yy",},},
     {"id":{"name":"sEmptyAmmo","path":"sprites/sEmptyAmmo/sEmptyAmmo.yy",},},
     {"id":{"name":"sFlyer","path":"sprites/sFlyer/sFlyer.yy",},},
     {"id":{"name":"sFullAmmo","path":"sprites/sFullAmmo/sFullAmmo.yy",},},

@@ -1,13 +1,6 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
-    {"name":"Limbo_Boss_Room","order":3,"path":"rooms/Limbo_Boss_Room/Limbo_Boss_Room.yy",},
-    {"name":"Limbo_hallway","order":1,"path":"rooms/Limbo_hallway/Limbo_hallway.yy",},
-    {"name":"Limbo_Restroom","order":2,"path":"rooms/Limbo_Restroom/Limbo_Restroom.yy",},
-    {"name":"Limbo_Upgrade_Room","order":7,"path":"rooms/Limbo_Upgrade_Room/Limbo_Upgrade_Room.yy",},
-    {"name":"Limbo2_Tower","order":4,"path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
-    {"name":"Outside_Limbo","order":5,"path":"rooms/Outside_Limbo/Outside_Limbo.yy",},
-    {"name":"Restroom_B4_Boss","order":6,"path":"rooms/Restroom_B4_Boss/Restroom_B4_Boss.yy",},
-    {"name":"sLimboJimboRanged","order":1,"path":"sprites/sLimboJimboRanged/sLimboJimboRanged.yy",},
+    {"name":"sCrawler3","order":1,"path":"sprites/sCrawler3/sCrawler3.yy",},
   ],
 }

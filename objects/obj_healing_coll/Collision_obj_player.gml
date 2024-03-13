@@ -4,12 +4,9 @@
 
 
 
-
-// Inherit the parent event
-event_inherited();
-
 with(obj_player)
 {
 	hp = min(hp + 50, max_health);
 }
 
+instance_destroy(self);
