@@ -3,7 +3,7 @@
 
 if(!spikes_active)
 {
-	with(obj_heart_spikes)
+	with(obj_heart_spikes_boss)
 	{
 		move = 1;
 	}

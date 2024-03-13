@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_spikes",
-  "eventList":[],
+  "%Name":"obj_heart_spikes_boss",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_spikes",
+  "name":"obj_heart_spikes_boss",
   "overriddenProperties":[],
   "parent":{
     "name":"Hazards",
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sSpikes",
-    "path":"sprites/sSpikes/sSpikes.yy",
+    "name":"HeartSpikes",
+    "path":"sprites/HeartSpikes/HeartSpikes.yy",
   },
   "spriteMaskId":null,
   "visible":true,
