@@ -4,6 +4,6 @@
 var _event = 6;
 
 
-attack_cooldown = ((hp/max_health) < 0.5) ? 75 : 100;
+attack_cooldown = ((hp/max_health) < 0.5) ? 75 : 150;
 
 event_user(_event);

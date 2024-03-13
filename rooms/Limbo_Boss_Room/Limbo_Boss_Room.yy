@@ -26,7 +26,8 @@
           ],"layers":[],"name":"Bouncy","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRTileLayer":"","%Name":"Platforms","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Platforms","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":43,"TileCompressedData":[
               -574,-2147483648,-8,0,-4,-2147483648,3,72,73,73,-23,-2147483648,5,72,73,75,-2147483648,-2147483648,-8,
-              0,-35,-2147483648,2,0,72,-4,73,2,74,75,-170,-2147483648,4,72,73,74,75,-190,-2147483648,
+              0,-35,-2147483648,2,0,72,-4,73,2,74,75,-162,-2147483648,4,72,73,74,75,-4,-2147483648,4,72,73,74,75,-190,
+              -2147483648,
             ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet7","path":"tilesets/TileSet7/TileSet7.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
         {"$GMRTileLayer":"","%Name":"Collision","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Collision","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":24,"SerialiseWidth":43,"TileCompressedData":[
               14,10,11,10,11,10,11,10,11,10,11,10,11,10,12,-6,129,37,9,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,
@@ -37,7 +38,7 @@
               11,10,11,10,12,-6,129,24,9,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,10,-12,
               18,1,20,-6,129,1,17,-10,18,13,11,10,11,10,11,10,11,10,11,10,11,10,12,-14,-2147483648,-3,0,-12,-2147483648,
               14,9,11,10,11,10,11,10,11,10,11,10,11,10,12,-29,-2147483648,14,9,11,10,11,10,11,10,11,10,11,10,11,10,
-              12,-29,-2147483648,14,9,11,10,11,10,11,10,11,10,11,10,11,10,12,-29,-2147483648,1,17,-12,18,1,20,-29,
+              12,-29,-2147483648,14,9,11,10,11,10,11,10,11,10,11,10,11,10,20,-29,-2147483648,1,17,-12,18,1,129,-29,
               -2147483648,-14,129,-29,-2147483648,-14,129,-29,-2147483648,-14,129,-26,-2147483648,-3,0,1,1,-19,2,1,
               4,-22,-2147483648,21,9,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,12,-22,-2147483648,21,
               9,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,12,-22,-2147483648,12,9,11,10,11,10,11,10,
@@ -66,7 +67,7 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},"propertyId":{"name":"destination","path":"objects/obj_room_transition/obj_room_transition.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Limbo1",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},"propertyId":{"name":"dest_entrance_id","path":"objects/obj_room_transition/obj_room_transition.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":2.0,"x":1312.0,"y":608.0,},
-        {"$GMRInstance":"","%Name":"inst_50574177","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50574177","objectId":{"name":"obj_boss_limbo","path":"objects/obj_boss_limbo/obj_boss_limbo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_50574177","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50574177","objectId":{"name":"obj_boss_limbo","path":"objects/obj_boss_limbo/obj_boss_limbo.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":128.0,"y":384.0,},
         {"$GMRInstance":"","%Name":"inst_368EDAEF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_368EDAEF","objectId":{"name":"obj_gate","path":"objects/obj_gate/obj_gate.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},"propertyId":{"name":"room_index","path":"objects/obj_obstacle/obj_obstacle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},"propertyId":{"name":"active","path":"objects/obj_obstacle/obj_obstacle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
