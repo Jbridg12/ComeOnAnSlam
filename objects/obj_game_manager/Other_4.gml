@@ -103,6 +103,7 @@ if(variable_struct_exists(_room_map, room_get_name(room)))
 			_inst.image_yscale = _struct_obs.y_scale;
 			_inst.room_index = _struct_obs.room_index;
 			_inst.axis = _struct_obs.axis;
+			_inst.image_angle = _struct_obs.angle;
 			if(_struct_obs.object == "obj_weighted_gate") _inst.org = _struct_obs.org;
 			if(_struct_obs.object == "obj_gate") 
 			{
