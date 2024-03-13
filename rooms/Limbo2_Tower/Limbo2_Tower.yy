@@ -17,6 +17,7 @@
     {"name":"inst_62742A60","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
     {"name":"inst_7D682696","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
     {"name":"inst_124691FB","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
+    {"name":"inst_D937E2C","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -125,6 +126,7 @@
         {"$GMRInstance":"","%Name":"inst_124691FB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_124691FB","objectId":{"name":"obj_flying_limbo_enemy","path":"objects/obj_flying_limbo_enemy/obj_flying_limbo_enemy.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"follow_path","path":"objects/obj_enemy/obj_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"med_horz_LR_line",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":704.0,},
+        {"$GMRInstance":"","%Name":"inst_D937E2C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D937E2C","objectId":{"name":"obj_weapon_upgrade","path":"objects/obj_weapon_upgrade/obj_weapon_upgrade.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":96.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Render_Below_Instances","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRLayer":"","%Name":"Enemy_Paths","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
