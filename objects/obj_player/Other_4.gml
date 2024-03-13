@@ -19,7 +19,7 @@ if(forced_y > 0)
 	forced_y = -1;
 }
 
-if(room == MainMenu)
+if(room == MainMenu || room == rmGameOver)
 {
 	gui_enabled = false;	
 	layer = layer_get_id("HiddenInstances");

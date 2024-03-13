@@ -7,7 +7,13 @@ if(obj_game_manager.in_pause) return;
 CheckAnimation();
 if(in_animation) return;
 
-
+if(hp <= 0)
+{
+	hp = max_health;
+	room_goto(rmGameOver);
+	//instance_destroy();
+	return;
+}
 
 if(!in_ranged)
 {

@@ -8,7 +8,6 @@ if(curr_realm != last_realm && curr_realm >= 0)
 	last_realm = curr_realm;
 }
 
-
 //if(ds_map_exists(room_map, room))
 //{
 if(variable_struct_exists(_room_map, room_get_name(room)))
@@ -132,6 +131,7 @@ if(variable_struct_exists(_room_map, room_get_name(room)))
 		}
 	}
 }
+
 
 // Reattach interactibles to associated objects
 with(obj_interactible)
