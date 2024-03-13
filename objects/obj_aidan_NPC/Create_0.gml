@@ -4,13 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-
-with(obj_boss_enemy)
-{
-	instance_destroy();	
-}
-
-with(obj_boss_trigger_lust)
-{
-	event_user(1);	
-}
+destination_x = -1;
+index = -1;
+orient_x = 1;

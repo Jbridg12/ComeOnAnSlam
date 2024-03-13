@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_anim_destination",
+  "%Name":"obj_camera_target",
   "eventList":[],
   "managed":true,
-  "name":"obj_anim_destination",
+  "name":"obj_camera_target",
   "overriddenProperties":[],
   "parent":{
     "name":"RoomObjects",

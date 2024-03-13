@@ -10,7 +10,7 @@ with(obj_boss_enemy)
 	instance_destroy();	
 }
 
-with(obj_boss_trigger)
+with(obj_boss_trigger_limbo)
 {
 	event_user(1);	
 }

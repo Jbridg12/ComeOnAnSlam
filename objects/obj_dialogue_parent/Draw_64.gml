@@ -42,7 +42,7 @@ if(showing_dialogue == true)
 	draw_set_font(fLargeText);
 	
 	draw_set_color(c_white);
-	draw_text_ext(text_x, base_y + text_y, current_dialogue.message, 16, display_get_gui_width() -192);
+	draw_text_ext(text_x, base_y + text_y, current_dialogue.message, 32, display_get_gui_width() -192);
 
 	alpha = lerp(alpha, 1, 0.06);
 

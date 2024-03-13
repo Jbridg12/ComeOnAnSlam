@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boss_trigger",
+  "%Name":"obj_boss_trigger_limbo",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,11 +8,11 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_boss_trigger",
+  "name":"obj_boss_trigger_limbo",
   "overriddenProperties":[],
   "parent":{
-    "name":"Triggers",
-    "path":"folders/Objects/Environement Props/Triggers.yy",
+    "name":"BossTriggers",
+    "path":"folders/Objects/Environement Props/Triggers/BossTriggers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -40,5 +40,5 @@
     "path":"sprites/Portal/Portal.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

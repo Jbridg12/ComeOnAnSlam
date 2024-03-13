@@ -15,15 +15,6 @@ if(hp <= 0)
 	return;
 }
 
-if(!in_ranged)
-{
-	if(delta_x != 0) orientation = sign(delta_x);
-}
-else
-{
-	if(sign(ranged_angle - 90) != 0)
-		orientation = sign(ranged_angle - 90);	
-}
 
 
 // Update Last Safe Position
@@ -68,8 +59,20 @@ else
 		if(abs(animation_destination - x) > tolerance)
 		{
 			delta_x = sign(animation_destination - x) * walk_speed;
+			delta_y = 20;
 		}
 	}
+}
+
+
+if(!in_ranged)
+{
+	if(delta_x != 0) orientation = sign(delta_x);
+}
+else
+{
+	if(sign(ranged_angle - 90) != 0)
+		orientation = sign(ranged_angle - 90);	
 }
 
 // Invulnerability Cooldown
