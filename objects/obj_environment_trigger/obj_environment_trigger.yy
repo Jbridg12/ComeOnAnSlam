@@ -45,5 +45,5 @@
     "path":"sprites/Portal/Portal.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

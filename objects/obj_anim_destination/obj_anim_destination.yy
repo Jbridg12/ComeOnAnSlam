@@ -34,5 +34,5 @@
     "path":"sprites/sRoomLanding/sRoomLanding.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
