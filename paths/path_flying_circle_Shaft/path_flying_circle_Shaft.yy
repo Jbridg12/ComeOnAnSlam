@@ -1,0 +1,20 @@
+{
+  "$GMPath":"",
+  "%Name":"path_flying_circle_Shaft",
+  "closed":true,
+  "kind":1,
+  "name":"path_flying_circle_Shaft",
+  "parent":{
+    "name":"Shaft",
+    "path":"folders/Paths/Lust/Shaft.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":544.0,"y":1440.0,},
+    {"speed":100.0,"x":544.0,"y":1728.0,},
+    {"speed":100.0,"x":736.0,"y":1728.0,},
+    {"speed":100.0,"x":736.0,"y":1440.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

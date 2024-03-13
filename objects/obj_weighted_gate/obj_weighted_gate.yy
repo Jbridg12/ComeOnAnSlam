@@ -13,8 +13,8 @@
   "name":"obj_weighted_gate",
   "overriddenProperties":[],
   "parent":{
-    "name":"Parents",
-    "path":"folders/Objects/Parents.yy",
+    "name":"Environement Props",
+    "path":"folders/Objects/Environement Props.yy",
   },
   "parentObjectId":{
     "name":"obj_obstacle",
