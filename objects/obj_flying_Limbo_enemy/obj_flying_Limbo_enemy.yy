@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_flying_Limbo_enemy",
+  "%Name":"obj_flying_limbo_enemy",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_flying_Limbo_enemy",
+  "name":"obj_flying_limbo_enemy",
   "overriddenProperties":[],
   "parent":{
     "name":"Limbo",

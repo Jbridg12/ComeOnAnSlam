@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_walking_Limbo_enemy",
+  "%Name":"obj_walking_limbo_enemy",
   "eventList":[],
   "managed":true,
-  "name":"obj_walking_Limbo_enemy",
+  "name":"obj_walking_limbo_enemy",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_pausable_object","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"propertyId":{"name":"platform_transparent","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"detection_radius","path":"objects/obj_enemy/obj_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"50",},

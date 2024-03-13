@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Sprites/ObjectSprites/Enemy.yy",
+    "name":"Limbo",
+    "path":"folders/Sprites/ObjectSprites/Enemy/Limbo.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
