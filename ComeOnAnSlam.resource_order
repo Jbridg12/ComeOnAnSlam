@@ -16,6 +16,8 @@
     {"name":"obj_dialogue_health","order":1,"path":"objects/obj_dialogue_health/obj_dialogue_health.yy",},
     {"name":"obj_dialogue_walljump","order":4,"path":"objects/obj_dialogue_walljump/obj_dialogue_walljump.yy",},
     {"name":"obj_dialogue_weapon","order":7,"path":"objects/obj_dialogue_weapon/obj_dialogue_weapon.yy",},
+    {"name":"obj_dialogueTreachBossEnd","order":2,"path":"objects/obj_dialogueTreachBossEnd/obj_dialogueTreachBossEnd.yy",},
+    {"name":"obj_dialogueTreachBossStart","order":1,"path":"objects/obj_dialogueTreachBossStart/obj_dialogueTreachBossStart.yy",},
     {"name":"obj_heart_spikes","order":2,"path":"objects/obj_heart_spikes/obj_heart_spikes.yy",},
     {"name":"obj_spikes","order":1,"path":"objects/obj_spikes/obj_spikes.yy",},
     {"name":"sAidanWIP_small","order":1,"path":"sprites/sAidanWIP_small/sAidanWIP_small.yy",},
@@ -27,7 +29,7 @@
     {"name":"sLustProps","order":2,"path":"sprites/sLustProps/sLustProps.yy",},
     {"name":"sTSWater","order":5,"path":"sprites/sTSWater/sTSWater.yy",},
     {"name":"Terrain_and_Props","order":2,"path":"sprites/Terrain_and_Props/Terrain_and_Props.yy",},
-    {"name":"tsLustProps","order":1,"path":"tilesets/tsLustProps/tsLustProps.yy",},
     {"name":"tsIntroProps","order":2,"path":"tilesets/tsIntroProps/tsIntroProps.yy",},
+    {"name":"tsLustProps","order":1,"path":"tilesets/tsLustProps/tsLustProps.yy",},
   ],
 }
