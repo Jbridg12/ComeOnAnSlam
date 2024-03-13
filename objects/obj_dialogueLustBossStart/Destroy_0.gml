@@ -6,7 +6,9 @@ event_inherited();
 
 if(obj_game_manager.curr_bgm) audio_stop_sound(obj_game_manager.curr_bgm);
 
-obj_game_manager.curr_bgm = audio_play_sound(sndCollect, 1, true);
+obj_game_manager.curr_bgm = audio_play_sound(sndBoss, 1, true);
+audio_sound_loop_start(curr_bgm, 3);
+audio_sound_loop_end(curr_bgm, 87);
 
 with(obj_boss_enemy)
 {
