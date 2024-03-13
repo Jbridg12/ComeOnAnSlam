@@ -44,8 +44,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sMargaretWIP",
-    "path":"sprites/sMargaretWIP/sMargaretWIP.yy",
+    "name":"sMargaretWIP_small",
+    "path":"sprites/sMargaretWIP_small/sMargaretWIP_small.yy",
   },
   "spriteMaskId":null,
   "visible":true,

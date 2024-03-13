@@ -228,6 +228,7 @@
     {"name":"sLimboProps","order":5,"path":"sprites/sLimboProps/sLimboProps.yy",},
     {"name":"sLustTileables","order":2,"path":"sprites/sLustTileables/sLustTileables.yy",},
     {"name":"sMargaretWIP","order":1,"path":"sprites/sMargaretWIP/sMargaretWIP.yy",},
+    {"name":"sMargaretWIP_small","order":3,"path":"sprites/sMargaretWIP_small/sMargaretWIP_small.yy",},
     {"name":"sPause_Menu_BG_long","order":2,"path":"sprites/sPause_Menu_BG_long/sPause_Menu_BG_long.yy",},
     {"name":"sPause_Menu_BG","order":1,"path":"sprites/sPause_Menu_BG/sPause_Menu_BG.yy",},
     {"name":"sPlayerProjectile","order":1,"path":"sprites/sPlayerProjectile/sPlayerProjectile.yy",},
