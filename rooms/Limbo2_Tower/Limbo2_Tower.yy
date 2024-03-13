@@ -18,6 +18,8 @@
     {"name":"inst_7D682696","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
     {"name":"inst_124691FB","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
     {"name":"inst_D937E2C","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
+    {"name":"inst_76A2641A","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
+    {"name":"inst_7ACCC5E4","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -40,8 +42,10 @@
               1,-2147483648,-31,0,1,-2147483648,-31,0,1,-2147483648,-31,0,1,-2147483648,-31,0,1,-2147483648,-31,0,
               1,-2147483648,-31,0,1,-2147483648,-31,0,1,-2147483648,-31,0,1,-2147483648,-31,0,
             ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet7","path":"tilesets/TileSet7/TileSet7.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
-        {"$GMRInstanceLayer":"","%Name":"Bouncy","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-            {"$GMRInstance":"","%Name":"inst_59C8F11C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_59C8F11C","objectId":{"name":"obj_wall_bounce","path":"objects/obj_wall_bounce/obj_wall_bounce.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":57.0,"scaleY":1.0,"x":96.0,"y":2464.0,},
+        {"$GMRInstanceLayer":"","%Name":"Bouncy","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"instances":[
+            {"$GMRInstance":"","%Name":"inst_59C8F11C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_59C8F11C","objectId":{"name":"obj_wall_bounce","path":"objects/obj_wall_bounce/obj_wall_bounce.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":57.0,"scaleY":1.0,"x":32.0,"y":2464.0,},
+            {"$GMRInstance":"","%Name":"inst_76A2641A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76A2641A","objectId":{"name":"obj_wall_bounce","path":"objects/obj_wall_bounce/obj_wall_bounce.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":25.0,"scaleY":1.0,"x":608.0,"y":1504.0,},
+            {"$GMRInstance":"","%Name":"inst_7ACCC5E4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7ACCC5E4","objectId":{"name":"obj_wall_bounce","path":"objects/obj_wall_bounce/obj_wall_bounce.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":30.000002,"scaleY":1.0,"x":32.0,"y":1504.0,},
           ],"layers":[],"name":"Bouncy","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
         {"$GMRTileLayer":"","%Name":"Platforms","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Platforms","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":79,"SerialiseWidth":32,"TileCompressedData":[
               -193,-2147483648,1,72,-28,73,1,75,-199,-2147483648,26,216,217,218,219,217,218,217,218,217,218,217,218,
