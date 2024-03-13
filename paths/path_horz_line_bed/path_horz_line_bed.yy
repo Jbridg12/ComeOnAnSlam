@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"path_horz_line_bed",
+  "closed":false,
+  "kind":0,
+  "name":"path_horz_line_bed",
+  "parent":{
+    "name":"bedroom",
+    "path":"folders/Paths/Lust/bedroom.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":384.0,"y":288.0,},
+    {"speed":100.0,"x":542.0005,"y":288.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
