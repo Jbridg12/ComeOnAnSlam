@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Man",
-    "path":"sprites/Man/Man.yy",
+    "name":"sLimboJimboRanged",
+    "path":"sprites/sLimboJimboRanged/sLimboJimboRanged.yy",
   },
   "spriteMaskId":null,
   "visible":true,
