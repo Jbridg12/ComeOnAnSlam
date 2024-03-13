@@ -1,12 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_flying_limbo_enemy",
+  "%Name":"obj_flying_limbo_boss_minion",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_flying_limbo_enemy",
-  "overriddenProperties":[],
+  "name":"obj_flying_limbo_boss_minion",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"detection_radius","path":"objects/obj_enemy/obj_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5000",},
+  ],
   "parent":{
     "name":"Limbo",
     "path":"folders/Objects/Entities/Enemies/Limbo.yy",

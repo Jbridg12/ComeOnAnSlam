@@ -3,14 +3,7 @@
 
 var _event = 6;
 
-if((hp/max_health) < 0.5)
-{
-	_event = spikes_active ? choose(6, 7) : choose(6, 7, 9);
-}
-else
-{
-	_event = 6;
-}
-attack_cooldown = ((hp/max_health) < 0.5) ? 180 : 240;
+
+attack_cooldown = ((hp/max_health) < 0.5) ? 75 : 100;
 
 event_user(_event);

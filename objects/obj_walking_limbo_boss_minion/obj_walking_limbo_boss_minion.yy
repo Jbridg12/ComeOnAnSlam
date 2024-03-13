@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_walking_limbo_enemy",
+  "%Name":"obj_walking_limbo_boss_minion",
   "eventList":[],
   "managed":true,
-  "name":"obj_walking_limbo_enemy",
+  "name":"obj_walking_limbo_boss_minion",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_pausable_object","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"propertyId":{"name":"platform_transparent","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"detection_radius","path":"objects/obj_enemy/obj_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"50",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"detection_radius","path":"objects/obj_enemy/obj_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5000",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"path_action","path":"objects/obj_enemy/obj_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"reverse",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_pausable_object","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"propertyId":{"name":"use_gravity","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_pausable_object","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"propertyId":{"name":"weight","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_pausable_object","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"propertyId":{"name":"max_health","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_pausable_object","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"propertyId":{"name":"max_health","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"300",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"move_speed","path":"objects/obj_enemy/obj_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.2",},
   ],
   "parent":{
     "name":"Limbo",
@@ -38,8 +39,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sLimboJimbo",
-    "path":"sprites/sLimboJimbo/sLimboJimbo.yy",
+    "name":"sLimboJimboBoss",
+    "path":"sprites/sLimboJimboBoss/sLimboJimboBoss.yy",
   },
   "spriteMaskId":null,
   "visible":true,
