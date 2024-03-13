@@ -17,6 +17,7 @@
     {"name":"inst_62742A60","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
     {"name":"inst_7D682696","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
     {"name":"inst_124691FB","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
+    {"name":"inst_D937E2C","path":"rooms/Limbo2_Tower/Limbo2_Tower.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -84,7 +85,8 @@
               10,11,10,11,10,11,10,11,10,12,-3,0,29,9,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,
               10,11,10,11,10,11,10,12,-3,0,14,9,10,11,10,11,10,11,10,11,10,11,10,11,41,-14,18,1,20,-3,0,1,17,-11,18,
               2,40,12,-30,0,2,9,12,-30,0,2,9,12,-30,0,2,9,12,-30,0,2,9,12,-30,0,2,17,12,-31,0,1,12,-31,0,1,12,-31,
-              0,1,12,-31,0,1,33,-31,2,-32,0,
+              0,1,12,-31,0,1,33,-31,2,32,10,11,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,10,11,
+              10,11,10,11,10,11,10,
             ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet7","path":"tilesets/TileSet7/TileSet7.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
       ],"name":"Render_Above_Instances","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"GUI","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"GUI","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
@@ -124,6 +126,7 @@
         {"$GMRInstance":"","%Name":"inst_124691FB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_124691FB","objectId":{"name":"obj_flying_limbo_enemy","path":"objects/obj_flying_limbo_enemy/obj_flying_limbo_enemy.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"propertyId":{"name":"follow_path","path":"objects/obj_enemy/obj_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"med_horz_LR_line",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":704.0,},
+        {"$GMRInstance":"","%Name":"inst_D937E2C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_D937E2C","objectId":{"name":"obj_weapon_upgrade","path":"objects/obj_weapon_upgrade/obj_weapon_upgrade.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":96.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Render_Below_Instances","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRLayer":"","%Name":"Enemy_Paths","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":true,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
