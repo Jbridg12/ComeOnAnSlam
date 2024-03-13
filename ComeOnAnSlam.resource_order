@@ -69,7 +69,6 @@
   "ResourceOrderSettings":[
     {"name":"fMenu","order":1,"path":"fonts/fMenu/fMenu.yy",},
     {"name":"dialogue1","order":1,"path":"objects/dialogue1/dialogue1.yy",},
-    {"name":"obj_dialogue_joan2","order":2,"path":"objects/obj_dialogue_joan2/obj_dialogue_joan2.yy",},
     {"name":"obj_anim_destination","order":5,"path":"objects/obj_anim_destination/obj_anim_destination.yy",},
     {"name":"obj_boss_enemy","order":14,"path":"objects/obj_boss_enemy/obj_boss_enemy.yy",},
     {"name":"obj_boss_lust","order":2,"path":"objects/obj_boss_lust/obj_boss_lust.yy",},
@@ -83,6 +82,7 @@
     {"name":"obj_dawg","order":1,"path":"objects/obj_dawg/obj_dawg.yy",},
     {"name":"obj_dialogue_bear1","order":2,"path":"objects/obj_dialogue_bear1/obj_dialogue_bear1.yy",},
     {"name":"obj_dialogue_bear2","order":3,"path":"objects/obj_dialogue_bear2/obj_dialogue_bear2.yy",},
+    {"name":"obj_dialogue_joan2","order":2,"path":"objects/obj_dialogue_joan2/obj_dialogue_joan2.yy",},
     {"name":"obj_dialogue_limbo2","order":1,"path":"objects/obj_dialogue_limbo2/obj_dialogue_limbo2.yy",},
     {"name":"obj_dialogue_parent","order":7,"path":"objects/obj_dialogue_parent/obj_dialogue_parent.yy",},
     {"name":"obj_dialogueLimboBossEnd","order":5,"path":"objects/obj_dialogueLimboBossEnd/obj_dialogueLimboBossEnd.yy",},
@@ -183,6 +183,7 @@
     {"name":"sndStapler_Throw","order":6,"path":"sounds/sndStapler_Throw/sndStapler_Throw.yy",},
     {"name":"sndStep_2","order":1,"path":"sounds/sndStep_2/sndStep_2.yy",},
     {"name":"sndTreachBGM","order":2,"path":"sounds/sndTreachBGM/sndTreachBGM.yy",},
+    {"name":"sndItemGet","order":6,"path":"sounds/sndItemGet/sndItemGet.yy",},
     {"name":"Bat","order":1,"path":"sprites/Bat/Bat.yy",},
     {"name":"BG","order":3,"path":"sprites/BG/BG.yy",},
     {"name":"dialogue_aidan","order":3,"path":"sprites/dialogue_aidan/dialogue_aidan.yy",},
