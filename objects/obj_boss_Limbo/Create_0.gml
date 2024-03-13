@@ -3,6 +3,7 @@
 
 // Inherit the parent event
 event_inherited();
-max_health = 1500;
-hp = 1500;
+
+max_health = 750;
+hp = 750;
 medium_range = 650;
