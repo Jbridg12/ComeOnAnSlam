@@ -13,7 +13,14 @@ draw_circle_color(x, y, detection_radius, c_white, c_purple, true);
 // If enemy can go upside down
 if(can_rotate)
 {
-	draw_sprite_ext(self.sprite_index, image_index, x, y, 1, 1, rotation, sprite_color, 1);
+	if(path_action == "loop")
+	{
+		draw_sprite_ext(self.sprite_index, image_index, x, y, 1, 1, rotation, sprite_color, 1);
+	}
+	else
+	{
+		draw_sprite_ext(self.sprite_index, image_index, x, y, orient_x, 1, 0, sprite_color, 1);
+	}
 }
 else
 {

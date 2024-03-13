@@ -1,4 +1,6 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"sCrawler3","order":1,"path":"sprites/sCrawler3/sCrawler3.yy",},
+  ],
 }
