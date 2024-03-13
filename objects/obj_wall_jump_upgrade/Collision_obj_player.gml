@@ -12,3 +12,4 @@ with(obj_player)
 {
 	wall_jump_enabled = true;	
 }
+instance_create_layer(0, 0, "Instances", obj_dialogue_walljump);

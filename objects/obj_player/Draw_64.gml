@@ -31,11 +31,14 @@ if(gui_enabled)
 					  
 	draw_sprite(health_border, 0, healthbar_offset_x, healthbar_offset_y)
 
-	for(var i=0; i < max_ammo; i++)
+	if(ranged_enabled)
 	{
-		var _ammo_sprite = sFullAmmo;
-		if(i >= current_ammo) _ammo_sprite = sEmptyAmmo;
+		for(var i=0; i < max_ammo; i++)
+		{
+			var _ammo_sprite = sFullAmmo;
+			if(i >= current_ammo) _ammo_sprite = sEmptyAmmo;
 		
-		draw_sprite(_ammo_sprite, 0, initial_ammo_x + (i * ammo_offset_x), initial_ammo_y);	
+			draw_sprite(_ammo_sprite, 0, initial_ammo_x + (i * ammo_offset_x), initial_ammo_y);	
+		}
 	}
 }

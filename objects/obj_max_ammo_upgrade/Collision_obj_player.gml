@@ -10,3 +10,4 @@ with(obj_player)
 	current_ammo = max_ammo;
 
 }
+instance_create_layer(0, 0, "Instances", obj_dialogue_ammo);

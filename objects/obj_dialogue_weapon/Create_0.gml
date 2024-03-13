@@ -3,13 +3,7 @@
 
 
 
-
-
 // Inherit the parent event
 event_inherited();
 
-with(obj_player)
-{
-	dummy_enabled = true;	
-}
-instance_create_layer(0, 0, "Instances", obj_dialogue_dummy);
+dialog.add(dialogue_red, "Found a Whetstone that sharpens your Stapler!");

@@ -1,6 +1,15 @@
 {
-  "FolderOrderSettings":[],
+  "FolderOrderSettings":[
+    {"name":"Collectibles","order":2,"path":"folders/Objects/Dialogue/Collectibles.yy",},
+  ],
   "ResourceOrderSettings":[
+    {"name":"obj_dialogue_ammo","order":6,"path":"objects/obj_dialogue_ammo/obj_dialogue_ammo.yy",},
+    {"name":"obj_dialogue_weapon","order":7,"path":"objects/obj_dialogue_weapon/obj_dialogue_weapon.yy",},
+    {"name":"obj_dialogue_chargedAttack","order":5,"path":"objects/obj_dialogue_chargedAttack/obj_dialogue_chargedAttack.yy",},
+    {"name":"obj_dialogue_chargedVert","order":3,"path":"objects/obj_dialogue_chargedVert/obj_dialogue_chargedVert.yy",},
+    {"name":"obj_dialogue_dummy","order":2,"path":"objects/obj_dialogue_dummy/obj_dialogue_dummy.yy",},
+    {"name":"obj_dialogue_health","order":1,"path":"objects/obj_dialogue_health/obj_dialogue_health.yy",},
+    {"name":"obj_dialogue_walljump","order":4,"path":"objects/obj_dialogue_walljump/obj_dialogue_walljump.yy",},
     {"name":"obj_heart_spikes","order":2,"path":"objects/obj_heart_spikes/obj_heart_spikes.yy",},
     {"name":"obj_spikes","order":1,"path":"objects/obj_spikes/obj_spikes.yy",},
   ],
