@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sFlyer",
-    "path":"sprites/sFlyer/sFlyer.yy",
+    "name":"sWingedJimboRed",
+    "path":"sprites/sWingedJimboRed/sWingedJimboRed.yy",
   },
   "spriteMaskId":null,
   "visible":true,

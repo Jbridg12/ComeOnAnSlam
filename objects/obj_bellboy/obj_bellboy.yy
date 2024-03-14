@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sBearPH",
-    "path":"sprites/sBearPH/sBearPH.yy",
+    "name":"sBellboyJimbo",
+    "path":"sprites/sBellboyJimbo/sBellboyJimbo.yy",
   },
   "spriteMaskId":null,
   "visible":true,
