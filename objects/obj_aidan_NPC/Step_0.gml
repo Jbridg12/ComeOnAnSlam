@@ -10,6 +10,11 @@ if(destination_x != -1)
 	if(delta_x != 0)
 	{
 		orient_x = sign(delta_x);	
+		sprite_index = sAidanWalk;
+	}
+	else
+	{
+		sprite_index = sAidanWIP_small;
 	}
 }
 

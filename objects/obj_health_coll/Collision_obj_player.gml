@@ -6,6 +6,7 @@
 with(obj_player)
 {
 	max_health += 50;
+	max_health = clamp(max_health, 0, 300);
 	hp = max_health;
 
 }

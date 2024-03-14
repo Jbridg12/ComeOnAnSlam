@@ -10,8 +10,20 @@ if(gui_enabled)
 	switch(max_health)
 	{
 		case 150:
-			health_bg = healthbar_bg_lvl2;
-			health_border = healthbar_border_lvl2;
+			health_bg = healthbar_bg_2;
+			health_border = healthbar_border_2;
+			break;
+		case 200:
+			health_bg = healthbar_bg_3;
+			health_border = healthbar_border_3;
+			break;
+		case 250:
+			health_bg = healthbar_bg_4;
+			health_border = healthbar_border_4;
+			break;
+		case 300:
+			health_bg = healthbar_bg_5;
+			health_border = healthbar_border_5;
 			break;
 		default:
 			health_bg = healthbar_bg;
