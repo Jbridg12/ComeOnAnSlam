@@ -42,7 +42,7 @@
     ],
     "top":0,
   },
-  "origin":4,
+  "origin":1,
   "parent":{
     "name":"Hitboxes",
     "path":"folders/Sprites/ObjectSprites/Hitboxes.yy",
@@ -95,7 +95,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":32,
-    "yorigin":16,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":2.525,
