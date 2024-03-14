@@ -10,9 +10,5 @@ with(obj_boss_enemy)
 	instance_destroy();	
 }
 
-with(obj_boss_trigger_treachery)
-{
-	event_user(1);	
-}
 
 room_goto(MainMenu);

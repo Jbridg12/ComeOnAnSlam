@@ -118,6 +118,7 @@ charge_jump_speed = -100;
 // Cutscene Destination
 animation_destination = -1;
 tolerance = 5;
+animation_speed = 0;
 
 //------------------------------------------------------------------
 

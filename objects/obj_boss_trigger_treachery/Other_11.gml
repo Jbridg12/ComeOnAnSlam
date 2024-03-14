@@ -8,10 +8,32 @@ with(obj_obstacle)
 	{
 		event_user(0);
 	}
+	if(room_index == 5)
+	{
+		event_user(0);
+	}
 }
+
+with(obj_boss_enemy)
+{
+	instance_destroy();	
+}
+
 
 with(obj_game_manager)
 {
 	audio_stop_all()
 }
 
+obj_player.sprite_index = sPlayer;
+		
+with(obj_anim_destination)
+{
+	if(index == 1)
+	{
+		obj_player.animation_destination = self.x;
+		obj_player.animation_speed = 1.5;
+	}
+}
+obj_player.hazard_cooldown = 120;
+instance_create_layer(0, 0, "Instances", obj_dialogueTreachBossEnd);

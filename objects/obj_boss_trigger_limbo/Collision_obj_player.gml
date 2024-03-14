@@ -13,6 +13,7 @@ if(!triggered)
 			if(index == _index)
 			{
 				obj_player.animation_destination = self.x;
+				obj_player.animation_speed = 3;
 			}
 		}
 		

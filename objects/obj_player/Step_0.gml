@@ -58,7 +58,7 @@ else
 	{
 		if(abs(animation_destination - x) > tolerance)
 		{
-			delta_x = sign(animation_destination - x) * walk_speed;
+			delta_x = sign(animation_destination - x) * animation_speed;
 			delta_y = 20;
 		}
 	}
