@@ -14,6 +14,7 @@
     {"name":"inst_2B18748E","path":"rooms/Lust_Break/Lust_Break.yy",},
     {"name":"inst_4E164739","path":"rooms/Lust_Break/Lust_Break.yy",},
     {"name":"inst_16584263","path":"rooms/Lust_Break/Lust_Break.yy",},
+    {"name":"inst_49764078","path":"rooms/Lust_Break/Lust_Break.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -51,6 +52,10 @@
         {"$GMRInstance":"","%Name":"inst_16584263","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_16584263","objectId":{"name":"obj_room_entrance","path":"objects/obj_room_entrance/obj_room_entrance.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_room_entrance","path":"objects/obj_room_entrance/obj_room_entrance.yy",},"propertyId":{"name":"entrance_id","path":"objects/obj_room_entrance/obj_room_entrance.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":64.0,},
+        {"$GMRInstance":"","%Name":"inst_49764078","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_49764078","objectId":{"name":"obj_Joan","path":"objects/obj_Joan/obj_Joan.yy",},"properties":[
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_interactible_char","path":"objects/obj_interactible_char/obj_interactible_char.yy",},"propertyId":{"name":"initial_dialogue","path":"objects/obj_interactible_char/obj_interactible_char.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_dialogue_joan2",},
+            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_interactible_char","path":"objects/obj_interactible_char/obj_interactible_char.yy",},"propertyId":{"name":"repeat_dialogue","path":"objects/obj_interactible_char/obj_interactible_char.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_dialogue_joan_filler2",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":662.0,"y":432.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Render_Below_Instances","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRLayer":"","%Name":"Enemy_Paths","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Enemy_Paths","properties":[],"resourceType":"GMRLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
