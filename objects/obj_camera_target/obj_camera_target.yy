@@ -6,8 +6,8 @@
   "name":"obj_camera_target",
   "overriddenProperties":[],
   "parent":{
-    "name":"RoomObjects",
-    "path":"folders/Objects/RoomObjects.yy",
+    "name":"Locations",
+    "path":"folders/Objects/RoomObjects/Locations.yy",
   },
   "parentObjectId":null,
   "persistent":false,
