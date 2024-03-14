@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Man",
-    "path":"sprites/Man/Man.yy",
+    "name":"sEvilJimbo",
+    "path":"sprites/sEvilJimbo/sEvilJimbo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

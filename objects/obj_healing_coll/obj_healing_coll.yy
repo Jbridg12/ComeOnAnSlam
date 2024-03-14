@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sHealthPickup",
-    "path":"sprites/sHealthPickup/sHealthPickup.yy",
+    "name":"sHealthColl",
+    "path":"sprites/sHealthColl/sHealthColl.yy",
   },
   "spriteMaskId":null,
   "visible":true,
