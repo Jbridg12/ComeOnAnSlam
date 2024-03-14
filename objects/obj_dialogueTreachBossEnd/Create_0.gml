@@ -8,4 +8,4 @@ finished = false;
 dialog.add(dialogue_nadia, "PEBBLES!");
 dialog.add(dialogue_nadia, "Oh how I've missed you.");
 dialog.add(dialogue_pebbles, "Woof!");
-dialog.add(dialogue_pebbles, "Woof! (I missed you too Nadia.)");
+dialog.add(dialogue_pebbles, "Woof! *licks*");
