@@ -71,6 +71,7 @@
     {"name":"sMargaretWIP_small","order":2,"path":"sprites/sMargaretWIP_small/sMargaretWIP_small.yy",},
     {"name":"sMargaretWIP","order":3,"path":"sprites/sMargaretWIP/sMargaretWIP.yy",},
     {"name":"sMedRock","order":1,"path":"sprites/sMedRock/sMedRock.yy",},
+    {"name":"Sprite104","order":1,"path":"sprites/Sprite104/Sprite104.yy",},
     {"name":"sShortRock","order":2,"path":"sprites/sShortRock/sShortRock.yy",},
     {"name":"sWingedJimbo","order":6,"path":"sprites/sWingedJimbo/sWingedJimbo.yy",},
     {"name":"sWingedJimboRed","order":7,"path":"sprites/sWingedJimboRed/sWingedJimboRed.yy",},
