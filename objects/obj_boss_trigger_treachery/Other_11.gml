@@ -4,7 +4,7 @@
 var _index = tied_room_index;
 with(obj_obstacle)
 {
-	if(room_index == _index)
+	if(room_index == 4)
 	{
 		event_user(0);
 	}
@@ -12,6 +12,6 @@ with(obj_obstacle)
 
 with(obj_game_manager)
 {
-	event_user(2);	
+	audio_stop_all()
 }
 

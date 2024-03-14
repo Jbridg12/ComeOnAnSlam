@@ -3,6 +3,9 @@
 
 // Inherit the parent event
 event_inherited();
+finished = false;
 
-dialog.add(dialogue_red, "Huh? My notebook...");
-dialog.add(dialogue_red, "Guess I'll write about this.");
+dialog.add(dialogue_nadia, "PEBBLES!");
+dialog.add(dialogue_nadia, "Oh how I've missed you.");
+dialog.add(dialogue_pebbles, "Woof!");
+dialog.add(dialogue_pebbles, "Woof! (I missed you too Nadia.)");

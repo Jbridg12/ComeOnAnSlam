@@ -16,7 +16,6 @@ if(!triggered)
 			}
 		}
 		
-		
 		camera_set_view_speed(view_camera[0], 5, 5);
 		camera_set_view_target(view_camera[0], obj_camera_target);
 		_index = tied_room_index;
