@@ -8,8 +8,8 @@
   "name":"obj_dialogue_bear_filler1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialogue",
-    "path":"folders/Objects/Dialogue.yy",
+    "name":"Lust",
+    "path":"folders/Objects/Dialogue/Lust.yy",
   },
   "parentObjectId":{
     "name":"obj_dialogue_parent",

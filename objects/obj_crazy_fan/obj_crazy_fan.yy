@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sHeartstruckJimbo",
-    "path":"sprites/sHeartstruckJimbo/sHeartstruckJimbo.yy",
+    "name":"Man",
+    "path":"sprites/Man/Man.yy",
   },
   "spriteMaskId":null,
   "visible":true,
