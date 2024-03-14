@@ -1,21 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_crazy_fan",
+  "%Name":"obj_dialogue_bearupgrade",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":13,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_crazy_fan",
+  "name":"obj_dialogue_bearupgrade",
   "overriddenProperties":[],
   "parent":{
     "name":"Lust",
-    "path":"folders/Objects/Entities/Enemies/Lust.yy",
+    "path":"folders/Objects/Dialogue/Lust.yy",
   },
   "parentObjectId":{
-    "name":"obj_projectile_enemy",
-    "path":"objects/obj_projectile_enemy/obj_projectile_enemy.yy",
+    "name":"obj_dialogue_parent",
+    "path":"objects/obj_dialogue_parent/obj_dialogue_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,10 +32,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sHeartstruckJimbo",
-    "path":"sprites/sHeartstruckJimbo/sHeartstruckJimbo.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
