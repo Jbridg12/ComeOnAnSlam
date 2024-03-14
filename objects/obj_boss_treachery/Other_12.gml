@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-dialog.add(dialogue_nadia, "Alright Punk tell me where Pebbles is!");
+instance_create_layer(0, 0, "Instances", obj_dialogueLustBossEnd);

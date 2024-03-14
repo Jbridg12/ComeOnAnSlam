@@ -6,8 +6,8 @@
   "name":"obj_anim_destination",
   "overriddenProperties":[],
   "parent":{
-    "name":"RoomObjects",
-    "path":"folders/Objects/RoomObjects.yy",
+    "name":"Locations",
+    "path":"folders/Objects/RoomObjects/Locations.yy",
   },
   "parentObjectId":null,
   "persistent":false,
