@@ -4,5 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-dialog.add(dialogue_red, "Huh? My notebook...");
-dialog.add(dialogue_red, "Guess I'll write about this.");
+dialog.add(dialogue_nadia, "God it reeks in here. What were there 13 types of cologne?");
