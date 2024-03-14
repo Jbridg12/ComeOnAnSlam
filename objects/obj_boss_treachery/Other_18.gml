@@ -15,6 +15,9 @@ if(in_dash)
 		in_attack = false;
 		invulnerable = false;
 		collidable = false;
+		
+		image_speed = 0;
+		image_index = 14;
 	}
 }
 else
@@ -23,4 +26,6 @@ else
 	invulnerable = true;
 	dash_index = 0;
 	collidable = true;
+	image_speed = 4;
+	
 }

@@ -7,3 +7,5 @@ event_inherited();
 destination_x = -1;
 index = -1;
 orient_x = 1;
+image_speed = 0;
+image_index = 14;

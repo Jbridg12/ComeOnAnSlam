@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sAidanWIP_small",
-    "path":"sprites/sAidanWIP_small/sAidanWIP_small.yy",
+    "name":"sAidanWalk",
+    "path":"sprites/sAidanWalk/sAidanWalk.yy",
   },
   "spriteMaskId":null,
   "visible":true,

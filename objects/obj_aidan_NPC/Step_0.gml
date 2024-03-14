@@ -10,6 +10,12 @@ if(destination_x != -1)
 	if(delta_x != 0)
 	{
 		orient_x = sign(delta_x);	
+		image_speed = 1;
+	}
+	else
+	{
+		image_speed = 0;
+		image_index = 14;
 	}
 }
 
