@@ -22,6 +22,10 @@
     {"name":"inst_52A1EF5","path":"rooms/TestRoomStart/TestRoomStart.yy",},
     {"name":"inst_18C726B5","path":"rooms/TestRoomStart/TestRoomStart.yy",},
     {"name":"inst_46F0536E","path":"rooms/TestRoomStart/TestRoomStart.yy",},
+    {"name":"inst_5AE9E670","path":"rooms/TestRoomStart/TestRoomStart.yy",},
+    {"name":"inst_42F16A44","path":"rooms/TestRoomStart/TestRoomStart.yy",},
+    {"name":"inst_71E95130","path":"rooms/TestRoomStart/TestRoomStart.yy",},
+    {"name":"inst_14FEF1F8","path":"rooms/TestRoomStart/TestRoomStart.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -113,6 +117,10 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_interactible","path":"objects/obj_interactible/obj_interactible.yy",},"propertyId":{"name":"tied_room_index","path":"objects/obj_interactible/obj_interactible.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-90.0,"scaleX":1.0,"scaleY":1.0,"x":576.0,"y":256.0,},
         {"$GMRInstance":"","%Name":"inst_46F0536E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_46F0536E","objectId":{"name":"obj_limbo_proj","path":"objects/obj_limbo_proj/obj_limbo_proj.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":448.0,},
+        {"$GMRInstance":"","%Name":"inst_5AE9E670","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5AE9E670","objectId":{"name":"obj_health_coll","path":"objects/obj_health_coll/obj_health_coll.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":384.0,},
+        {"$GMRInstance":"","%Name":"inst_42F16A44","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_42F16A44","objectId":{"name":"obj_health_coll","path":"objects/obj_health_coll/obj_health_coll.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1088.0,"y":384.0,},
+        {"$GMRInstance":"","%Name":"inst_71E95130","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71E95130","objectId":{"name":"obj_health_coll","path":"objects/obj_health_coll/obj_health_coll.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1344.0,"y":384.0,},
+        {"$GMRInstance":"","%Name":"inst_14FEF1F8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14FEF1F8","objectId":{"name":"obj_health_coll","path":"objects/obj_health_coll/obj_health_coll.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1472.0,"y":384.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRLayer":"","%Name":"Render_Below_Instance","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
         {"$GMRLayer":"","%Name":"Enemy_Paths","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[
