@@ -19,3 +19,6 @@ fired = false;
 in_circle_attack = false;
 float_speed = 4
 dest_index = -1;
+
+//Slam Parameters
+in_slam = false;

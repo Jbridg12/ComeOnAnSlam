@@ -43,6 +43,7 @@ function handle_input(){
 	//--------------------Vine Input management-------------------------
 	if(on_vine)
 	{
+		platform_transparent = true;
 		delta_y = 0;
 		delta_x = 0;
 		

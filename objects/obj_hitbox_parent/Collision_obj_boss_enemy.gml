@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(other.invulnerable) return;
 if(ds_list_find_index(other.hit_list, object_index) != -1) return;
 ds_list_add(other.hit_list, object_index);
 

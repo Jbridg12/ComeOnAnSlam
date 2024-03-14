@@ -72,7 +72,7 @@ if(active)
 		
 		if(abs(x - _dest_x) <= tolerance && abs(y - _dest_y) <= tolerance && !alarmed)
 		{
-			alarm[0] = 15;
+			alarm[0] = 30;
 			alarmed = true;
 			return;
 		}
@@ -83,6 +83,15 @@ if(active)
 		
 		delta_x = sign(target_x - x) * float_speed;
 		delta_y = sign(target_y - y) * float_speed;
+	}
+	if(in_slam)
+	{
+		if(!alarmed)
+		{
+			alarm[0] = 30;
+			alarmed = true;
+			return;
+		}
 	}
 	
 }
