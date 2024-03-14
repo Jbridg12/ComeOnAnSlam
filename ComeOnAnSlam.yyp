@@ -496,7 +496,7 @@
     {"roomId":{"name":"Limbo_hallway","path":"rooms/Limbo_hallway/Limbo_hallway.yy",},},
     {"roomId":{"name":"Restroom_B4_Boss","path":"rooms/Restroom_B4_Boss/Restroom_B4_Boss.yy",},},
     {"roomId":{"name":"Lust_Storage","path":"rooms/Lust_Storage/Lust_Storage.yy",},},
-    {"roomId":{"name":"Limbo_Upgrade_Room","path":"rooms/Limbo_Upgrade_Room/Limbo_Upgrade_Room.yy",},}
+    {"roomId":{"name":"Limbo_Upgrade_Room","path":"rooms/Limbo_Upgrade_Room/Limbo_Upgrade_Room.yy",},},
     {"roomId":{"name":"Limbo_chargejump","path":"rooms/Limbo_chargejump/Limbo_chargejump.yy",},},
     {"roomId":{"name":"Lust_ChargedUpgrade","path":"rooms/Lust_ChargedUpgrade/Lust_ChargedUpgrade.yy",},},
   ],
