@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_safe_spot",
+  "%Name":"obj_circle_target",
   "eventList":[],
   "managed":true,
-  "name":"obj_safe_spot",
+  "name":"obj_circle_target",
   "overriddenProperties":[],
   "parent":{
-    "name":"Locations",
-    "path":"folders/Objects/RoomObjects/Locations.yy",
+    "name":"Boss Objects",
+    "path":"folders/Objects/Entities/Enemies/Treachery/Boss Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -23,7 +23,9 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"index","filters":[],"listItems":[],"multiselect":false,"name":"index","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
