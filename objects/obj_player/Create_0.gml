@@ -16,8 +16,8 @@ image_speed = 1;
 
 //--------------------Progression Upgrade Flags---------------------
 
-primary_enabled = false;
-ranged_enabled = false;
+primary_enabled = true;
+ranged_enabled = true;
 wall_jump_enabled = true;
 charge_attack_enabled = true;
 dummy_enabled = true;
