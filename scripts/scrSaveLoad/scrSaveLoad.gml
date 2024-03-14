@@ -12,6 +12,7 @@ function save_game()
 			x : x,
 			y : y,
 			image_index : image_index,
+			primary_enabled : primary_enabled,
 			ranged_enabled : ranged_enabled,
 			wall_jump_enabled : wall_jump_enabled,
 			charge_attack_enabled : charge_attack_enabled,
@@ -95,6 +96,7 @@ function load_game()
 			forced_y = _array[0].y;
 			image_index = _array[0].image_index;
 			ranged_enabled = _array[0].ranged_enabled;
+			primary_enabled = _array[0].primary_enabled;
 			wall_jump_enabled = _array[0].wall_jump_enabled;
 			charge_attack_enabled = _array[0].charge_attack_enabled;
 			dummy_enabled = _array[0].dummy_enabled;

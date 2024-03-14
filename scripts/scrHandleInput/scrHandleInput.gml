@@ -201,6 +201,8 @@ function handle_input(){
 	var _chargePrimary = keyboard_check(ord("2")) || keyboard_check(ord("K")) || mouse_check_button(mb_left) || gamepad_button_check(0, gp_face3);
 	var _releasePrimary = keyboard_check_released(ord("2")) || keyboard_check_released(ord("K")) || mouse_check_button_released(mb_left) || gamepad_button_check_released(0, gp_face3);
 	
+	if(!primary_enabled) return;
+	
 	if(charging && _chargePrimary)
 	{
 		charge_timer++;
@@ -266,7 +268,7 @@ function handle_input(){
 			
 		}
 		
-		if(isJump)
+		if(isJump && ranged_enabled)
 		{
 			event_user(4);
 		}
