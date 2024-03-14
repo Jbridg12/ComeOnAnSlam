@@ -6,7 +6,7 @@ event_inherited();
 finished = false;
 
 dialog.add(dialogue_nadia, "Hey, give me back my dog!");
-dialog.add(dialogue_margret, "Here she is sir stirring up trouble again.");
+dialog.add(dialogue_margret, "Here she comes, stirring up trouble again.");
 dialog.add(dialogue_margret, "Why can't you just learn to punch in and shut up like everyone else!");
 dialog.add(dialogue_aidan, "Careful Margaret we don't want a lawsuit on our hands.");
 dialog.add(dialogue_nadia, "Who are you people? Do I know you?");
