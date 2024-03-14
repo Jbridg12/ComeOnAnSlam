@@ -15,9 +15,8 @@ if(in_dash)
 		in_attack = false;
 		invulnerable = false;
 		collidable = false;
-		
+		sprite_index = sAidanWIP_small;
 		image_speed = 0;
-		image_index = 14;
 	}
 }
 else
@@ -26,6 +25,7 @@ else
 	invulnerable = true;
 	dash_index = 0;
 	collidable = true;
+	sprite_index = sAidanWalk;
 	image_speed = 4;
 	
 }

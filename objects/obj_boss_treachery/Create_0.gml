@@ -3,7 +3,6 @@
 
 // Inherit the parent event
 event_inherited();
-image_index = 14;
 
 in_attack = false;
 alarmed = false;
