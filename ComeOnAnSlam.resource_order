@@ -103,6 +103,7 @@
     {"name":"sMargaretWIP","order":3,"path":"sprites/sMargaretWIP/sMargaretWIP.yy",},
     {"name":"sMedRock","order":1,"path":"sprites/sMedRock/sMedRock.yy",},
     {"name":"Sprite104","order":1,"path":"sprites/Sprite104/Sprite104.yy",},
+    {"name":"sHealthColl","order":1,"path":"sprites/sHealthColl/sHealthColl.yy",},
     {"name":"sBGLustTiles","order":7,"path":"sprites/sBGLustTiles/sBGLustTiles.yy",},
     {"name":"sShortRock","order":2,"path":"sprites/sShortRock/sShortRock.yy",},
     {"name":"sTreach","order":4,"path":"sprites/sTreach/sTreach.yy",},
