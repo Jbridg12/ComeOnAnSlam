@@ -11,6 +11,7 @@ invulnerable_timer = 0;
 attack_cooldown = 0;
 target_x = 0;
 target_y = 0;
+collidable = false;
 
 hit_list = ds_list_create();
 
