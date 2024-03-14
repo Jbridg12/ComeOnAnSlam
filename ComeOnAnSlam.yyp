@@ -143,6 +143,7 @@
     {"id":{"name":"obj_dialogue_bear1","path":"objects/obj_dialogue_bear1/obj_dialogue_bear1.yy",},},
     {"id":{"name":"obj_dialogue_bear2","path":"objects/obj_dialogue_bear2/obj_dialogue_bear2.yy",},},
     {"id":{"name":"obj_dialogue_bear3","path":"objects/obj_dialogue_bear3/obj_dialogue_bear3.yy",},},
+    {"id":{"name":"obj_dialogue_bearupgrade","path":"objects/obj_dialogue_bearupgrade/obj_dialogue_bearupgrade.yy",},},
     {"id":{"name":"obj_dialogue_both_filler3","path":"objects/obj_dialogue_both_filler3/obj_dialogue_both_filler3.yy",},},
     {"id":{"name":"obj_dialogue_chargedAttack","path":"objects/obj_dialogue_chargedAttack/obj_dialogue_chargedAttack.yy",},},
     {"id":{"name":"obj_dialogue_chargedVert","path":"objects/obj_dialogue_chargedVert/obj_dialogue_chargedVert.yy",},},
@@ -274,6 +275,7 @@
     {"id":{"name":"Lust_Break_Boss","path":"rooms/Lust_Break_Boss/Lust_Break_Boss.yy",},},
     {"id":{"name":"Lust_Break","path":"rooms/Lust_Break/Lust_Break.yy",},},
     {"id":{"name":"Lust_Catwalks","path":"rooms/Lust_Catwalks/Lust_Catwalks.yy",},},
+    {"id":{"name":"Lust_ChargedUpgrade","path":"rooms/Lust_ChargedUpgrade/Lust_ChargedUpgrade.yy",},},
     {"id":{"name":"Lust_Hallway1","path":"rooms/Lust_Hallway1/Lust_Hallway1.yy",},},
     {"id":{"name":"Lust_Hallway2","path":"rooms/Lust_Hallway2/Lust_Hallway2.yy",},},
     {"id":{"name":"Lust_Outside","path":"rooms/Lust_Outside/Lust_Outside.yy",},},
@@ -493,8 +495,9 @@
     {"roomId":{"name":"Limbo_hallway","path":"rooms/Limbo_hallway/Limbo_hallway.yy",},},
     {"roomId":{"name":"Restroom_B4_Boss","path":"rooms/Restroom_B4_Boss/Restroom_B4_Boss.yy",},},
     {"roomId":{"name":"Lust_Storage","path":"rooms/Lust_Storage/Lust_Storage.yy",},},
-    {"roomId":{"name":"Limbo_Upgrade_Room","path":"rooms/Limbo_Upgrade_Room/Limbo_Upgrade_Room.yy",},},
+    {"roomId":{"name":"Limbo_Upgrade_Room","path":"rooms/Limbo_Upgrade_Room/Limbo_Upgrade_Room.yy",},}
     {"roomId":{"name":"Limbo_chargejump","path":"rooms/Limbo_chargejump/Limbo_chargejump.yy",},},
+    {"roomId":{"name":"Lust_ChargedUpgrade","path":"rooms/Lust_ChargedUpgrade/Lust_ChargedUpgrade.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
