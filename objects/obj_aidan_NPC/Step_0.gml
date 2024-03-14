@@ -26,3 +26,8 @@ if(x = destination_x)
 	
 	instance_destroy();
 }
+
+if(!instance_exists(obj_boss_enemy))
+{
+	instance_destroy();	
+}

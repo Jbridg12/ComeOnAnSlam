@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 var _event = event_id;
+activated  = true;
 if(tied_object != noone)
 {
 	with(tied_object)

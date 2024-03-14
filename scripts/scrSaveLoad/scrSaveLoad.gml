@@ -18,6 +18,7 @@ function save_game()
 			dummy_enabled : dummy_enabled,
 			charged_vert_enabled : charged_vert_enabled,
 			max_health : max_health,
+			weapon_id : weapon_id,
 			max_ammo : max_ammo
 		};
 		
@@ -99,6 +100,7 @@ function load_game()
 			dummy_enabled = _array[0].dummy_enabled;
 			charged_vert_enabled = _array[0].charged_vert_enabled;
 			max_health = _array[0].max_health;
+			weapon_id = _array[0].weapon_id;
 			hp = max_health;
 			max_ammo = max_ammo;
 			current_ammo = max_ammo;
