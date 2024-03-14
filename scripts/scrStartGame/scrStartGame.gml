@@ -6,6 +6,6 @@ function start_game()
 	obj_game_manager._room_map = {};
 	instance_destroy(obj_player);
 	instance_create_layer(0,0, "Instances", obj_player);
-	room_goto(treach_boss);
+	room_goto(Limbo1);
 
 }
