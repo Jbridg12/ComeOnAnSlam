@@ -23,7 +23,7 @@
   ],
   "name":"sHitboxRight",
   "nineSlice":null,
-  "origin":4,
+  "origin":3,
   "parent":{
     "name":"Hitboxes",
     "path":"folders/Sprites/ObjectSprites/Hitboxes.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":32,
+    "xorigin":0,
     "yorigin":32,
   },
   "swatchColours":null,
