@@ -7,4 +7,4 @@
 event_inherited();
 
 dialog.add(dialogue_red, "Pebbles! Where are you?");
-dialog.add(dialogue_red, "(to herself) Where’d he go?");
+dialog.add(dialogue_red, "(to herself) Where'd he go?");
