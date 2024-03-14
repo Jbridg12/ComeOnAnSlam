@@ -11,7 +11,7 @@ if(in_dash)
 	{
 		dash_index = -1;
 		in_dash = false;
-		attack_cooldown = ((hp/max_health) < 0.5) ? 180 : 240;
+		attack_cooldown = ((hp/max_health) < 0.5) ? 120 : 180;
 		in_attack = false;
 		invulnerable = false;
 		collidable = false;

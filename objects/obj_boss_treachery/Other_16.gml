@@ -10,7 +10,7 @@ if(in_circle_attack)
 		{
 			in_circle_attack = false;
 			dest_index = -1;
-			attack_cooldown = ((hp/max_health) < 0.5) ? 180 : 240;
+			attack_cooldown = ((hp/max_health) < 0.5) ? 120 : 180;
 			in_attack = false;
 			fired = false;
 		}

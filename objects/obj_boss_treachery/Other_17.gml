@@ -5,7 +5,7 @@
 if(instance_exists(obj_rock_small))
 {
 	in_slam = false;
-	attack_cooldown = ((hp/max_health) < 0.5) ? 180 : 240;
+	attack_cooldown = ((hp/max_health) < 0.5) ? 120 : 180;
 	in_attack = false;
 	return;
 }
