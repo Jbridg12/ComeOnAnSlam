@@ -3,11 +3,7 @@
 
 if(!spikes_active)
 {
-	with(obj_heart_spikes_boss)
-	{
-		move = 1;
-	}
-
-	alarm[0] = 300;
+	alarm[3] = 30;
+	color = c_fuchsia;
 	spikes_active = true;
-}
+} 

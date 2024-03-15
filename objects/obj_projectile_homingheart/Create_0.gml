@@ -4,6 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-move_speed = 1;
+move_speed = 3;
 target = noone;
-alarm[0] = 60;
+alarm[0] = 480;
+color = c_white;
+triggered = false;
