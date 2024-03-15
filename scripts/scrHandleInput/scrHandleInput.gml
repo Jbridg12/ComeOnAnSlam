@@ -2,9 +2,9 @@
 // TODO: Gamepad Input gp_()
 function handle_input(){
 	var isJump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
-	var isSprint =  keyboard_check(vk_lshift) || gamepad_button_check(0, gp_shoulderlb);
+	var isSprint =  keyboard_check(vk_shift) || gamepad_button_check(0, gp_shoulderlb);
 	var isHoldJump = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
-	
+
 	var isUp = keyboard_check(ord("W"));
 	var isDown = keyboard_check(ord("S"));
 	

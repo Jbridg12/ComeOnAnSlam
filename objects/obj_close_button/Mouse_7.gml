@@ -2,8 +2,5 @@
 // You can write your code in this editor
 
 
-if(!in_settings)
-{	
-	obj_game_manager.in_pause = false;
-	load_game();
-}
+event_user(0);
+

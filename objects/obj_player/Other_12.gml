@@ -21,9 +21,9 @@ if(active_hitbox)
 
 if(!grounded && (keyboard_check(ord("S")) || gamepad_axis_value(0, gp_axislv) > 0))
 {
-	if(sprite_index != sPlayerAttack)
+	if(sprite_index != sPlayerDownAttack)
 	{
-		sprite_index = sPlayerAttack;
+		sprite_index = sPlayerDownAttack;
 		image_index = 0;
 	}
 	active_hitbox = instance_create_layer(x, y, instance_layer, obj_down_attack);

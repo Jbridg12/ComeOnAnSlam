@@ -68,9 +68,7 @@ function calculate_movement()
 	if(platform_transparent)
 	{
 		
-		
 		colliding_instances_x = move_and_collide(delta_x, 0, [room_collision_layer, obj_obstacle]);
-		
 		colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, obj_obstacle]);
 		
 		if(object_get_name(object_index) == "obj_player")
@@ -91,9 +89,48 @@ function calculate_movement()
 	else
 	{
 		// Overlappable enemies
+		//var _oldX = x;
+		//var _oldY = y;
 		colliding_instances_x = move_and_collide(delta_x, 0, [room_collision_layer, platform_collision_layer, obj_obstacle]);
-		colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, platform_collision_layer, obj_obstacle]);
-		
+		colliding_instances_y = move_and_collide(0, delta_y, [room_collision_layer, platform_collision_layer, obj_obstacle]);	
+
+		// Tileset Collision Fails in HTML5 No idea why this is an attempt to fix
+		//if(object_get_name(object_index) == "obj_player")
+		//{
+		//	var inst;
+		//	inst = collision_rectangle( x - sprite_get_width(sprite_index)/2 , 
+		//								bbox_top, 
+		//								x + sprite_get_width(sprite_index)/2 ,
+		//								bbox_bottom,  
+		//								[room_collision_layer, platform_collision_layer], false, true);
+			
+		//	show_debug_message("x_collide: ");
+		//	show_debug_message(inst);
+		//	if(inst != noone)
+		//	{
+		//		x = _oldX;
+		//		array_push(colliding_instances_x, inst); 
+		//	}
+		//}
+		//if(object_get_name(object_index) == "obj_player")
+		//{
+		//	var inst;
+		//	inst = collision_rectangle( x - sprite_get_width(sprite_index)/2 , 
+		//								bbox_top, 
+		//								x + sprite_get_width(sprite_index)/2 ,
+		//								bbox_bottom,  
+		//								[room_collision_layer, platform_collision_layer], false, true);
+			
+		//	show_debug_message("y_collide: ");
+		//	show_debug_message(inst);
+		//	if(inst != noone)
+		//	{
+		//		y = _oldY;
+		//		array_push(colliding_instances_y, inst); 
+		//	}
+		//}
+		//show_debug_message(delta_x);
+		//show_debug_message(delta_y);
 		
 		// Case if we want enemies to not be overlappable
 		//if(object_index == obj_player)
@@ -137,7 +174,7 @@ function calculate_movement()
 		
 		if(object_get_name(object_index) == "obj_player")
 		{
-			// Player colliding with a wall
+
 			if(array_contains(colliding_instances_x, room_collision_layer))
 			{
 				// Wall Jump Handling

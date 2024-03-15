@@ -85,6 +85,11 @@ if(_selectOption)
 		room_goto(MainMenu);
 		return;
 	}
+	else if (_name  == "Quit Game")
+	{
+		game_end();
+		return;
+	}
 	else
 	{
 		locked = true;

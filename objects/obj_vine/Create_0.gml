@@ -9,3 +9,5 @@ depth = instance_depth + 1;
 vine_speed = 0;
 vine_acceleration = 0;
 vine_input = 0;
+vine_correction = 0;
+vine_position = 0;

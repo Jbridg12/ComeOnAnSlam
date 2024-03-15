@@ -3,23 +3,23 @@
   "%Name":"sLustEx",
   "bboxMode":0,
   "bbox_bottom":127,
-  "bbox_left":0,
+  "bbox_left":1,
   "bbox_right":63,
-  "bbox_top":9,
+  "bbox_top":10,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f9315478-382a-432f-a5ce-6e74ff142644","name":"f9315478-382a-432f-a5ce-6e74ff142644","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e56d371f-2bf1-4923-943d-b320e6115fb3","name":"e56d371f-2bf1-4923-943d-b320e6115fb3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":128,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"99eb67bc-58d9-4ada-8e4b-5bfc5b4c5eb8","blendMode":0,"displayName":"default","isLocked":false,"name":"99eb67bc-58d9-4ada-8e4b-5bfc5b4c5eb8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4df12e37-85bf-44f7-b1a5-9af9b1552022","blendMode":0,"displayName":"default","isLocked":false,"name":"4df12e37-85bf-44f7-b1a5-9af9b1552022","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sLustEx",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f9315478-382a-432f-a5ce-6e74ff142644","path":"sprites/sLustEx/sLustEx.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"dea980ab-3dc6-4a99-b018-b87fbb9a9ba5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e56d371f-2bf1-4923-943d-b320e6115fb3","path":"sprites/sLustEx/sLustEx.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"161f6b99-0bdb-4432-b2d7-a5c4510bf755","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

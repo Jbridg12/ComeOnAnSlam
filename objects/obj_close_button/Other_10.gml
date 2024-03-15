@@ -3,7 +3,6 @@
 
 
 if(!in_settings)
-{	
-	obj_game_manager.in_pause = false;
-	load_game();
+{
+	game_end();
 }
