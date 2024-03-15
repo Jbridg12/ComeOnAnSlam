@@ -27,7 +27,7 @@ if(!other.invulnerable)
 			_damage = 100;
 			break;
 	}
-	other.hp -= damage;
+	other.hp -= _damage;
 	other.invulnerable_timer = other.invulnerable_timer_max;
 }
 instance_destroy();

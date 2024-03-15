@@ -27,7 +27,7 @@ switch(obj_player.weapon_id)
 		break;
 }
 
-other.hp -= damage;
+other.hp -= _damage;
 other.invulnerable_timer = other.invulnerable_timer_max;
 
 //other.knockback_angle = point_direction(x, y, other.x, other.y);
