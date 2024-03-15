@@ -42,10 +42,11 @@ else
 	ammo_countdown = 300;
 }
 
-if(step_cooldown > 0)	step_cooldown--;
-if(staple_cooldown > 0) staple_cooldown--;
-if(hazard_cooldown > 0) hazard_cooldown--;
-if(hit_timer > 0)		hit_timer--;
+if(step_cooldown > 0)		step_cooldown--;
+if(staple_cooldown > 0)		staple_cooldown--;
+if(hazard_cooldown > 0)		hazard_cooldown--;
+if(hit_timer > 0)			hit_timer--;
+if(attack_cooldown > 0)		attack_cooldown--;
 	
 if(animation_destination == -1) 
 {

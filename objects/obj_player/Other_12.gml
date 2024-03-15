@@ -44,3 +44,6 @@ active_hitbox.image_xscale = orientation;
 attacking_enable_collision = true;
 image_speed = 1;
 alarm[1] = 15;
+
+active_hitbox_dx = 0;
+active_hitbox_dy = 0;

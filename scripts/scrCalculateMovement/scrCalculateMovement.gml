@@ -198,8 +198,10 @@ function calculate_movement()
 	{
 		if(active_hitbox)
 		{
-			active_hitbox.x += x - last_x;
-			active_hitbox.y += y - last_y;
+			//active_hitbox.x += x - last_x;
+			//active_hitbox.y += y - last_y;
+			active_hitbox_dx = x- last_x;
+			active_hitbox_dy = y - last_y;
 		}
 		
 		last_x = x;

@@ -29,6 +29,9 @@ charged_vert_enabled = false;
 //-----------------------Combat Parameters---------------------------
 
 attacking_enable_collision = false;
+attack_cooldown = 0;
+active_hitbox_dx = 0;
+active_hitbox_dy = 0;
 active_hitbox = noone;
 invulnerable = false;
 knockback_force_x = 0;

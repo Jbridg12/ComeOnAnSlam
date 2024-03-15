@@ -219,6 +219,7 @@ function handle_input(){
 	var _releasePrimary = keyboard_check_released(ord("2")) || keyboard_check_released(ord("K")) || mouse_check_button_released(mb_left) || gamepad_button_check_released(0, gp_face3);
 	
 	if(!primary_enabled) return;
+	if(attack_cooldown > 0) return; 
 	
 	if(charging && _chargePrimary)
 	{
