@@ -6,4 +6,4 @@
 // Inherit the parent event
 event_inherited();
 
-dialog.add(dialogue_red, "Found space for an additional Ammo!");
+dialog.add(dialogue_nadia, "Found space for an additional Ammo!");

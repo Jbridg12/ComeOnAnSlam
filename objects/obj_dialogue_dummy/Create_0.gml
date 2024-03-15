@@ -6,5 +6,5 @@
 // Inherit the parent event
 event_inherited();
 
-dialog.add(dialogue_red, "Found the power to create an exact Replica!");
-dialog.add(dialogue_red, "Hold Run and press Interact to trigger.");
+dialog.add(dialogue_nadia, "Found the power to create an exact Replica!");
+dialog.add(dialogue_bear, "Hold Run and press Interact to trigger.");

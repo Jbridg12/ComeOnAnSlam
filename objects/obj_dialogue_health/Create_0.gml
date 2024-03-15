@@ -6,4 +6,4 @@
 // Inherit the parent event
 event_inherited();
 
-dialog.add(dialogue_red, "Found a Health Upgrade!");
+dialog.add(dialogue_nadia, "Found a Health Upgrade!");

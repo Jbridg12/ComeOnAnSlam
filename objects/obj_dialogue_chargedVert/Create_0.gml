@@ -6,5 +6,5 @@
 // Inherit the parent event
 event_inherited();
 
-dialog.add(dialogue_red, "Found the power to CHARGE your jumps!");
-dialog.add(dialogue_red, "Hold Run + Jump to activate.");
+dialog.add(dialogue_nadia, "Found the power to CHARGE your jumps!");
+dialog.add(dialogue_bear, "Hold Run + Jump to activate.");

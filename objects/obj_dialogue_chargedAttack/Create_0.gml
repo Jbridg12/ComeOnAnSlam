@@ -6,5 +6,5 @@
 // Inherit the parent event
 event_inherited();
 
-dialog.add(dialogue_red, "Found the power to CHARGE your Attacks!");
-dialog.add(dialogue_red, "Hold the Attack button until your character seethes RED power.");
+dialog.add(dialogue_nadia, "Found the power to CHARGE your Attacks!");
+dialog.add(dialogue_bear, "Hold the Attack button until your character seethes RED power.");

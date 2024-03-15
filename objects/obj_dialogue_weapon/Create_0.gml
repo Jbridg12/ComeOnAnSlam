@@ -6,4 +6,4 @@
 // Inherit the parent event
 event_inherited();
 
-dialog.add(dialogue_red, "Found a Whetstone that sharpens your Stapler!");
+dialog.add(dialogue_nadia, "Found a Whetstone that sharpens your Stapler!");
