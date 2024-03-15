@@ -47,9 +47,16 @@ if(staple_cooldown > 0) staple_cooldown--;
 if(hazard_cooldown > 0) hazard_cooldown--;
 if(hit_timer > 0)		hit_timer--;
 	
-if(!obj_game_manager.in_dialogue) 
+if(animation_destination == -1) 
 {
-	handle_input();
+	if(obj_game_manager.in_dialogue)
+	{
+		delta_x = 0;
+	}
+	else
+	{
+		handle_input();
+	}
 }
 else
 {
@@ -60,6 +67,14 @@ else
 		{
 			delta_x = sign(animation_destination - x) * animation_speed;
 			delta_y = 20;
+		}
+		else
+		{
+			animation_destination = -1;
+			with(obj_cutscene_trigger)
+			{
+				event_user(0);	
+			}
 		}
 	}
 }
