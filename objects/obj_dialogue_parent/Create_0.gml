@@ -12,4 +12,5 @@ current_dialogue = {};
 
 alpha = 0;
 
-obj_player.delta_x = 0;
+if(room != MainMenu)
+	obj_player.delta_x = 0;

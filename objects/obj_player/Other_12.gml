@@ -27,12 +27,12 @@ if(!grounded && (keyboard_check(ord("S")) || gamepad_axis_value(0, gp_axislv) > 
 }
 else
 {
-	sprite_index = TestAttackRight;
+	sprite_index = sPlayerWalk;
 	active_hitbox = instance_create_layer(_right, y, instance_layer, obj_side_attack);
 	active_hitbox.y = _top  + (obj_side_attack.sprite_height/2);
 }
 
 active_hitbox.image_xscale = orientation;
 attacking_enable_collision = true;
-image_speed = 0.2;
-alarm[0] = 25;
+image_speed = 1;
+//alarm[0] = 25;
