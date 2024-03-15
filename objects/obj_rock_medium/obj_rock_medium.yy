@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"obj_rock_medium",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_projectile_parent","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"propertyId":{"name":"damage","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
+  ],
   "parent":{
     "name":"Boss Objects",
     "path":"folders/Objects/Entities/Enemies/Treachery/Boss Objects.yy",
