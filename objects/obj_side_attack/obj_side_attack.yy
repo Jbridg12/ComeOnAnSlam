@@ -35,5 +35,5 @@
     "path":"sprites/sHitboxRight/sHitboxRight.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

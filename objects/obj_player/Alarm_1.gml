@@ -1,6 +1,7 @@
-/// @description Reset Weight Long Jump	
+/// @description Unalive Hitbox
 // You can write your code in this editor
 
-weight = 2;
 
-
+attacking_enable_collision = false;
+instance_destroy(active_hitbox);
+active_hitbox = noone;

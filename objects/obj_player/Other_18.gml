@@ -3,8 +3,5 @@
 
 
 sprite_index = sPlayer;
-attacking_enable_collision = false;
-instance_destroy(active_hitbox);
-active_hitbox = noone;
 image_speed = 1;
 

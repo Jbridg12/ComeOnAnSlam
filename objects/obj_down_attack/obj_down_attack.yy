@@ -40,5 +40,5 @@
     "path":"sprites/sHitboxDown/sHitboxDown.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

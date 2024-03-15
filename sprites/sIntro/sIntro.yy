@@ -29,8 +29,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"ComeOnAnSlam",
-    "path":"ComeOnAnSlam.yyp",
+    "name":"Menus",
+    "path":"folders/Sprites/Menus.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -3,7 +3,9 @@
 
 if(!invulnerable)
 {
-	hp -= 20;
+	var _damage = 10 * obj_game_manager.curr_realm; 
+	hp -= _damage;
+	
 	screenshake(5, 2, 0.5);
 	invulnerable = true;
 	hit_timer = 60;

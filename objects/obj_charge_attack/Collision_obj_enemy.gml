@@ -14,13 +14,22 @@ var damage = 0;
 switch(obj_player.weapon_id)
 {
 	case 0:
-		damage = 20;
+		damage = 15;
 		break;
 	case 1:
-		damage = 40;
+		damage = 30;
+		break;
+	case 2:
+		damage = 75;
+		break;
+	case 3:
+		damage = 150;
+		break;
+	case 4:
+		damage = 300;
 		break;
 	default:
-		damage = 400;
+		damage = 100;
 		break;
 }
 

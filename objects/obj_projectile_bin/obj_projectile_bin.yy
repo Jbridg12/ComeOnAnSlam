@@ -8,7 +8,7 @@
   "managed":true,
   "name":"obj_projectile_bin",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_projectile_parent","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"propertyId":{"name":"damage","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"5",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_projectile_parent","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"propertyId":{"name":"damage","path":"objects/obj_projectile_parent/obj_projectile_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"10",},
   ],
   "parent":{
     "name":"Projectiles",
