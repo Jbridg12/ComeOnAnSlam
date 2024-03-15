@@ -22,7 +22,7 @@ if(showing_cutscene == false)
 }
 else if(!obj_game_manager.in_dialogue) 
 {
-	if(keyboard_check_released(key_next) || gamepad_button_check_released(0, gp_next))
+	if(keyboard_check_released(key_next) || gamepad_button_check_released(0, gp_next) || mouse_check_button_released(mb_left))
 	{
 		showing_cutscene = false;
 	}

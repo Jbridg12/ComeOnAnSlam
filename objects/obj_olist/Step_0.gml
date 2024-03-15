@@ -11,6 +11,8 @@ var _unSelectOption = 0;
 var _moveSelect =  keyboard_check_released(ord("W")) - keyboard_check_released(ord("S"));
 _moveSelect += gamepad_button_check_pressed(0, gp_padu) - gamepad_button_check_pressed(0, gp_padd);
 
+var _moveVal =  keyboard_check_released(ord("D")) - keyboard_check_released(ord("A"));
+_moveVal += gamepad_button_check_pressed(0, gp_padr) - gamepad_button_check_pressed(0, gp_padl);
 
 if(unlock_escape)
 {
@@ -92,7 +94,7 @@ if(_selectOption)
 	}
 	else
 	{
-		locked = true;
+		//locked = true;
 	}
 }
 
@@ -100,9 +102,9 @@ if(!locked)
 {
 	selected -= _moveSelect;
 	selected = clamp(selected, 0, _size - 1);	
-}
-else
-{
+//}
+//else
+//{
 	var _arr = list[| selected];
 	var _name = _arr[PARAM.NAME];
 	var _sel = _arr[PARAM.SEL_VAL];
@@ -114,7 +116,7 @@ else
 	{
 		if(global.fullscreen && _name == "Window Size") return;
 		
-		_sel += _moveSelect;
+		_sel += _moveVal;
 		_sel = clamp(_sel, 0, array_length(_vals) - 1);
 				
 		_arr[@ PARAM.SEL_VAL] = _sel;
@@ -178,6 +180,8 @@ for(var i = 0; i < _size; i++)
 	
 	if(_hover)
 	{
+		
+		selected = i;	
 		hover_index = i;
 		
 		if(_sel == -1 && (_mousePressed || _selectOption > 0))
@@ -201,6 +205,16 @@ for(var i = 0; i < _size; i++)
 						}
 						instance_destroy(obj_pause);
 					}
+					return;
+				case "Main Menu":
+					with(obj_game_manager) 
+					{
+						event_user(1);
+					}
+					room_goto(MainMenu);
+					return;
+				case "Quit Game":
+					game_end();
 					return;
 				default:
 					locked = true;
