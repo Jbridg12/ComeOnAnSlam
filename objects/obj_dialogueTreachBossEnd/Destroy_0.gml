@@ -10,5 +10,5 @@ with(obj_boss_enemy)
 	instance_destroy();	
 }
 
-
-room_goto(MainMenu);
+instance_create_layer(0, 0, "Instances", obj_credits);
+//room_goto(MainMenu);

@@ -3,5 +3,8 @@
 
 obj_player.depth += 1;
 depth -= 50;
-create_list(400, 40, 300, 240, LIST_TYPE.SETTINGS);
+y = (global.org_win_height * (2 / 3)) - 150;
+x = (global.org_win_width / 2) - 200;
+
+create_list(x, y, 400, 300, LIST_TYPE.SETTINGS);
 

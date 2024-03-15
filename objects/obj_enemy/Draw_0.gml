@@ -8,7 +8,7 @@ if(invulnerable_timer > 0)
 	sprite_color = c_red;
 }
 
-draw_circle_color(x, y, detection_radius, c_white, c_purple, true);
+//draw_circle_color(x, y, detection_radius, c_white, c_purple, true);
 
 // If enemy can go upside down
 if(can_rotate)

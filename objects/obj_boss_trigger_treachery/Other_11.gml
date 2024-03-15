@@ -26,7 +26,7 @@ with(obj_game_manager)
 }
 
 obj_player.sprite_index = sPlayer;
-		
+obj_player.in_ranged = false;
 with(obj_anim_destination)
 {
 	if(index == 1)

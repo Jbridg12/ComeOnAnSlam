@@ -9,6 +9,7 @@ with(obj_obstacle)
 		event_user(0);
 	}
 }
+obj_player.in_ranged = false;
 
 with(obj_game_manager)
 {

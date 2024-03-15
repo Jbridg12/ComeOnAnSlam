@@ -12,6 +12,6 @@ if(move)
 	{
 		x =  org - (s_height * sign(move_speed));	
 	}
-	active = !active;
+	//active = !active;
 	distance_travelled = 0;
 }
