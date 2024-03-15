@@ -14,7 +14,10 @@
     "name":"BossTriggers",
     "path":"folders/Objects/Environement Props/Triggers/BossTriggers.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_cutscene_trigger",
+    "path":"objects/obj_cutscene_trigger/obj_cutscene_trigger.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

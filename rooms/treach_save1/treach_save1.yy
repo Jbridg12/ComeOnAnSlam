@@ -10,7 +10,6 @@
     {"name":"inst_65CD9E62","path":"rooms/treach_save1/treach_save1.yy",},
     {"name":"inst_31C54235","path":"rooms/treach_save1/treach_save1.yy",},
     {"name":"inst_53734E47","path":"rooms/treach_save1/treach_save1.yy",},
-    {"name":"inst_2D1CF639","path":"rooms/treach_save1/treach_save1.yy",},
     {"name":"inst_204504E7","path":"rooms/treach_save1/treach_save1.yy",},
     {"name":"inst_180B267A","path":"rooms/treach_save1/treach_save1.yy",},
   ],
@@ -52,7 +51,6 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_room_transition","path":"objects/obj_room_transition/obj_room_transition.yy",},"propertyId":{"name":"dest_entrance_id","path":"objects/obj_room_transition/obj_room_transition.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":4.5,"x":896.0,"y":128.0,},
         {"$GMRInstance":"","%Name":"inst_53734E47","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_53734E47","objectId":{"name":"obj_save","path":"objects/obj_save/obj_save.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":352.0,},
-        {"$GMRInstance":"","%Name":"inst_2D1CF639","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2D1CF639","objectId":{"name":"obj_dialogue_both_filler3","path":"objects/obj_dialogue_both_filler3/obj_dialogue_both_filler3.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1536.0,"y":416.0,},
         {"$GMRInstance":"","%Name":"inst_204504E7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_204504E7","objectId":{"name":"obj_both_npc","path":"objects/obj_both_npc/obj_both_npc.yy",},"properties":[
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_interactible_char","path":"objects/obj_interactible_char/obj_interactible_char.yy",},"propertyId":{"name":"initial_dialogue","path":"objects/obj_interactible_char/obj_interactible_char.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_dialogue_treach1",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_interactible_char","path":"objects/obj_interactible_char/obj_interactible_char.yy",},"propertyId":{"name":"repeat_dialogue","path":"objects/obj_interactible_char/obj_interactible_char.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_dialogue_both_filler3",},
