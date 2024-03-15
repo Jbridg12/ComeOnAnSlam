@@ -96,7 +96,8 @@ function handle_input(){
 	}
 	else
 	{
-		image_speed = 1;
+		if(sprite_index == sPlayerWalk)
+			image_speed = 1;
 	}
 	
 	
@@ -209,14 +210,13 @@ function handle_input(){
 		charge_timer++;
 		
 		// Step through charge sprite over duration of charge
-		var _img = floor(sprite_get_number(sprite_index) * (charge_timer / timer_max))
-		image_index = clamp(_img, 0, sprite_get_number(sprite_index)-1);
+		//var _img = floor(sprite_get_number(sprite_index) * (charge_timer / timer_max))
+		//image_index = clamp(_img, 0, sprite_get_number(sprite_index)-1);
 	}
 	if(charging && _releasePrimary)
 	{
 		
 		charging = false;
-		charge_timer = 0;
 		if(charge_timer > timer_max)
 		{
 			event_user(5); // Charge Attack
@@ -226,6 +226,7 @@ function handle_input(){
 			show_debug_message("ATTACK"); // Normal Attack
 			event_user(2);	
 		}
+		charge_timer = 0;
 	}
 	
 	if(primaryAttack)
@@ -244,8 +245,9 @@ function handle_input(){
 			charging = true;
 			
 			// Set sprite to charging animation sprite
-			//sprite_index = TestAttackRight;
-			//image_speed = 0;
+			sprite_index = sPlayerAttack;
+			image_index	 = 1;
+			image_speed = 0;
 		}
 	}
 	

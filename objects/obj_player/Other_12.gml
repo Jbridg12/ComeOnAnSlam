@@ -21,15 +21,21 @@ if(active_hitbox)
 
 if(!grounded && (keyboard_check(ord("S")) || gamepad_axis_value(0, gp_axislv) > 0))
 {
-	sprite_index = sPlayerAttack;
-	image_index = 0;
+	if(sprite_index != sPlayerAttack)
+	{
+		sprite_index = sPlayerAttack;
+		image_index = 0;
+	}
 	active_hitbox = instance_create_layer(x, y, instance_layer, obj_down_attack);
 	active_hitbox.y = _bottom  + (obj_down_attack.sprite_height/2) - 8;
 }
 else
 {
-	sprite_index = sPlayerAttack;
-	image_index = 0;
+	if(sprite_index != sPlayerAttack)
+	{
+		sprite_index = sPlayerAttack;
+		image_index = 0;
+	}
 	active_hitbox = instance_create_layer(_right, y, instance_layer, obj_side_attack);
 	active_hitbox.y = _top  + (obj_side_attack.sprite_height/2);
 }
@@ -37,4 +43,4 @@ else
 active_hitbox.image_xscale = orientation;
 attacking_enable_collision = true;
 image_speed = 1;
-//alarm[0] = 25;
+alarm[1] = 15;

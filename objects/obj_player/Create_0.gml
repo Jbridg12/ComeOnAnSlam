@@ -19,7 +19,7 @@ image_speed = 1;
 primary_enabled = true;
 ranged_enabled = false;
 wall_jump_enabled = false;
-charge_attack_enabled = false;
+charge_attack_enabled = true;
 dummy_enabled = false;
 charged_vert_enabled = false;
 
