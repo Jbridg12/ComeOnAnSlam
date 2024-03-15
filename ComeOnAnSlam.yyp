@@ -431,6 +431,7 @@
     {"id":{"name":"sprHeart","path":"sprites/sprHeart/sprHeart.yy",},},
     {"id":{"name":"sprHeartHoming","path":"sprites/sprHeartHoming/sprHeartHoming.yy",},},
     {"id":{"name":"Sprite104","path":"sprites/Sprite104/Sprite104.yy",},},
+    {"id":{"name":"Sprite115","path":"sprites/Sprite115/Sprite115.yy",},},
     {"id":{"name":"sprThrowCan","path":"sprites/sprThrowCan/sprThrowCan.yy",},},
     {"id":{"name":"sRoomLanding","path":"sprites/sRoomLanding/sRoomLanding.yy",},},
     {"id":{"name":"sSave","path":"sprites/sSave/sSave.yy",},},
