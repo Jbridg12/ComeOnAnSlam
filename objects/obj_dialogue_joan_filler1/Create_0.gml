@@ -7,4 +7,4 @@
 event_inherited();
 
 
-dialog.add(dialogue_joan, "Tonight is wine and TPS report night!");
+dialog.add(dialogue_joan, "Tonight is wine and TPS report night! Wooooo!");
