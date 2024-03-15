@@ -8,7 +8,7 @@ if(showing_cutscene == false)
 		obj_game_manager.in_dialogue = false;
 		instance_create_layer(0,0, "Instances", obj_player);
 		instance_destroy();
-		room_goto(Limbo1);
+		room_goto(rmStart);
 		return;
 	}
 	else if(image_index == 1)
