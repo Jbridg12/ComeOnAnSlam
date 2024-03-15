@@ -11,7 +11,7 @@ dialog.add(dialogue_bear, "Ma'am.");
 dialog.add(dialogue_nadia, "What's up with you guys?");
 dialog.add(dialogue_joan, "We just got back from corporate. The company has decided to 'Downsize to reflect new market realities'.");
 dialog.add(dialogue_bear, "Whatever that means.");
-dialog.add(dialogue_nadia, "No! They can’t!");
+dialog.add(dialogue_nadia, "No! They can't!");
 dialog.add(dialogue_bear, "They did sadly.");
 dialog.add(dialogue_joan, "I just wish I had told them what I really wanted to say. Nadia, don't ever be afraid to speak your mind!");
 dialog.add(dialogue_bear, "Well I oughta wallop them just like mama used to!");
