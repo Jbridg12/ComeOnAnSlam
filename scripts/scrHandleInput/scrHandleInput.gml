@@ -25,7 +25,22 @@ function handle_input(){
 
 	if(keyboard_check_released(vk_delete) || gamepad_button_check_released(0, gp_start))
 	{
-		room_goto(MainMenu);
+		//room_goto(MainMenu);
+	}
+	if(gamepad_button_check_released(0, gp_start))
+	{
+		if(obj_game_manager.recently_escaped) 
+		{
+			obj_game_manager.recently_escaped = false;	
+		} 
+		else
+		{
+			with(obj_game_manager)
+			{
+				event_user(1);
+			}
+			return;
+		}
 	}
 	
 	if(obj_game_manager.in_dialogue) return;

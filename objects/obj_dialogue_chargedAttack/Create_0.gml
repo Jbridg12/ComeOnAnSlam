@@ -7,4 +7,4 @@
 event_inherited();
 
 dialog.add(dialogue_red, "Found the power to CHARGE your Attacks!");
-dialog.add(dialogue_red, "Hold Run and the Attack button.");
+dialog.add(dialogue_red, "Hold the Attack button until your character seethes RED power.");
