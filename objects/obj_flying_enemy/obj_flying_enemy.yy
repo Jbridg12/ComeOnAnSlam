@@ -6,10 +6,12 @@
   ],
   "managed":true,
   "name":"obj_flying_enemy",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_pausable_object","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"propertyId":{"name":"max_health","path":"objects/obj_pausable_object/obj_pausable_object.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"100",},
+  ],
   "parent":{
-    "name":"Enemies",
-    "path":"folders/Objects/Entities/Enemies.yy",
+    "name":"Treachery",
+    "path":"folders/Objects/Entities/Enemies/Treachery.yy",
   },
   "parentObjectId":{
     "name":"obj_flying_parent",
