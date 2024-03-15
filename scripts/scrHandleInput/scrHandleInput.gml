@@ -91,7 +91,8 @@ function handle_input(){
 	{
 		air_resistance = 0.95;
 		motion_speed = sprint_speed;
-		image_speed = 1.5;
+		if(sprite_index == sPlayerWalk)
+			image_speed = 1.5;
 	}
 	else
 	{
