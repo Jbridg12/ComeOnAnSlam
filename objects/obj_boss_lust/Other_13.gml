@@ -4,7 +4,7 @@ var _event = 7;
 
 if((hp/max_health) < 0.5)
 {
-	_event = spikes_active ? 8 : choose(8, 9);
+	_event = spikes_active ? 7 : choose(7, 9);
 }
 
 attack_cooldown = ((hp/max_health) < 0.5) ? 180 : 240;

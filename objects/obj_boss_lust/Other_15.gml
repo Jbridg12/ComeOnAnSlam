@@ -14,4 +14,4 @@ else
 
 attack_cooldown = ((hp/max_health) < 0.5) ? 180 : 240;
 
-event_user(10);
+event_user(7);
