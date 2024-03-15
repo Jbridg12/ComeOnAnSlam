@@ -103,8 +103,8 @@ function load_game()
 			charged_vert_enabled = _array[0].charged_vert_enabled;
 			max_health = _array[0].max_health;
 			weapon_id = _array[0].weapon_id;
+			max_ammo = _array[0].max_ammo;
 			hp = max_health;
-			max_ammo = max_ammo;
 			current_ammo = max_ammo;
 		}
 		
